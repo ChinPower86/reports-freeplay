@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KOB Insights — Reports</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #080b10;
+    --surface: #0d1117;
+    --surface2: #131922;
+    --border: #1e2a38;
+    --accent: #e63946;
+    --accent2: #f4a261;
+    --text: #e2e8f0;
+    --muted: #4a6080;
+    --blue: #3b82f6;
+  }
+
+  body {
+    font-family: 'Syne', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* ── GRID BG ── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(230,57,70,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(230,57,70,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ── HEADER ── */
+  header {
+    position: relative;
+    z-index: 1;
+    padding: 48px 60px 40px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .logo-area {}
+
+  .logo-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--accent);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .logo-title {
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 800;
+    color: #fff;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+
+  .logo-title span {
+    color: var(--accent);
+  }
+
+  .logo-sub {
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 400;
+  }
+
+  .header-stats {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .stat-pill {
+    text-align: right;
+  }
+
+  .stat-pill .num {
+    font-size: 28px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .stat-pill .label {
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+
+  /* ── MAIN ── */
+  main {
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 48px 60px 80px;
+  }
+
+  .section-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ── REPORT GRID ── */
+  .reports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 16px;
+    margin-bottom: 60px;
+  }
+
+  .report-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+    transition: border-color 0.2s, transform 0.2s;
+    position: relative;
+  }
+
+  .report-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+  }
+
+  .report-card:hover .card-arrow {
+    transform: translate(3px, -3px);
+    opacity: 1;
+  }
+
+  .card-top-bar {
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+  }
+
+  .card-inner {
+    padding: 20px 24px 22px;
+  }
+
+  .card-date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  .card-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.3;
+    margin-bottom: 8px;
+  }
+
+  .card-desc {
+    font-size: 12px;
+    color: #6a88a8;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+
+  .ctag {
+    font-size: 10px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.5px;
+  }
+
+  .ctag-red { background: rgba(230,57,70,0.12); color: #e63946; border: 1px solid rgba(230,57,70,0.25); }
+  .ctag-blue { background: rgba(59,130,246,0.12); color: #60a5fa; border: 1px solid rgba(59,130,246,0.25); }
+  .ctag-green { background: rgba(52,211,153,0.12); color: #34d399; border: 1px solid rgba(52,211,153,0.25); }
+  .ctag-orange { background: rgba(244,162,97,0.12); color: #f4a261; border: 1px solid rgba(244,162,97,0.25); }
+
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+  }
+
+  .card-open {
+    font-size: 11px;
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .card-arrow {
+    font-size: 16px;
+    color: var(--accent);
+    opacity: 0.5;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+
+  /* ── NEW BADGE ── */
+  .new-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* ── EMPTY CARD (placeholder) ── */
+  .report-card.empty {
+    border-style: dashed;
+    opacity: 0.35;
+    pointer-events: none;
+  }
+
+  .report-card.empty .card-top-bar {
+    background: var(--border);
+  }
+
+  .empty-inner {
+    padding: 20px 24px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 160px;
+    gap: 10px;
+    color: var(--muted);
+  }
+
+  .empty-icon {
+    font-size: 28px;
+    opacity: 0.4;
+  }
+
+  .empty-text {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  /* ── HOW TO ── */
+  .howto {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px 32px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .howto-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .step {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-bottom: 12px;
+  }
+
+  .step-num {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .step-text {
+    font-size: 12px;
+    color: #6a88a8;
+    line-height: 1.6;
+    padding-top: 2px;
+  }
+
+  .step-text code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    background: var(--surface2);
+    padding: 1px 6px;
+    border-radius: 4px;
+    color: var(--accent2);
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid var(--border);
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .footer-left {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 1px;
+  }
+
+  .footer-right {
+    font-size: 10px;
+    color: var(--muted);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  @media (max-width: 768px) {
+    header, main, footer { padding-left: 20px; padding-right: 20px; }
+    header { padding-top: 28px; padding-bottom: 24px; }
+    .header-stats { display: none; }
+    main { padding-top: 28px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-area">
+    <div class="logo-eyebrow">▸ Intelligence Portal</div>
+    <div class="logo-title">KOB <span>Insights</span></div>
+    <div class="logo-sub">Отчёты по мобильному рынку · CEO Freeplay</div>
+  </div>
+  <div class="header-stats">
+    <div class="stat-pill">
+      <div class="num" id="report-count">1</div>
+      <div class="label">Отчётов</div>
+    </div>
+    <div class="stat-pill">
+      <div class="num">2026</div>
+      <div class="label">Год</div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="section-label">Все отчёты</div>
+
+  <div class="reports-grid" id="reports-grid">
+
+    <!-- Report 1 — actual -->
+    <a class="report-card" href="trends_09_04_26.html">
+      <div class="new-badge">NEW</div>
+      <div class="card-top-bar"></div>
+      <div class="card-inner">
+        <div class="card-date">09 АПРЕЛЯ 2026</div>
+        <div class="card-title">🔥 Ранние сигналы — KOB Insights</div>
+        <div class="card-desc">Новые игры в тесте, активная итерация, паблишер-трансферы, жанровые сигналы. Январь – Апрель 2026.</div>
+        <div class="card-tags">
+          <span class="ctag ctag-red">Мультисигнал</span>
+          <span class="ctag ctag-blue">Soft Launch</span>
+          <span class="ctag ctag-green">Итерация</span>
+          <span class="ctag ctag-orange">Паттерны</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-open">Открыть</span>
+          <span class="card-arrow">↗</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Placeholders -->
+    <div class="report-card empty">
+      <div class="card-top-bar"></div>
+      <div class="empty-inner">
+        <div class="empty-icon">📋</div>
+        <div class="empty-text">Следующий отчёт</div>
+      </div>
+    </div>
+
+    <div class="report-card empty">
+      <div class="card-top-bar"></div>
+      <div class="empty-inner">
+        <div class="empty-icon">📋</div>
+        <div class="empty-text">Следующий отчёт</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="section-label">Как добавить новый отчёт</div>
+
+  <div class="howto">
+    <div>
+      <div class="howto-title">// Инструкция</div>
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-text">Залей HTML-файл отчёта в корень репозитория <code>reports-freeplay</code> через GitHub (кнопка Add file)</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-text">Открой <code>index.html</code>, скопируй блок карточки и заполни дату, заголовок, теги, ссылку на файл</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-text">Сохрани — через ~30 секунд изменения появятся на сайте автоматически</div>
+      </div>
+    </div>
+    <div>
+      <div class="howto-title">// Именование файлов</div>
+      <div class="step">
+        <div class="step-num">→</div>
+        <div class="step-text">Формат: <code>trends_ДД_ММ_ГГ.html</code></div>
+      </div>
+      <div class="step">
+        <div class="step-num">→</div>
+        <div class="step-text">Пример: <code>trends_09_04_26.html</code></div>
+      </div>
+      <div class="step">
+        <div class="step-num">→</div>
+        <div class="step-text">URL сайта: <code>chinpower86.github.io/reports-freeplay</code></div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-left">KOB INSIGHTS © 2026</div>
+  <div class="footer-right">POWERED BY GITHUB PAGES</div>
+</footer>
+
+</body>
+</html>
