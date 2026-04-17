@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>🔥 KOB Insights — 3–17 апреля 2026</title>
+<title>🔥  Insights — 3–17 апреля 2026</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
   *{box-sizing:border-box;margin:0;padding:0}
@@ -106,13 +106,13 @@
 </head>
 <body>
 <div class="header">
-<h1>🔥 KOB Insights — <span>3–17 апреля 2026</span></h1>
+<h1>🔥  Insights — <span>3–17 апреля 2026</span></h1>
 <div class="subtitle">Новые игры в тесте • Активная итерация • Паблишер-трансферы • Жанровые сигналы</div>
 <div class="meta">
 <div class="meta-pill">📅 3–17 апреля 2026</div>
 <div class="meta-pill">📊 Publisher Change Tracker</div>
-<div class="meta-pill">📈 KOB Insights (Ranking, Rating, Iteration)</div>
-<div class="meta-pill">📱 SensorTower Weekly</div>
+<div class="meta-pill">📈  Insights (Ranking, Rating, Iteration)</div>
+<div class="meta-pill">📱  Weekly</div>
 <div class="meta-pill">🔄 Обновлено: 17 апреля 2026</div>
 </div>
 </div>
@@ -151,7 +151,7 @@
 <img alt="Hexa Fall: Color Sort" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'" src="https://play-lh.googleusercontent.com/Acv8N7YZK6NCPBYmkUo2xB4RrmWnNBTqhgN2NPwH2EzO-bR6lXyzIaxQ41FOyUEODj4BE20zDukERc2i8634g0k=w526-h296-rw"/></div>
 <div class="vid-label">🎬 AD CREATIVE — Hexa Fall: Color Sort</div><div class="vid-wrap"><video controls poster="https://x-ad-assets.s3.amazonaws.com/media_asset/dee661c24c11c8b4/thumb" preload="none" style="height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;display:block;margin:0 auto"><source src="https://x-ad-assets.s3.amazonaws.com/media_asset/dee661c24c11c8b4/media" type="video/mp4"></video></div><div class="card-body">
 <div class="dl-stat">iOS: 25K dl +43x · Android: 28K dl +8x · Одновременный рост на двух платформах 🔥</div>
-<div class="metrics">📊 SensorTower Apr 6–12: iOS 25K (+43x WoW) · Android 28K (+8x WoW) · Двойной сигнал органик</div>
+<div class="metrics">📊  Apr 6–12: iOS 25K (+43x WoW) · Android 28K (+8x WoW) · Двойной сигнал органик</div>
 <div class="analysis">Уникальный случай: игра показала резкий рост одновременно на iOS и Android за одну неделю. +43x на iOS — это почти всегда органический вирус или featuring. Параллельный рост на Android (+8x) подтверждает: у игры работает либо UA, либо сарафанное радио. Механика Hexa Sort — проверенный жанр с устойчивой аудиторией.</div>
 <div class="hypothesis">Сильнейший сигнал недели. Если рост удержится ещё 1–2 недели — это новый хит сортировочного жанра. Рекомендуется следить плотно. Конкурент: Hexa Sort (Lion Studios).</div>
 </div>
@@ -184,7 +184,7 @@
 </div>
 <div class="card-body">
 <div class="dl-stat">iOS: 101K загрузок +18x · Топ-сигнал iOS-чарта Apr 6–12 🔥</div>
-<div class="metrics">📊 SensorTower Apr 6–12 iOS: 101K dl (+18x WoW) · Абсолютный лидер роста в HC/Casual iOS</div>
+<div class="metrics">📊  Apr 6–12 iOS: 101K dl (+18x WoW) · Абсолютный лидер роста в HC/Casual iOS</div>
 <div class="analysis">101K загрузок за неделю с ростом в 18 раз — это феноменальный результат для casual. Bus puzzle / parking jam жанр сейчас горячий (Parking Jam от Popcore, Traffic Escape). Bus Rush Fever! взял огромный скачок, возможно благодаря iOS featuring или вирусному видео в TikTok. Goodroid — японский дев, ранее известный по гиперкэжу.</div>
 <div class="hypothesis">Parking/bus jam механика продолжает работать в 2026. Если Bus Rush Fever! удержит хотя бы 30K/неделю — он один из главных перформеров квартала на iOS. Смотреть на: удержание, RPD, монетизация.</div>
 </div>
@@ -216,7 +216,7 @@
 </div>
 <div class="card-body">
 <div class="dl-stat">iOS: 30K новый вход · Первая неделя в чарте Apr 6–12 🆕</div>
-<div class="metrics">📊 SensorTower Apr 6–12 iOS: 30K (новый вход) · Match 3D + карнавальная тема · iOS only</div>
+<div class="metrics">📊  Apr 6–12 iOS: 30K (новый вход) · Match 3D + карнавальная тема · iOS only</div>
 <div class="analysis">Match3D — жанр с большой аудиторией (Match 3D от Lion Studios имеет 200M+ загрузок). Carnival Crew — новый скин/тема на проверенной механике. 30K в первую неделю без предыстории — сильный старт. Вероятно свежий релиз с активной iOS UA кампанией. Карнавальная тема + triple tile — популярная комбинация в сезон Q2.</div>
 <div class="hypothesis">Match 3D с тематическим скином всегда находит аудиторию. Смотреть на: рост во второй неделе. Если 40K+ — кандидат в Блок 1 следующего отчёта.</div>
 </div>
@@ -285,7 +285,7 @@
 <img alt="Home Restore: ASMR Makeover" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'" src="https://play-lh.googleusercontent.com/l9gugmVu1Ku1SJkhGgVBx_fAZY6qJOZEzyXYC-lK4-jzy9fXtyxFWht5qpSg2hMCx3o=w526-h296-rw"/></div>
 <div class="vid-label">🎬 AD CREATIVE — Home Restore: ASMR Makeover</div><div class="vid-wrap"><video controls poster="https://x-ad-assets.s3.amazonaws.com/media_asset/047e2f62867c378d/thumb" preload="none" style="height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;display:block;margin:0 auto"><source src="https://x-ad-assets.s3.amazonaws.com/media_asset/047e2f62867c378d/media" type="video/mp4"></video></div><div class="card-body">
 <div class="dl-stat">Android: 25.9K загрузок +19x · Apr 6–12 🔥</div>
-<div class="metrics">📊 SensorTower Apr 6–12 Android: 25.9K dl (+19x WoW) · ASMR cleaning + home makeover · Android only</div>
+<div class="metrics">📊  Apr 6–12 Android: 25.9K dl (+19x WoW) · ASMR cleaning + home makeover · Android only</div>
 <div class="analysis">ASMR-клининг игры продолжают расти в 2026. +19x рост — скорее всего следствие вирусного TikTok/YouTube контента, типичного для ASMR-жанра. Home Restore предлагает power-washing + ремонт интерьера — стандартный гибрид, работающий на женскую аудиторию 25-40 лет. Этот сегмент привлекает паблишеров типа Lion Studios и Rollic.</div>
 <div class="hypothesis">ASMR/cleaning casual = горячий сегмент Q1-Q2 2026. Если Home Restore удержит рост, паблишер заберёт в течение 4–6 недель. Смотреть: кто подпишет (Rollic vs Lion vs самостоятельно).</div>
 </div>
@@ -313,7 +313,7 @@
 <img alt="Hungry Balls" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'" src="https://play-lh.googleusercontent.com/fgPVp42sTbYjOnTjVd0xr_BErZv5F7-vqdnqVplsOqiS0gjR4ZvY6yy2hazYHld_q_SDKVMOekQKahJ3mjhiIA=w526-h296-rw"/></div>
 <div class="vid-label">🎬 AD CREATIVE — Hungry Balls</div><div class="vid-wrap"><video controls poster="https://x-ad-assets.s3.amazonaws.com/media_asset/0d5f72b1a98a1392/thumb" preload="none" style="height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;display:block;margin:0 auto"><source src="https://x-ad-assets.s3.amazonaws.com/media_asset/0d5f72b1a98a1392/media" type="video/mp4"></video></div><div class="card-body">
 <div class="dl-stat">Android: 18.7K загрузок +22x · Apr 6–12 🔥</div>
-<div class="metrics">📊 SensorTower Apr 6–12 Android: 18.7K dl (+22x WoW) · Physics puzzle · one-touch · Android only</div>
+<div class="metrics">📊  Apr 6–12 Android: 18.7K dl (+22x WoW) · Physics puzzle · one-touch · Android only</div>
 <div class="analysis">+22x рост за неделю — почти всегда органика или UA burst. Hungry Balls — физическая паззл-механика с управлением шарами через "стирание" песка/земли. Напоминает классику типа Cut the Rope, но в современной гиперкэжуал упаковке. 18.7K абсолют на Android — скромно, но рост кратный говорит о раннем сигнале.</div>
 <div class="hypothesis">Интересный кандидат для паблишера. Если CPI окажется низким (что типично для physics sandbox жанра), возможен быстрый scale-up через Voodoo / SayGames / CrazyLabs. Следить за издательским активностью вокруг игры.</div>
 </div>
@@ -425,7 +425,7 @@
 <img alt="Hardwood Empire+41x" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bd/39/f4/bd39f429-fb0e-ad60-946d-a99b6d286a94/image1.png/300x650bb-60.jpg"/></div>
 <div class="vid-label">🎬 GAMEPLAY — Hardwood Empire+41x</div><div class="vid-wrap"><a class="yt-thumb-link" href="https://www.youtube.com/watch?v=0Re1w9KwSzc" target="_blank"><img src="https://i.ytimg.com/vi/0Re1w9KwSzc/hqdefault.jpg"/><div class="yt-play-btn">▶</div></a></div><div class="card-body">
 <div class="dl-stat">iOS: 37.4K dl +41x · Tap to Turn Arrow Escape: 20K dl +115x 🤯</div>
-<div class="metrics">📊 SensorTower Apr 6–12: Hardwood Empire iOS 37.4K (+41x) · Tap to Turn Arrow Escape iOS 20K (+115x WoW)</div>
+<div class="metrics">📊  Apr 6–12: Hardwood Empire iOS 37.4K (+41x) · Tap to Turn Arrow Escape iOS 20K (+115x WoW)</div>
 <div class="analysis"><b>Hardwood Empire</b> — симулятор баскетбольной dynastии (365 команд, 23 конференции). +41x — резкий спайк, возможно связанный с NCAA сезоном или featuring. Нишевый продукт, но сигнал сильный. <br/><br/><b>Tap to Turn Arrow Escape</b> — +115x это самый высокий мультипликатор недели. Arrow direction puzzle = горячий жанр (см. Tripledot Arrow Color Out, Обозрение Arrow). 20K абсолют на iOS пока скромно, но рост говорит о раннем вирусе.</div>
 <div class="hypothesis">Arrow direction puzzle — нарождающийся жанр-2026. Три разных тайтла одновременно: Arrow Color Out (Tripledot), Tap to Turn Arrow Escape (+115x), плюс сигналы в паттернах. Окно для входа в жанр — ближайшие 2–3 месяца.</div>
 </div>
@@ -439,7 +439,7 @@
 <!-- ═══ BLOCK 3: ON RADAR ════════════════════════════════════════════════ -->
 <div class="section" id="block3">
 <div class="section-header sec-3">
-    🔄 БЛОК 3 — НА РАДАРЕ  |  Активная итерация · Новые паблишер-сигнинги · KOB Slack-сигналы
+    🔄 БЛОК 3 — НА РАДАРЕ  |  Активная итерация · Новые паблишер-сигнинги ·  Slack-сигналы
   </div>
 <div class="grid">
 <!-- Crown Rush: Survival -->
@@ -461,12 +461,12 @@
 <img alt="Crown Rush: Survival" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'" src="https://i.ytimg.com/vi/wYaeypp_Q_8/hqdefault.jpg"/></div>
 <div class="vid-label">🎬 GAMEPLAY — Crown Rush: Survival</div><div class="vid-wrap"><a class="yt-thumb-link" href="https://www.youtube.com/watch?v=wYaeypp_Q_8" target="_blank"><img src="https://i.ytimg.com/vi/wYaeypp_Q_8/hqdefault.jpg"/><div class="yt-play-btn">▶</div></a></div><div class="card-body">
 <div class="dl-stat">🔥 25 обновлений за 14 дней · Рекорд итерации в отчёте</div>
-<div class="metrics">📊 KOB Insights: 25 апдейтов за 14 дней · Game Duo · Android · Base defense / kingdom survival</div>
+<div class="metrics">📊  Insights: 25 апдейтов за 14 дней · Game Duo · Android · Base defense / kingdom survival</div>
 <div class="analysis">25 обновлений за две недели — это рекорд итерационной скорости в данном отчёте. Game Duo — студия, известная агрессивной итерацией прототипов. Такая частота правок говорит об одном: метрики близки к порогу, и студия активно их дожимает. Crown Rush: Survival — expand territory + auto-defense + ресурсный менеджмент. Mechanics mix актуален.</div>
 <div class="hypothesis">Game Duo итерирует так быстро потому что видят прогресс. Если за следующие 2 недели темп не упадёт — они либо дожмут метрики до паблишерского порога, либо уже ведут переговоры. Смотреть на паблишер-аккаунт.</div>
 </div>
 <div class="card-footer">
-<a class="link-btn link-gp" href="https://app.sensortower.com/android/net.gameduo.mm" target="_blank">📊 SensorTower</a>
+<a class="link-btn link-gp" href="https://app..com/android/net.gameduo.mm" target="_blank">📊 </a>
 <a class="link-btn link-ios" href="https://www.google.com/search?q=Crown+Rush+Survival+Game+Duo" target="_blank">🔍 Найти</a>
 </div>
 </div>
@@ -489,7 +489,7 @@
 <img alt="BackPack Arena" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'" src="https://play-lh.googleusercontent.com/Jx6S4yB3isizdT7XEXYeEi8La83hY29x6V8qKIEbHGx1SafT9awHwe-Top7cPe4-_qrx=w526-h296-rw"/></div>
 <div class="vid-label">🎬 AD CREATIVE — BackPack Arena</div><div class="vid-wrap"><video controls poster="https://x-ad-assets.s3.amazonaws.com/media_asset/011e9675040f5ad3/thumb" preload="none" style="height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;display:block;margin:0 auto"><source src="https://x-ad-assets.s3.amazonaws.com/media_asset/011e9675040f5ad3/media" type="video/mp4"></video></div><div class="card-body">
 <div class="dl-stat">8 обновлений за 14 дней · Auto-battler + inventory PvP</div>
-<div class="metrics">📊 KOB Insights: 8 апдейтов за 14 дней · Celadon Wolves · PvP auto-battler с управлением инвентарём</div>
+<div class="metrics">📊  Insights: 8 апдейтов за 14 дней · Celadon Wolves · PvP auto-battler с управлением инвентарём</div>
 <div class="analysis">BackPack Arena — PvP auto-battler где инвентарь рюкзака = тактика. Жанр "backpack game" взорвался на PC (Backpack Battles в Steam), и мобильные студии пытаются перенести механику на iOS/Android. 8 обновлений за 2 недели = активный тест с живой аудиторией. Нишевый, но стабильно растущий поджанр.</div>
 <div class="hypothesis">Backpack / inventory auto-battler на мобайле — незанятая ниша. Если Celadon Wolves нащупают правильный UX для тачскрина — потенциальный хит для хардкорной аудитории 18-30 лет. Смотреть: выйдет ли на iOS и привлечёт ли паблишера типа Habby или Supercell.</div>
 </div>
@@ -608,7 +608,7 @@
 <div class="ss-wrap">
 <img alt="Pondlife" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'" src="https://play-lh.googleusercontent.com/2XkIxQXaHEStM8Qfouvz5UeHDKbVsuqQkL-_DqKw8y4wEAP6tyfuoW8mDVqg6lWisRIiVERMlhg85nOn-tbr=w526-h296-rw"/></div>
 <div class="vid-label">🎬 AD CREATIVE — Pondlife</div><div class="vid-wrap"><video controls poster="https://x-ad-assets.s3.amazonaws.com/media_asset/2874d93530449bb1/thumb" preload="none" style="height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;display:block;margin:0 auto"><source src="https://x-ad-assets.s3.amazonaws.com/media_asset/2874d93530449bb1/media" type="video/mp4"></video></div><div class="card-body">
-<div class="metrics">📊 KOB Insights: 13 апдейтов за 14 дней · Pond ecosystem / idle sim · Ранний тест</div>
+<div class="metrics">📊  Insights: 13 апдейтов за 14 дней · Pond ecosystem / idle sim · Ранний тест</div>
 <div class="analysis">13 обновлений за 2 недели — почти ежедневный апдейт. Пруд-экосистема с idle-прогрессией — нишевая но залипательная механика. Природные симуляторы работают на zen-аудиторию. Очень ранняя стадия, но активность дева говорит о хороших сигналах retention.</div>
 <div class="hypothesis">Если найдёт паблишера типа CrazyLabs или Gamejam — потенциал в casual/idle сегменте. Следить через 3–4 недели.</div>
 </div>
@@ -634,7 +634,7 @@
 <div class="ss-wrap">
 <img alt="TownsFolk" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'" src="https://play-lh.googleusercontent.com/SruDnXL2UY_7hpdr04KmidY0w8QMShZ2Mjq7mmZRupYGLYDQuF2v95nWVEXwhkok_s4N=w526-h296-rw"/></div>
 <div class="vid-label">🎬 GAMEPLAY — TownsFolk</div><div class="vid-wrap"><a class="yt-thumb-link" href="https://www.youtube.com/watch?v=jQB0x04RcuE" target="_blank"><img src="https://i.ytimg.com/vi/jQB0x04RcuE/hqdefault.jpg"/><div class="yt-play-btn">▶</div></a></div><div class="card-body">
-<div class="metrics">📊 KOB Insights: Ранний тест · Town-builder idle · Community signals</div>
+<div class="metrics">📊  Insights: Ранний тест · Town-builder idle · Community signals</div>
 <div class="analysis">TownsFolk — town-builder с idle-прогрессией и возможной социальной механикой (folk = народ, сообщество). Жанр town-builder активно тестируется крупными студиями (Scopely, Zynga). Ранний прототип, интересен механикой и темой. Нет ещё scale-up сигналов.</div>
 <div class="hypothesis">Если town-builder + idle retention покажет D7 &gt; 35% — кандидат для мидкорного паблишера. Смотреть за следующие 4 недели.</div>
 </div>
@@ -660,7 +660,7 @@
 <div class="ss-wrap">
 <img alt="Idle Picky Pad ASMR" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'" src="https://play-lh.googleusercontent.com/uaUw-4iXK2kjFh9aNK4RWtrWHAFeHwQTDm7rP2ZGTvk6r_TM9Y66-xTwEEeIrNZC2muP1nZA7Rn8TDQ4_Jh4GJ0=w526-h296-rw"/></div>
 <div class="vid-label">🎬 GAMEPLAY — Idle Picky Pad ASMR</div><div class="vid-wrap"><a class="yt-thumb-link" href="https://www.youtube.com/watch?v=124TNi4rqBA" target="_blank"><img src="https://i.ytimg.com/vi/124TNi4rqBA/hqdefault.jpg"/><div class="yt-play-btn">▶</div></a></div><div class="card-body">
-<div class="metrics">📊 KOB Insights: ASMR + idle hybrid · "Picky Pad" — удаление / чистка механика · Ранний тест</div>
+<div class="metrics">📊  Insights: ASMR + idle hybrid · "Picky Pad" — удаление / чистка механика · Ранний тест</div>
 <div class="analysis">Idle + ASMR + "picky" (удаление загрязнений/налипок) — жанровый гибрид, объединяющий три актуальных тренда. "Picky pad" ASMR имеет вирусный потенциал на TikTok/YouTube — именно с такого контента обычно начинается органика ASMR-игр. Ранняя стадия, но концепция сильная.</div>
 <div class="hypothesis">ASMR + idle + "picky" = потенциально вирусная концепция. Если запустит TikTok-кампанию — может взорваться быстро. Жанр ASMR cleaning без паблишера сейчас редкость.</div>
 </div>
@@ -686,7 +686,7 @@
 <div class="ss-wrap">
 <img alt="Draft Showdown" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'" src="https://play-lh.googleusercontent.com/3yX8vERf_X9Z6XSjIBggpKybRzn6YjjBxSOMUIi1gO_HJFQZLJCTmHPCfBBUUYIFEFIiLW9GOQ3eon4IOHS0hQ=w526-h296-rw"/></div>
 <div class="vid-label">🎬 AD CREATIVE — Draft Showdown</div><div class="vid-wrap"><video controls poster="https://x-ad-assets.s3.amazonaws.com/media_asset/71e1cea26792a734/thumb" preload="none" style="height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;display:block;margin:0 auto"><source src="https://x-ad-assets.s3.amazonaws.com/media_asset/71e1cea26792a734/media" type="video/mp4"></video></div><div class="card-body">
-<div class="metrics">📊 KOB Insights: Sports draft strategy · Showdown-механика · Ранний тест</div>
+<div class="metrics">📊  Insights: Sports draft strategy · Showdown-механика · Ранний тест</div>
 <div class="analysis">Draft Showdown — стратегия выбора команды/драфта в игровой обёртке. Draft-механики популярны в Fantasy Sports (DraftKings, FanDuel), но на мобайл в casual-упаковке ещё не перенесены полностью. Потенциальный мидкорный продукт с высоким DAU если нащупают правильную петлю монетизации.</div>
 <div class="hypothesis">Если Draft Showdown переупакует фантастический спорт в casual UI — большой потенциал у мужской аудитории 22-35. Смотреть за 2 месяца.</div>
 </div>
@@ -762,7 +762,7 @@
 </div>
 </div><!-- /container -->
 <div style="text-align:center;padding:24px;color:#4a4a6a;font-size:11px;border-top:1px solid #2d2d4e;margin-top:16px">
-  🔥 KOB Insights Report · FreePlay Inc · 3–17 апреля 2026 · Источники: Publisher Change Tracker (Games Parser), KOB Insights (Ranking, Rating, Iteration), SensorTower Weekly (Market Report)
+  🔥  Insights Report · FreePlay Inc · 3–17 апреля 2026 · Источники: Publisher Change Tracker (Games Parser),  Insights (Ranking, Rating, Iteration),  Weekly (Market Report)
 </div>
 <!-- ─── Lightbox modal ────────────────────────────────────────────── -->
 <div id="lb" onclick="if(event.target===this)closeLb()" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.88);align-items:center;justify-content:center;cursor:zoom-out">
