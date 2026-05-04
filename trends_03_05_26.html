@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>🔥 Insights — 25 апр — 3 мая 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',sans-serif;background:#0f0f1a;color:#e2e8f0;min-height:100vh}
+  .header{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);padding:32px 40px;border-bottom:2px solid #e63946}
+  .header h1{font-size:24px;font-weight:800;color:#fff;letter-spacing:-0.5px}
+  .header h1 span{color:#e63946}
+  .header .subtitle{font-size:12px;color:#94a3b8;margin-top:6px}
+  .header .meta{display:flex;gap:20px;margin-top:16px;flex-wrap:wrap}
+  .meta-pill{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 14px;font-size:11px;color:#94a3b8}
+  .container{max-width:1400px;margin:0 auto;padding:32px 40px}
+  .section{margin-bottom:40px}
+  .section-header{display:flex;align-items:center;gap:12px;padding:14px 20px;border-radius:10px;margin-bottom:20px;font-size:14px;font-weight:700;letter-spacing:0.3px}
+  .sec-1{background:linear-gradient(90deg,#7f1d1d,#991b1b);color:#fef2f2}
+  .sec-2{background:linear-gradient(90deg,#1e3a5f,#1e40af);color:#eff6ff}
+  .sec-3{background:linear-gradient(90deg,#064e3b,#065f46);color:#ecfdf5}
+  .sec-4{background:linear-gradient(90deg,#78350f,#92400e);color:#fffbeb}
+  .sec-5{background:linear-gradient(90deg,#4c1d95,#5b21b6);color:#f5f3ff}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(440px,1fr));gap:16px}
+  .card{background:#1a1a2e;border:1px solid #2d2d4e;border-radius:12px;overflow:hidden;transition:transform 0.15s,border-color 0.15s;display:flex;flex-direction:column}
+  .card:hover{transform:translateY(-2px);border-color:#4a4a7a}
+  .card-top{display:flex;gap:14px;padding:16px 16px 12px}
+  .card-meta{flex:1;min-width:0}
+  .game-name{font-size:14px;font-weight:700;color:#f1f5f9;line-height:1.3;margin-bottom:3px}
+  .game-dev{font-size:11px;color:#94a3b8;margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .tags{display:flex;flex-wrap:wrap;gap:4px}
+  .tag{font-size:10px;padding:2px 8px;border-radius:10px;font-weight:500}
+  .tag-pub{background:#1e3a5f;color:#93c5fd}
+  .tag-genre{background:#1c3a2d;color:#6ee7b7}
+  .tag-plat{background:#3d2a1a;color:#fcd34d}
+  .tag-date{background:#2d1a3d;color:#c084fc}
+  .no-img-icon{width:72px;height:72px;border-radius:14px;background:linear-gradient(135deg,#1e3a5f,#2d2d4e);display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0}
+  .ss-wrap{padding:0 16px 12px;display:flex;justify-content:center;gap:10px;align-items:flex-start}
+  .ss-wrap img{height:160px;width:auto;max-width:100%;object-fit:contain;border-radius:8px;background:#0a0a14;flex-shrink:0;cursor:zoom-in;transition:opacity .15s}
+  .ss-wrap img:hover{opacity:.85}
+  .ss-placeholder{width:100%;height:80px;border-radius:8px;display:flex;align-items:center;justify-content:center;background:#1f1f35;color:#4a4a6a;font-size:11px;margin:0 16px 12px}
+  /* Lightbox */
+  #lb{display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out}
+  #lb.open{display:flex}
+  #lb img{max-width:92vw;max-height:92vh;border-radius:10px;object-fit:contain;box-shadow:0 20px 60px rgba(0,0,0,.8)}
+  #lb-close{position:fixed;top:18px;right:22px;color:#fff;font-size:32px;cursor:pointer;line-height:1;opacity:.7}
+  #lb-close:hover{opacity:1}
+  .vid-label{font-size:9px;color:#4a5568;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;padding:0 16px;text-align:center}
+  .vid-wrap{padding:0 16px 12px;display:flex;justify-content:center}
+  .vid-wrap video{height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;display:block;margin:0 auto}
+  .yt-thumb-link{display:block;position:relative;border-radius:8px;overflow:hidden;text-decoration:none;width:100%;max-width:320px;margin:0 auto}
+  .yt-thumb-link img{width:100%;height:200px;object-fit:cover;display:block}
+  .yt-play-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:60px;height:42px;background:rgba(0,0,0,0.75);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:22px;pointer-events:none}
+  .yt-thumb-link:hover .yt-play-btn{background:#e63946;transition:background .2s}
+  .st-crea-link{display:flex;align-items:center;justify-content:center;height:120px;border-radius:8px;gap:14px;text-decoration:none;width:100%;background:linear-gradient(135deg,#162236,#1a2640);border:1px solid #2a3a5e;transition:border-color .2s}
+  .st-crea-link:hover{border-color:#4a6a9e}
+  .card-body{padding:0 16px 12px;flex:1}
+  .dl-stat{font-size:11px;font-weight:700;color:#fbbf24;margin-bottom:7px;padding:5px 10px;background:rgba(251,191,36,0.07);border-left:2px solid #fbbf24;border-radius:0 6px 6px 0;line-height:1.6}
+  .metrics{font-size:11px;color:#fbbf24;margin-bottom:8px;font-weight:500}
+  .analysis{font-size:11px;color:#cbd5e1;line-height:1.6;margin-bottom:8px}
+  .hypothesis{font-size:11px;color:#a78bfa;line-height:1.6;padding:8px 10px;background:rgba(167,139,250,0.06);border-left:2px solid #7c3aed;border-radius:0 6px 6px 0}
+  .card-footer{padding:10px 16px 14px;display:flex;gap:8px;flex-wrap:wrap;border-top:1px solid #2d2d4e;margin-top:auto}
+  .link-btn{font-size:10px;padding:4px 12px;border-radius:6px;text-decoration:none;font-weight:600;transition:opacity 0.15s}
+  .link-gp{background:#1a4731;color:#4ade80;border:1px solid #166534}
+  .link-ios{background:#1a2a47;color:#60a5fa;border:1px solid #1e3a5f}
+  .link-btn:hover{opacity:0.8}
+  .signal-badge{font-size:13px;margin-right:4px}
+  .pub-banner{padding:6px 16px;font-size:11px;font-weight:700;color:#93c5fd;letter-spacing:0.4px;background:linear-gradient(90deg,#162236 0%,#1a1a2e 100%);border-bottom:1px solid #2a3a5e;display:flex;align-items:center;gap:6px}
+  .transfer-banner{padding:6px 16px;font-size:11px;font-weight:700;color:#fcd34d;letter-spacing:0.4px;background:linear-gradient(90deg,#2a1a00 0%,#1a1a2e 100%);border-bottom:1px solid #5a3a0e}
+  .new-badge{display:inline-block;background:#7f1d1d;color:#fca5a5;font-size:9px;font-weight:700;padding:1px 6px;border-radius:4px;letter-spacing:0.5px;margin-left:6px;vertical-align:middle}
+  .toc{background:#1a1a2e;border:1px solid #2d2d4e;border-radius:10px;padding:16px 20px;margin-bottom:32px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .toc span{font-size:11px;color:#94a3b8;margin-right:4px}
+  .toc a{font-size:11px;color:#60a5fa;text-decoration:none;padding:3px 10px;background:#1e3a5f;border-radius:10px}
+  .toc a:hover{background:#1e40af}
+  .pattern-card{background:#1a1a2e;border:1px solid #2d2d4e;border-radius:12px;padding:16px;margin-bottom:12px}
+  .pattern-title{font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:6px}
+  .pattern-body{font-size:11px;color:#cbd5e1;line-height:1.6}
+  .pattern-hyp{font-size:11px;color:#a78bfa;margin-top:8px;padding:6px 10px;background:rgba(167,139,250,0.06);border-left:2px solid #7c3aed;border-radius:0 6px 6px 0}
+</style>
+</head>
+<body>
+<div id="lb"><span id="lb-close" onclick="document.getElementById('lb').className=''">×</span><img id="lb-img" src=""/></div>
+<script>
+document.addEventListener('click',function(e){
+  if(e.target.matches('.ss-wrap img')){
+    document.getElementById('lb-img').src=e.target.src;
+    document.getElementById('lb').className='open';
+  }
+});
+document.getElementById('lb').addEventListener('click',function(e){
+  if(e.target===this||e.target.id==='lb-img')this.className='';
+});
+</script>
+
+<div class="header">
+<h1>🔥 Insights — <span>25 апр — 3 мая 2026</span></h1>
+<div class="subtitle">Новые игры в тесте • Паблишер-трансферы • Жанровые сигналы • Неожиданные скачки</div>
+<div class="meta">
+<div class="meta-pill">📅 25 апр — 3 мая 2026</div>
+<div class="meta-pill">📊 #05_freeplay_apps_pubchange (Slack)</div>
+<div class="meta-pill">📈 Ranking, Rating, Iteration</div>
+<div class="meta-pill">📱 Weekly Apr 20–26</div>
+<div class="meta-pill">🔄 Обновлено: 4 мая 2026</div>
+</div>
+</div>
+
+<div class="container">
+<div class="toc">
+<span>→</span>
+<a href="#block1">🎯🎯🎯 Мультисигнал</a>
+<a href="#block2">🎯🎯 Высокий потенциал</a>
+<a href="#block3">🔄 На радаре</a>
+<a href="#block4">🧪 Паблишер-трансферы</a>
+<a href="#patterns">📐 Паттерны</a>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- BLOCK 1 — МУЛЬТИСИГНАЛЬНЫЕ                             -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="section" id="block1">
+<div class="section-header sec-1">
+  🎯🎯🎯 БЛОК 1 — МУЛЬТИСИГНАЛЬНЫЕ ИГРЫ · Несколько независимых источников · 25 апр — 3 мая 2026
+</div>
+<div class="grid">
+
+<!-- Dicero! -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c9/9e/91/c99e9102-1bc6-257d-2b3f-d1f11d058dfb/512x512bb.jpg" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">🎲</div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🎯🎯🎯</span>Dicero! <span class="new-badge">NEW</span></div>
+<div class="game-dev">HABBY</div>
+<div class="tags">
+<span class="tag tag-pub">🏢 Habby</span>
+<span class="tag tag-genre">Action / Mid-core</span>
+<span class="tag tag-plat">iOS + Android</span>
+<span class="tag tag-date">~1 неделя</span>
+</div>
+</div>
+</div>
+<div class="ss-wrap">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f9/8a/3b/f98a3bff-e445-79f7-449f-5ac6901946ad/3.png/392x696bb.jpg" alt="Dicero! screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f1/74/4c/f1744cd9-e6c7-82e3-f784-ffb417790b27/_U82f1_U8bed.png/392x696bb.jpg" alt="Dicero! screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7f/dd/58/7fdd58f2-e125-184d-ef71-5585a18aa28f/_U82f1_U8bed2.png/392x696bb.jpg" alt="Dicero! screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">📊 AD CREATIVES — Dicero!</div>
+<div class="vid-wrap">
+<video controls poster="https://x-ad-assets.s3.amazonaws.com/media_asset/de645c503edeb9b5/thumb" preload="none" style="height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;display:block;margin:0 auto">
+  <source src="https://x-ad-assets.s3.amazonaws.com/media_asset/de645c503edeb9b5/media" type="video/mp4"/>
+</video>
+</div>
+<div class="card-body">
+<div class="dl-stat">iOS: 165K загрузок 🔥 (NEW) · Android: 40K загрузок (NEW) · Дебют обеих платформ · Habby — топ-студия (Archero, Cat &amp; Soup)</div>
+<div class="metrics">📊 Apr 20–26: iOS 165K NEW · Android 40K NEW · Age: ~1 неделя · Category: Action / Mid-core</div>
+<div class="analysis">Habby — это студия, которая сделала Archero и превратила его в жанр. Dicero — их новая попытка, и старт феноменальный: 165K iOS в первую неделю — топ-7 iOS вообще, включая вечные лидеры. Механика — dice/число-пул в real-time action (судя по скринам: бросок кубиков + движение по полю). Habby всегда строит retention через progression system с кривой сложности. Если формула работает — это следующий Archero.</div>
+<div class="hypothesis">Главная игра недели без оговорок. 165K в дебютную неделю на iOS — это не UA-буст, это органический интерес. Следить: темп загрузок на неделе 2, появление Clone-игр (всегда индикатор успеха), рейтинг App Store на неделе 4.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6740966864" target="_blank">🍎 App Store</a>
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.bailing.lark.roll.dev" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- Human or Not? -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b6/e4/06/b6e40624-d880-e456-84f5-d30e6bd57dca/512x512bb.jpg" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">🤖</div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🎯🎯🎯</span>Human or Not?</div>
+<div class="game-dev">Human or Bot (Stefan Tissen)</div>
+<div class="tags">
+<span class="tag tag-genre">Social / Hypercasual</span>
+<span class="tag tag-plat">iOS + Android</span>
+<span class="tag tag-date">~6 месяцев</span>
+</div>
+</div>
+</div>
+<div class="ss-wrap">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/80/d2/e6/80d2e607-2ca5-7811-b55a-726d734f6b3b/1242x2688_en_1-splash.jpg/392x696bb.jpg" alt="Human or Not? screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3f/f0/b2/3ff0b265-b77f-dc66-2bac-d7da04a9e582/1242x2688_en_2-question.jpg/392x696bb.jpg" alt="Human or Not? screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/76/96/6e/76966e64-03e0-05da-7932-5651f8c31fef/1242x2688_en_3-result.jpg/392x696bb.jpg" alt="Human or Not? screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">📊 AD CREATIVES — Human or Not?</div>
+<div class="vid-wrap">
+<a class="yt-thumb-link" href="https://www.youtube.com/watch?v=bEBE-iHn_Wg" target="_blank">
+<img src="https://img.youtube.com/vi/bEBE-iHn_Wg/hqdefault.jpg" alt="Human or Not gameplay"/>
+<div class="yt-play-btn">▶</div>
+</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">iOS: 35K +97% · Android: 16K +151% · Обе платформы одновременно · AI Turing Test-игра</div>
+<div class="metrics">📊 Apr 20–26: iOS 35K +97% · Android 16K +151% · Age: ~6 мес · Category: Casual / Social Experiment</div>
+<div class="analysis">Игра-тест Тьюринга: игрок чатится с персонажем и угадывает — человек или бот. Концепция эксплуатирует тревогу 2025–2026 года вокруг ИИ и человечности. Двукратный рост на обеих платформах одновременно без очевидного внешнего триггера (не входит в чарты за счёт UA-бюджета — скорее вирусный). Похожие игры (Turing Test, Human Benchmark) всплывают циклично, но этот заход лучше оформлен как продукт.</div>
+<div class="hypothesis">Социальный сигнал: AI-anxiety как игровая механика — растущий жанр. Если Human or Not удерживает retention — паблишеры обратят внимание. Смотреть на: появление у крупного паблишера, клоны в следующие 4–6 недель.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6754804909" target="_blank">🍎 App Store</a>
+</div>
+</div>
+
+</div><!-- /grid -->
+</div><!-- /block1 -->
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- BLOCK 2 — ВЫСОКИЙ ПОТЕНЦИАЛ                            -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="section" id="block2">
+<div class="section-header sec-2">
+  🎯🎯 БЛОК 2 — ВЫСОКИЙ ПОТЕНЦИАЛ · Сильный рост или новый паблишер · 25 апр — 3 мая 2026
+</div>
+<div class="grid">
+
+<!-- Deco Master -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3f/47/5d/3f475d06-e9d4-6738-7605-9e0f50daeca5/512x512bb.jpg" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">✏️</div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🎯🎯</span>Deco Master — DIY Pen ASMR <span class="new-badge">NEW</span></div>
+<div class="game-dev">Whoyaho Corp.</div>
+<div class="tags">
+<span class="tag tag-genre">Hypercasual / ASMR Simulation</span>
+<span class="tag tag-plat">iOS + Android</span>
+<span class="tag tag-date">~1 неделя</span>
+</div>
+</div>
+</div>
+<div class="ss-wrap">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8e/cd/17/8ecd17c6-b19a-4f2f-84f9-6ba239ef5988/1290x2796_EN2.jpg/392x696bb.jpg" alt="Deco Master screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e2/c1/e9/e2c1e9e2-8026-1fae-f76e-7149df0044cf/1290x2796_EN4.jpg/392x696bb.jpg" alt="Deco Master screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ce/44/e1/ce44e1ae-236b-97b4-0b45-25f49aab8df0/1290x2796_EN1.jpg/392x696bb.jpg" alt="Deco Master screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">📊 AD CREATIVES — Deco Master</div>
+<div class="vid-wrap">
+<video controls poster="https://x-ad-assets.s3.amazonaws.com/media_asset/7eb67f14e066399d/thumb" preload="none" style="height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;display:block;margin:0 auto">
+  <source src="https://x-ad-assets.s3.amazonaws.com/media_asset/7eb67f14e066399d/media" type="video/mp4"/>
+</video>
+</div>
+<div class="card-body">
+<div class="dl-stat">iOS: 15K загрузок (NEW) · Android: 10K загрузок (NEW) · Обе платформы в дебют · ASMR-рисование маркером</div>
+<div class="metrics">📊 Apr 20–26: iOS 15K NEW · Android 10K NEW · Age: ~1 неделя · Whoyaho Corp. · Model: Hypercasual</div>
+<div class="analysis">Whoyaho Corporation — корейская студия, которая уже запускала ASMR-игры. Deco Master — рисование маркером с ASMR-визуализацией (линии, декорации). Старт 15K+10K = 25K суммарно в неделю дебюта без пресс-релизов и крупного UA-бюджета. Механика попадает в нишу hand drawing + ASMR, которая доказала спрос через TikTok-вирусные видео. Аудитория: преимущественно женская, 18–35.</div>
+<div class="hypothesis">Если ASMR-ниша удержит retention, это следующий кандидат для крупного паблишера. Смотреть: нет ли уже переговоров с Voodoo/SayGames, которые активны в ASMR-жанре (Woodturning, Nail Art).</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6761046556" target="_blank">🍎 App Store</a>
+</div>
+</div>
+
+<!-- Arrow Maze-Tap Away -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/35/df/ec/35dfec91-d8cd-f3f8-aa64-26ef69fdad69/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:flex">🏹</div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🎯🎯</span>Arrow Maze — Tap Away</div>
+<div class="game-dev">HONG KONG XINGXI</div>
+<div class="tags">
+<span class="tag tag-genre">Hypercasual / Arrow Tap</span>
+<span class="tag tag-plat">Android</span>
+<span class="tag tag-date">~1 месяц</span>
+</div>
+</div>
+</div>
+<div class="ss-wrap">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ff/8b/ca/ff8bca9e-5c14-cc65-a531-3379a7273d1f/04.png/392x696bb.jpg" alt="Arrow Maze screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cc/4d/2e/cc4d2eaf-fce5-4367-dcfe-48151ff451a1/02.png/392x696bb.jpg" alt="Arrow Maze screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d3/22/00/d322003a-bc58-ba5e-6274-b26998ff2ac1/03.png/392x696bb.jpg" alt="Arrow Maze screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">🎬 GAMEPLAY — Arrow Maze</div>
+<div class="vid-wrap">
+<a class="yt-thumb-link" href="https://www.youtube.com/watch?v=8qbJuTvOS5I" target="_blank">
+<img src="https://img.youtube.com/vi/8qbJuTvOS5I/hqdefault.jpg" alt="Arrow Maze gameplay"/>
+<div class="yt-play-btn">▶</div>
+</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">Android: 31K загрузок +479% · ~1 месяц · Arrow-tap механика на волне Arrows GO!</div>
+<div class="metrics">📊 Apr 20–26: Android 31K +479% · Age: ~1 месяц · Model: Hypercasual · com.arrowmaze.tapaway.puzzle</div>
+<div class="analysis">На фоне успеха Arrows GO! (Tripledot, 250K/нед прошлой недели) arrow-механика переживает хайп. Arrow Maze — tap-to-shoot вариант: стрелки двигаются по лабиринту, нужно попасть в цель. +479% за одну неделю на Android — это либо активный UA-запуск, либо органический подхват. Без iOS-присутствия — ограниченный сигнал, но для мониторинга важен.</div>
+<div class="hypothesis">Arrow-жанр конвертируется в серийный тренд: Arrows GO! → Arrow Maze → Arrow Survival. Паттерн знакóм: Wordle → все клоны-словесники. Следить: появится ли iOS-версия или крупный паблишер подберёт механику.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.arrowmaze.tapaway.puzzle" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- Last Light: Wasteland -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/70/df/22/70df22bb-81aa-f118-e93f-0d13b9901569/512x512bb.jpg" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">🌆</div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🎯🎯</span>Last Light: Wasteland</div>
+<div class="game-dev">BINGCHUAN NETWORK</div>
+<div class="tags">
+<span class="tag tag-genre">Casual / Mid-core</span>
+<span class="tag tag-plat">iOS + Android</span>
+<span class="tag tag-date">~3 месяца</span>
+</div>
+</div>
+</div>
+<div class="ss-wrap">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/61/53/6a/61536a80-3df7-c45f-2012-65fdf7e1dc2b/1.jpg/392x696bb.jpg" alt="Last Light screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9f/fe/5b/9ffe5bfe-3051-efe8-01ff-64b9c6caed2c/2.jpg/392x696bb.jpg" alt="Last Light screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/da/53/e8/da53e84d-b611-fc6f-7681-2d108ce79681/3.jpg/392x696bb.jpg" alt="Last Light screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">📊 AD CREATIVES — Last Light: Wasteland</div>
+<div class="vid-wrap">
+<video controls poster="https://x-ad-assets.s3.amazonaws.com/media_asset/016cee8dd88a4c93/thumb" preload="none" style="height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;display:block;margin:0 auto">
+  <source src="https://x-ad-assets.s3.amazonaws.com/media_asset/016cee8dd88a4c93/media" type="video/mp4"/>
+</video>
+</div>
+<div class="card-body">
+<div class="dl-stat">iOS: 27K +1109% 🔥 · Android: 25K +104% · Кросс-платформенный взрыв · Post-apoc survival mid-core</div>
+<div class="metrics">📊 Apr 20–26: iOS 27K +1109% · Android 25K +104% · Age: ~3 мес · Model: Mid-core / Casual</div>
+<div class="analysis">Игра вышла ~3 месяца назад, но эту неделю показала +1109% на iOS — с практически нуля до 27K. Такой скачок через 3 месяца обычно означает одно: крупный паблишер включил UA-кампанию. Android тоже вырос (+104%), что подтверждает координированный запуск. Post-apoc выживание + idle механики — эта комбинация работает (Last Shelter, State of Survival). BINGCHUAN — китайская студия с опытом в жанре.</div>
+<div class="hypothesis">Если это старт масштабного UA — игра войдёт в топ-50 iOS уже на следующей неделе. Паттерн: крупный китайский паблишер тихо растит игру, потом включает глобальный UA. Следить: трафик источники в ST, появление тв-рекламы.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6754545818" target="_blank">🍎 App Store</a>
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.lighthouse.freeplay.ameuno" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+</div><!-- /grid -->
+</div><!-- /block2 -->
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- BLOCK 3 — НА РАДАРЕ                                    -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="section" id="block3">
+<div class="section-header sec-3">
+  🔄 БЛОК 3 — НА РАДАРЕ · Ранние сигналы и интересные аномалии · 25 апр — 3 мая 2026
+</div>
+<div class="grid">
+
+<!-- Slide & Roll -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://play-lh.googleusercontent.com/xJcISSpmAdvrv_QmHkzmQgldv-bsjY05MB8nzTgaUUOoZMGtH8dsLrJDaJWih792HbDCYL-d9n6ZsD0qCamWXTE=s512-rw" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:flex">🎳</div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🔄</span>Slide &amp; Roll</div>
+<div class="game-dev">Gimica GmbH</div>
+<div class="tags">
+<span class="tag tag-genre">Hypercasual / Puzzle</span>
+<span class="tag tag-plat">Android</span>
+<span class="tag tag-date">~1 год</span>
+</div>
+</div>
+</div>
+<div class="ss-wrap">
+<img src="https://play-lh.googleusercontent.com/riC6PvXuW1ujp3IiU6Ts-G36MzG0e0EpjXQpYlILLmCHxyNb9ZGHN2RUwJeahLDlZ97fKrZcxmwNuqoFX34=w392-h696-rw" alt="Slide &amp; Roll screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://play-lh.googleusercontent.com/m0QSTKpnvOI441cm00s_8I1VMJaPV1gKOn-DjLo0n1fjCtQpT6vZmD5wAIWKLK5yr-M=w392-h696-rw" alt="Slide &amp; Roll screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://play-lh.googleusercontent.com/LjyBmY0dZgdMKDio5ZH1iZJh4Pwn3ajaO4VI7R-4oAOQFJGN9Y2b7zhnIbadvwX5_aU=w392-h696-rw" alt="Slide &amp; Roll screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">🎬 GAMEPLAY — Slide &amp; Roll</div>
+<div class="vid-wrap">
+<a class="yt-thumb-link" href="https://www.youtube.com/watch?v=HEs_-4QSLVE" target="_blank">
+<img src="https://img.youtube.com/vi/HEs_-4QSLVE/hqdefault.jpg" alt="Slide and Roll gameplay"/>
+<div class="yt-play-btn">▶</div>
+</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">Android: 24K +781% · ~1 год · Неожиданное воскрешение головоломки</div>
+<div class="metrics">📊 Apr 20–26: Android 24K +781% · Age: ~1 год · Gimica GmbH · Model: Hypercasual</div>
+<div class="analysis">Gimica GmbH — немецкая студия, известная по Emoji Clickers (тоже в чартах на этой неделе с 36K). Slide &amp; Roll существует год, но эта неделя — взрыв: +781%. Две игры одной студии показывают аномальный рост одновременно: скорее всего, студия включила UA-кампанию по обоим тайтлам. Механика Slide &amp; Roll — шарик катится по направляющим, строй маршрут. Простая HC-механика с хорошим ASMR-потенциалом.</div>
+<div class="hypothesis">Gimica GmbH — студия на радаре. Если оба их тайтла удержат позиции — это кандидат для паблишера. Особенно интересно: сможет ли Emoji Clickers (36K NEW Android) войти на iOS.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.gimica.slideandroll" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- Eating Simulator -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/48/37/27/4837274c-066d-4817-ea7a-a15f2107c918/512x512bb.jpg" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">🍔</div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🔄</span>Eating Simulator: Physics Food</div>
+<div class="game-dev">KAYAC Inc.</div>
+<div class="tags">
+<span class="tag tag-genre">Hypercasual / Simulation</span>
+<span class="tag tag-plat">iOS + Android</span>
+<span class="tag tag-date">~3 года</span>
+</div>
+</div>
+</div>
+<div class="ss-wrap">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/fd/35/a2/fd35a2ed-00f0-9af8-2feb-e17963467735/5f4c4697-c5fd-44fd-bf0a-fc3db673be90_ios_bnr_1284_2778_01.jpg/392x696bb.jpg" alt="Eating Simulator screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/31/75/9f/31759fe7-16ef-b9a0-8aad-621aeaa20744/481d9217-8c54-46bb-b0b1-b3a3eed1f98b_ios_bnr_1284_2778_02.jpg/392x696bb.jpg" alt="Eating Simulator screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/03/a1/03/03a1031c-8509-3efa-565d-08189cd27145/ff8f0e64-0f74-4e8e-b28a-687ef2657b52_ios_bnr_1284_2778_03.jpg/392x696bb.jpg" alt="Eating Simulator screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">📊 AD CREATIVES — Eating Simulator</div>
+<div class="vid-wrap">
+<video controls poster="https://x-ad-assets.s3.amazonaws.com/media_asset/aebfbd65c6ab6c9a/thumb" preload="none" style="height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;display:block;margin:0 auto">
+  <source src="https://x-ad-assets.s3.amazonaws.com/media_asset/aebfbd65c6ab6c9a/media" type="video/mp4"/>
+</video>
+</div>
+<div class="card-body">
+<div class="dl-stat">iOS: 15K +120% · Android: 20K +93% · 3-летняя игра → неожиданный спайк · KAYAC (Ragdoll Break)</div>
+<div class="metrics">📊 Apr 20–26: iOS 15K +120% · Android 20K +93% · Age: ~3 года · KAYAC Inc. · Model: Hypercasual</div>
+<div class="analysis">KAYAC — японская студия, также запустившая Ragdoll Break (32K Android эту неделю). Eating Simulator — физика еды: объекты падают в рот персонажу с ragdoll-физикой. Трёхлетняя игра удваивается по загрузкам — это UA-реактивация. KAYAC активно работает с несколькими тайтлами одновременно; вероятно они тестируют UA на всём портфолио. Физика + еда = сильный viral loop в TikTok-видео.</div>
+<div class="hypothesis">KAYAC как студия интереснее, чем одна игра. Два их тайтла в Top-50 Android одновременно — это сигнал масштабирования. Следить: появится ли паблишер для KAYAC-игр на западном рынке.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6445974852" target="_blank">🍎 App Store</a>
+</div>
+</div>
+
+<!-- Snake Tile: Puzzle Game -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/df/96/ab/df96abee-dcea-c2c0-9e17-1708a7618862/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">🐍</div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🔄</span>Snake Tile: Puzzle Game <span class="new-badge">NEW</span></div>
+<div class="game-dev">Tripledot Studios Limited</div>
+<div class="tags">
+<span class="tag tag-pub">🤝 Tripledot</span>
+<span class="tag tag-genre">Puzzle / Snake</span>
+<span class="tag tag-plat">iOS</span>
+<span class="tag tag-date">Релиз 25 апр 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-wrap">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d6/e8/b6/d6e8b683-b333-f244-f1b5-e01c662a46c4/ST_ASO_0001_StartSet_s-1_l-en_1242x2688.jpg/392x696bb.jpg" alt="Snake Tile screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f1/6c/5c/f16c5c4a-ef88-b933-f379-402cd46e1d60/ST_ASO_0001_StartSet_s-2_l-en_1242x2688.jpg/392x696bb.jpg" alt="Snake Tile screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7a/b1/c8/7ab1c8f2-4ab6-5a9e-0da7-7b10fd789959/ST_ASO_0001_StartSet_s-3_l-en_1242x2688.jpg/392x696bb.jpg" alt="Snake Tile screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">📊 AD CREATIVES — Snake Tile</div>
+<div class="vid-wrap">
+<a class="yt-thumb-link" href="https://www.youtube.com/watch?v=adULwBf8PWs" target="_blank">
+<img src="https://img.youtube.com/vi/adULwBf8PWs/hqdefault.jpg" alt="Snake Tile gameplay"/>
+<div class="yt-play-btn">▶</div>
+</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">Дебют 25 апр 2026 · Tripledot Studios · Snake-механика на плитках · Ранний сигнал</div>
+<div class="metrics">📊 Релиз: 25 апр 2026 · Dev: Tripledot Studios Limited · iOS ID: 6759258985 · Puzzle/Snake</div>
+<div class="analysis">Tripledot Studios — один из топ-10 casual паблишеров. Их запуски всегда заслуживают внимания: WordMaster, Zen Match, Arrows GO! — все показали долгосрочный рост. Snake Tile адаптирует классическую механику змейки в пазл-формат на сетке плиток. Запуск 25 апреля — слишком свежий для недельной статистики, но ранний мониторинг важен: первые 2 недели от Tripledot обычно показывают траекторию.</div>
+<div class="hypothesis">Если Tripledot за 2 недели доводит Snake Tile до 30K+ iOS — это автоматически Блок 1 следующего отчёта. Tripledot умеет строить retention — их игры редко умирают через месяц.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6759258985" target="_blank">🍎 App Store</a>
+</div>
+</div>
+
+<!-- Factory Balls Go! -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ed/1b/cf/ed1bcff2-58fd-7f72-54db-014ec5b01475/512x512bb.jpg" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">🎱</div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🔄</span>Factory Balls Go! <span class="new-badge">NEW</span></div>
+<div class="game-dev">Bart BONTE</div>
+<div class="tags">
+<span class="tag tag-genre">Puzzle / Indie</span>
+<span class="tag tag-plat">iOS</span>
+<span class="tag tag-date">~1 неделя</span>
+</div>
+</div>
+</div>
+<div class="ss-wrap">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/75/9c/c1/759cc12c-d49a-1417-a392-fb8816be4a98/screen1.png/392x696bb.jpg" alt="Factory Balls Go! screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/14/fe/ce/14fece81-80e6-ca62-b4cb-73c870460d41/screen2.png/392x696bb.jpg" alt="Factory Balls Go! screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c2/8a/31/c28a315d-a37f-4236-a572-7e233c0f8f82/screen3.png/392x696bb.jpg" alt="Factory Balls Go! screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">🎬 GAMEPLAY — Factory Balls Go!</div>
+<div class="vid-wrap">
+<a class="yt-thumb-link" href="https://www.youtube.com/watch?v=7suM1JesSZg" target="_blank">
+<img src="https://img.youtube.com/vi/7suM1JesSZg/hqdefault.jpg" alt="Factory Balls Go gameplay"/>
+<div class="yt-play-btn">▶</div>
+</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">iOS: 7K загрузок (NEW) · ~1 неделя · Инди-пазл от культового автора · Factory Balls серия</div>
+<div class="metrics">📊 Apr 20–26: iOS 7K NEW · Age: ~1 неделя · Bart BONTE · Model: Hypercasual / Indie Puzzle</div>
+<div class="analysis">Bart BONTE — бельгийский инди-разработчик с культовой репутацией: Factory Balls (2008, оригинал) был вирусным Flash-хитом. Factory Balls Go! — мобильный ребут серии. 7K iOS в первую неделю без маркетингового бюджета — это органика от базы фанатов. Механика: покрасить шарики в нужные цвета, проводя через препятствия. Минималистичная логика с высоким satisfaction-фактором.</div>
+<div class="hypothesis">Инди-хиты с историей часто привлекают паблишеров после органического старта. Voodoo, SayGames и Rollic активно скаутят indie puzzle с retention потенциалом. Следить: недельная динамика, рейтинги App Store.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6759607863" target="_blank">🍎 App Store</a>
+</div>
+</div>
+
+</div><!-- /grid -->
+</div><!-- /block3 -->
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- BLOCK 4 — ПАБЛИШЕР-ТРАНСФЕРЫ                           -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="section" id="block4">
+<div class="section-header sec-4">
+  🧪 БЛОК 4 — ПАБЛИШЕР-ТРАНСФЕРЫ · Slack #05_freeplay_apps_pubchange · 28–30 апр 2026
+</div>
+<div class="grid">
+
+<!-- Cracker Head → Rollic Games -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/e2/fd/39e2fd32-b41d-def1-9ec6-651871fbd407/512x512bb.jpg" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">💥</div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🧪</span>Cracker Head</div>
+<div class="game-dev">FUBU GAMES → Rollic Games</div>
+<div class="tags">
+<span class="tag tag-pub">🤝 Rollic Games</span>
+<span class="tag tag-genre">Hypercasual</span>
+<span class="tag tag-plat">iOS</span>
+<span class="tag tag-date">Трансфер 30 апр 2026</span>
+</div>
+</div>
+</div>
+<div class="transfer-banner">🔄 FUBU GAMES → Rollic Games · 30 апреля 2026</div>
+<div class="ss-wrap">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4b/55/34/4b553468-4d52-4b0d-c10b-539780911324/iphone15__U00281_U0029.png/392x696bb.jpg" alt="Cracker Head screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/13/d1/7a/13d17a1e-d45f-b403-655c-662c03eb2cd9/iphone15__U00282_U0029.png/392x696bb.jpg" alt="Cracker Head screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/16/57/0b/16570b32-4897-c73b-16f3-b95d6af61d51/iphone15__U00283_U0029.png/392x696bb.jpg" alt="Cracker Head screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">📊 AD CREATIVES — Cracker Head</div>
+<div class="vid-wrap">
+<video controls poster="https://x-ad-assets.s3.amazonaws.com/media_asset/b3f5aea58fac3e40/thumb" preload="none" style="height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;display:block;margin:0 auto">
+  <source src="https://x-ad-assets.s3.amazonaws.com/media_asset/b3f5aea58fac3e40/media" type="video/mp4"/>
+</video>
+</div>
+<div class="card-body">
+<div class="dl-stat">Трансфер: FUBU GAMES → Rollic Games · 30 апр · iOS ID: 6759264026</div>
+<div class="metrics">📊 Publisher Change: FUBU GAMES OYUN → Rollic Games · 30 апр 2026 · iOS: 6759264026</div>
+<div class="analysis">Rollic Games (дочка Zynga) — один из крупнейших HC-паблишеров. Поглощение Cracker Head означает, что Rollic увидел в игре retention потенциал. FUBU — турецкая студия, переход к Rollic — стандартный путь: студия нашла UA-работающую механику, Rollic масштабирует. Cracker Head — разбивание головы-головоломки с физикой. Механика в духе "удар-и-взрыв".</div>
+<div class="hypothesis">После перехода к Rollic ждать агрессивного UA в течение 2–4 недель. Если Cracker Head войдёт в топ-100 iOS Free — это подтверждение модели Rollic 2026.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6759264026" target="_blank">🍎 App Store</a>
+</div>
+</div>
+
+<!-- Category Sort → Lion Studios Plus -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/10/8a/3e/108a3e28-afe7-f69e-d343-16a6f0b3e1f1/512x512bb.jpg" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">🗂️</div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🧪</span>Category Sort</div>
+<div class="game-dev">Banoth Rahul Naik → Lion Studios Plus</div>
+<div class="tags">
+<span class="tag tag-pub">🤝 Lion Studios Plus</span>
+<span class="tag tag-genre">Hypercasual / Sort Puzzle</span>
+<span class="tag tag-plat">iOS</span>
+<span class="tag tag-date">Трансфер 30 апр 2026</span>
+</div>
+</div>
+</div>
+<div class="transfer-banner">🔄 Banoth Rahul Naik → Lion Studios Plus · 30 апреля 2026</div>
+<div class="ss-wrap">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e2/7d/21/e27d215c-03cf-0cbe-5a14-dc4367812ec0/_0000__0005_1.png/392x696bb.jpg" alt="Category Sort screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ce/9b/f6/ce9bf647-f79b-0d07-b8ed-4c8b5721433e/_0003_Layer-1-copy-3.png/392x696bb.jpg" alt="Category Sort screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3f/d1/78/3fd17842-c145-1df3-ba24-6dd11d205fc5/_0004_Layer-1-copy-2.png/392x696bb.jpg" alt="Category Sort screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">📊 AD CREATIVES — Category Sort</div>
+<div class="vid-wrap">
+<video controls poster="https://x-ad-assets.s3.amazonaws.com/media_asset/6e96e9a7397fd8ef/thumb" preload="none" style="height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;display:block;margin:0 auto">
+  <source src="https://x-ad-assets.s3.amazonaws.com/media_asset/6e96e9a7397fd8ef/media" type="video/mp4"/>
+</video>
+</div>
+<div class="card-body">
+<div class="dl-stat">Трансфер: инди → Lion Studios Plus · 30 апр · iOS: 14K +586% · Сортировка по категориям</div>
+<div class="metrics">📊 Publisher Change: Banoth Rahul Naik → Lion Studios Plus · 30 апр 2026 · iOS: 6758512068 · Downloads this week: 14K +586%</div>
+<div class="analysis">Lion Studios Plus (AppLovin) — крупный UA-дистрибьютор в HC-жанре. Инди-разработчик Banoth Rahul Naik создал sort puzzle с категориями объектов (возможно: сортировка мусора, предметов, еды). Переход к Lion Studios часто предшествует масштабному UA-запуску через сеть AppLovin LION. 14K загрузок +586% уже до официального старта UA — значит механика работает органически.</div>
+<div class="hypothesis">Lion Studios plus → AppLovin MAX UA = стандартный путь к топ-100. Если механика hold retention &gt;30% day-7 — ждать топ-50 iOS через 3–4 недели.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6758512068" target="_blank">🍎 App Store</a>
+</div>
+</div>
+
+<!-- Merge Shooter! → Geisha Tokyo -->
+<div class="card">
+<div class="card-top">
+<img src="https://play-lh.googleusercontent.com/uH-37JWXEqAuJd2QNNgAL9qY4zjIyZybhlMvCh2yQpQ_rOEs4Par9xjP7MtJk54YfBc=s512-rw" alt="Merge Shooter icon" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🧪</span>Merge Shooter!</div>
+<div class="game-dev">HCGAME → Geisha Tokyo, Inc.</div>
+<div class="tags">
+<span class="tag tag-pub">🤝 Geisha Tokyo</span>
+<span class="tag tag-genre">Merge / Shooter</span>
+<span class="tag tag-plat">Android</span>
+<span class="tag tag-date">Трансфер 29 апр 2026</span>
+</div>
+</div>
+</div>
+<div class="transfer-banner">🔄 HCGAME → Geisha Tokyo, Inc. · 29 апреля 2026</div>
+<div class="ss-wrap">
+<img src="https://play-lh.googleusercontent.com/OOrDLjCvu1kEsJXYsiC74LD-fFjQ-IvxGZ3LMz3JyO791R70G-f1S3JgCq8ACZeFsA=w392-h696-rw" alt="Merge Shooter screenshot 2" onerror="this.style.display='none'" onclick="openLB(this.src)" style="cursor:zoom-in"/>
+<img src="https://play-lh.googleusercontent.com/9QNkAnlmIwbp3zsSVU0Tj3ThFQ7-RHzW2KTq7v9xC44BvyCARuwxaiTHlHFNgy9aJ5M=w392-h696-rw" alt="Merge Shooter screenshot 3" onerror="this.style.display='none'" onclick="openLB(this.src)" style="cursor:zoom-in"/>
+</div>
+<div class="vid-label">🎬 GAMEPLAY — Merge Shooter!</div>
+<div class="vid-wrap">
+<a class="yt-thumb-link" href="https://www.youtube.com/watch?v=y9YC3rdhXww" target="_blank">
+<img src="https://img.youtube.com/vi/y9YC3rdhXww/hqdefault.jpg" alt="AmaZeus Merge Shoot gameplay"/>
+<div class="yt-play-btn">▶</div>
+</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">Трансфер: HCGAME → Geisha Tokyo · 29 апр · Android-only · Merge + шутер механика</div>
+<div class="metrics">📊 Publisher Change: HCGAME → Geisha Tokyo, Inc. · 29 апр 2026 · Android only</div>
+<div class="analysis">Geisha Tokyo — японский паблишер, специализирующийся на merge-механиках. Merge Shooter сочетает слияние оружия с шутер-аркадой — гибрид, популярный в Азии. HCGAME (предположительно китайская студия) передала тайтл под японский паблишинг — возможно для продвижения на японском рынке или для глобального ребрендинга. Merge + shooter = растущий гибридный жанр.</div>
+<div class="hypothesis">Японский паблишер на merge-игре = скорее всего UA через японские DSP + Line Games аудитория. Следить: iOS-версия появится ли после переходного периода.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.merge.shooter" target="_blank">🤖 Google Play</a>
+</div>
+</div>
+
+</div><!-- /grid -->
+</div><!-- /block4 -->
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- PATTERNS                                               -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="section" id="patterns">
+<div class="section-header sec-5">
+  📐 ПАТТЕРНЫ НЕДЕЛИ · Тренды и выводы · 25 апр — 3 мая 2026
+</div>
+
+<div class="pattern-card">
+<div class="pattern-title">🎲 Habby-эффект: Mid-core бренд запускает Casual hit</div>
+<div class="pattern-body">Habby известны Archero — pure mid-core с сложным progression. Dicero! — первая их попытка в более лёгком casual/mid-core направлении. 165K iOS в дебют — это сигнал, что Habby умеет конвертировать бренд-доверие в install volume. Ранее так делали: Voodoo (из HC в casual), Supercell (из strategy в casual с Hay Day). Если Dicero удержит retention — у Habby появится второй долгосрочный IP.</div>
+<div class="pattern-hyp">→ Следить: retention week-2 Dicero, монетизационная модель (F2P или premium), появление клонов через 3–4 недели.</div>
+</div>
+
+<div class="pattern-card">
+<div class="pattern-title">🏹 Arrow-механика: от сигнала к жанру</div>
+<div class="pattern-body">Три недели назад в Блоке 1: Arrows GO! (Tripledot, 250K). Сейчас: Arrow Maze-Tap Away +479%, Arrow Survival +912%. Паттерн известен: один успешный тайтл → волна клонов → насыщение → умирание жанра за 8–12 недель. Arrow-жанр сейчас на фазе 2 (рост клонов). Аудитория распылится между 3–5 тайтлами, выживет 1–2 с лучшим retention.</div>
+<div class="pattern-hyp">→ Arrows GO! остаётся №1 в жанре. Клоны-конкуренты умрут через 6–8 недель, если не найдут уникальный крюк.</div>
+</div>
+
+<div class="pattern-card">
+<div class="pattern-title">🤖 AI-anxiety как игровая механика</div>
+<div class="pattern-body">Human or Not? (+97% iOS, +151% Android) эксплуатирует культурный момент 2025–2026: страх ИИ, неопределённость человеческой идентичности в эпоху ChatGPT. Туринг-тест превратился в casual game. Прецедент: Pokemon Go использовал AR-хайп 2016, Wordle использовал pandemic-скуку 2021. Human or Not? поймал свой момент. Вопрос в retention: насколько люди хотят играть в это регулярно vs. попробовать один раз.</div>
+<div class="pattern-hyp">→ Жанр "AI-social experiment" — новая ниша. Следить за появлением 3–5 клонов в мае 2026.</div>
+</div>
+
+<div class="pattern-card">
+<div class="pattern-title">🏢 Rollic + Lion Studios: HC-паблишеры активизировались в апреле</div>
+<div class="pattern-body">За неделю 28–30 апреля: Rollic подписал Cracker Head, Lion Studios Plus подписал Category Sort. Обе компании входят в экосистемы крупных холдингов (Zynga/Rollic, AppLovin/Lion). Агрессивная скупка HC-механик весной 2026 — вероятно, ответ на рост Voodoo (которая активно скаутила в марте-апреле). Гонка паблишеров за перспективные тайтлы ускоряется.</div>
+<div class="pattern-hyp">→ Сигнал для FreePlay: если у нас есть сильные HC-механики в тесте — апрель-май 2026 оптимальное окно для переговоров с паблишерами.</div>
+</div>
+
+</div><!-- /patterns -->
+
+</div><!-- /container -->
+</body>
+</html>
