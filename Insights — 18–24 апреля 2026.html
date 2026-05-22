@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>🔥 Insights — 18–24 апреля 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',sans-serif;background:#0f0f1a;color:#e2e8f0;min-height:100vh}
+  .header{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);padding:32px 40px;border-bottom:2px solid #e63946}
+  .header h1{font-size:24px;font-weight:800;color:#fff;letter-spacing:-0.5px}
+  .header h1 span{color:#e63946}
+  .header .subtitle{font-size:12px;color:#94a3b8;margin-top:6px}
+  .header .meta{display:flex;gap:20px;margin-top:16px;flex-wrap:wrap}
+  .meta-pill{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 14px;font-size:11px;color:#94a3b8}
+  .container{max-width:1400px;margin:0 auto;padding:32px 40px}
+  .section{margin-bottom:40px}
+  .section-header{display:flex;align-items:center;gap:12px;padding:14px 20px;border-radius:10px;margin-bottom:20px;font-size:14px;font-weight:700;letter-spacing:0.3px}
+  .sec-1{background:linear-gradient(90deg,#7f1d1d,#991b1b);color:#fef2f2}
+  .sec-2{background:linear-gradient(90deg,#1e3a5f,#1e40af);color:#eff6ff}
+  .sec-3{background:linear-gradient(90deg,#064e3b,#065f46);color:#ecfdf5}
+  .sec-4{background:linear-gradient(90deg,#78350f,#92400e);color:#fffbeb}
+  .sec-5{background:linear-gradient(90deg,#4c1d95,#5b21b6);color:#f5f3ff}
+  .sec-dev{background:linear-gradient(90deg,#1e3a5f,#0e7490);color:#e0f2fe}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(440px,1fr));gap:16px}
+  .card{background:#1a1a2e;border:1px solid #2d2d4e;border-radius:12px;overflow:hidden;transition:transform 0.15s,border-color 0.15s;display:flex;flex-direction:column}
+  .card:hover{transform:translateY(-2px);border-color:#4a4a7a}
+  .card-top{display:flex;gap:14px;padding:16px 16px 12px}
+  .icon-wrap{flex-shrink:0}
+  .icon-wrap img{width:72px;height:72px;border-radius:14px;object-fit:cover;background:#2d2d4e}
+  .icon-placeholder{width:72px;height:72px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0}
+  .card-meta{flex:1;min-width:0}
+  .game-name{font-size:14px;font-weight:700;color:#f1f5f9;line-height:1.3;margin-bottom:3px}
+  .game-dev{font-size:11px;color:#94a3b8;margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .tags{display:flex;flex-wrap:wrap;gap:4px}
+  .tag{font-size:10px;padding:2px 8px;border-radius:10px;font-weight:500}
+  .tag-pub{background:#1e3a5f;color:#93c5fd}
+  .tag-genre{background:#1c3a2d;color:#6ee7b7}
+  .tag-plat{background:#3d2a1a;color:#fcd34d}
+  .tag-date{background:#2d1a3d;color:#c084fc}
+  .ss-wrap{padding:0 16px 12px;display:flex;justify-content:center;gap:10px;align-items:flex-start}
+  .ss-wrap img{height:160px;width:auto;max-width:100%;object-fit:contain;border-radius:8px;background:#0a0a14;flex-shrink:0;cursor:zoom-in;transition:opacity .15s}
+  .ss-wrap img:hover{opacity:.85}
+  /* Lightbox */
+  #lb{display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out}
+  #lb.open{display:flex}
+  #lb img{max-width:92vw;max-height:92vh;border-radius:10px;object-fit:contain;box-shadow:0 20px 60px rgba(0,0,0,.8)}
+  #lb-close{position:fixed;top:18px;right:22px;color:#fff;font-size:32px;cursor:pointer;line-height:1;opacity:.7}
+  #lb-close:hover{opacity:1}
+  .st-crea-link{display:flex;align-items:center;justify-content:center;height:120px;border-radius:8px;gap:14px;text-decoration:none;width:100%;max-width:100%;background:linear-gradient(135deg,#162236,#1a2640);border:1px solid #2a3a5e;transition:border-color .2s}
+  .st-crea-link:hover{border-color:#4a6a9e}
+  .ss-wrap img.ls{width:100%;max-height:180px;height:auto;object-fit:cover;border-radius:8px;background:transparent}
+  .ss-placeholder{width:100%;height:80px;border-radius:8px;display:flex;align-items:center;justify-content:center;background:#1f1f35;color:#4a4a6a;font-size:11px;margin:0 16px 12px}
+  .card-body{padding:0 16px 12px;flex:1}
+  .metrics{font-size:11px;color:#fbbf24;margin-bottom:8px;font-weight:500}
+  .analysis{font-size:11px;color:#cbd5e1;line-height:1.6;margin-bottom:8px}
+  .hypothesis{font-size:11px;color:#a78bfa;line-height:1.6;padding:8px 10px;background:rgba(167,139,250,0.06);border-left:2px solid #7c3aed;border-radius:0 6px 6px 0}
+  .card-footer{padding:10px 16px 14px;display:flex;gap:8px;flex-wrap:wrap;border-top:1px solid #2d2d4e;margin-top:auto}
+  .link-btn{font-size:10px;padding:4px 12px;border-radius:6px;text-decoration:none;font-weight:600;transition:opacity 0.15s}
+  .link-gp{background:#1a4731;color:#4ade80;border:1px solid #166534}
+  .link-ios{background:#1a2a47;color:#60a5fa;border:1px solid #1e3a5f}
+  .link-btn:hover{opacity:0.8}
+  .signal-badge{font-size:13px;margin-right:4px}
+  .pattern-card{background:#1a1a2e;border:1px solid #2d2d4e;border-radius:12px;padding:16px;margin-bottom:12px}
+  .pattern-title{font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:6px}
+  .pattern-body{font-size:11px;color:#cbd5e1;line-height:1.6}
+  .pattern-hyp{font-size:11px;color:#a78bfa;margin-top:8px;padding:6px 10px;background:rgba(167,139,250,0.06);border-left:2px solid #7c3aed;border-radius:0 6px 6px 0}
+  .devs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}
+  .dev-card{background:#1a1a2e;border:1px solid #2d2d4e;border-radius:10px;padding:14px}
+  .dev-name{font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:4px}
+  .dev-pub{font-size:11px;color:#60a5fa;margin-bottom:6px}
+  .dev-signal{font-size:11px;color:#fbbf24;margin-bottom:6px;font-weight:600}
+  .dev-why{font-size:11px;color:#94a3b8;line-height:1.5}
+  .dev-games{font-size:11px;color:#6ee7b7;margin-bottom:4px}
+  hr.section-sep{border:none;border-top:1px solid #2d2d4e;margin:16px 0}
+  .toc{background:#1a1a2e;border:1px solid #2d2d4e;border-radius:10px;padding:16px 20px;margin-bottom:32px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .toc span{font-size:11px;color:#94a3b8;margin-right:4px}
+  .toc a{font-size:11px;color:#60a5fa;text-decoration:none;padding:3px 10px;background:#1e3a5f;border-radius:10px}
+  .toc a:hover{background:#1e40af}
+  .no-img-icon{width:72px;height:72px;border-radius:14px;background:linear-gradient(135deg,#1e3a5f,#2d2d4e);display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0}
+  .vid-wrap{padding:0 16px 12px;display:flex;justify-content:center;background:transparent}
+  .vid-wrap video{height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;object-fit:contain;display:block;margin:0 auto}
+  .vid-wrap iframe{width:100%;height:200px;border-radius:8px;border:none;display:block}
+  .yt-thumb-link{display:block;position:relative;border-radius:8px;overflow:hidden;text-decoration:none}
+  .yt-thumb-link img{width:100%;height:200px;object-fit:cover;display:block}
+  .yt-play-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:60px;height:42px;background:rgba(0,0,0,0.75);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:22px;pointer-events:none}
+  .yt-thumb-link:hover .yt-play-btn{background:#e63946;transition:background .2s}
+  .vid-label{font-size:9px;color:#4a5568;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;padding:0 16px;text-align:center}
+  .vid-details{padding:0 16px 4px;margin-bottom:0}
+  .vid-details summary{list-style:none;font-size:11px;color:#ffffff;text-transform:uppercase;letter-spacing:1px;cursor:pointer;padding:6px 0;user-select:none;display:flex;align-items:center;gap:6px;border-top:1px solid rgba(255,255,255,0.08);margin-top:2px;font-weight:600}
+  .vid-details summary::-webkit-details-marker{display:none}
+  .vid-details summary::before{content:'▶';font-size:7px;opacity:.7;transition:transform .18s;display:inline-block;flex-shrink:0}
+  .vid-details summary::after{content:'👆';font-size:12px;margin-left:2px;opacity:.75;transition:opacity .18s}
+  .vid-details[open] summary::before{transform:rotate(90deg)}
+  .vid-details[open] summary::after{opacity:0;width:0;margin:0;overflow:hidden}
+  .vid-details summary:hover{color:#ede9fe}
+  .tag-pub,.tag-plat{display:none}
+  .ss-caption{font-size:9px;color:#64748b;text-align:center;margin-top:2px;letter-spacing:0.3px}
+  .vid-details .vid-wrap{padding:8px 0 8px;margin:0}
+  .pub-banner{padding:6px 16px;font-size:11px;font-weight:700;color:#93c5fd;letter-spacing:0.4px;background:linear-gradient(90deg,#162236 0%,#1a1a2e 100%);border-bottom:1px solid #2a3a5e;display:flex;align-items:center;gap:6px}
+  .dl-stat{font-size:11px;font-weight:700;color:#fbbf24;margin-bottom:7px;padding:5px 10px;background:rgba(251,191,36,0.07);border-left:2px solid #fbbf24;border-radius:0 6px 6px 0;line-height:1.6}
+  .new-badge{display:inline-block;background:#7f1d1d;color:#fca5a5;font-size:9px;font-weight:700;padding:1px 6px;border-radius:4px;letter-spacing:0.5px;margin-left:6px;vertical-align:middle}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>🔥 Insights — <span>18–24 апреля 2026</span></h1>
+<div class="subtitle">Новые игры в тесте • Активная итерация • Паблишер-трансферы • Жанровые сигналы</div>
+<div class="meta">
+<div class="meta-pill">📅 18–24 апреля 2026</div>
+<div class="meta-pill">📊 #05_freeplay_kob_apps_pubchange (Slack)</div>
+<div class="meta-pill">📈 Ranking, Rating, Iteration</div>
+<div class="meta-pill">📱 Weekly Apr 6–12</div>
+<div class="meta-pill">🔄 Обновлено: 24 апреля 2026</div>
+</div>
+</div>
+<div class="container">
+<div class="toc">
+<span>→</span>
+<a href="#block1">🎯🎯🎯 Мультисигнал</a>
+<a href="#block2">🎯🎯 Паблишер-тест</a>
+<a href="#block3">🔄 На радаре</a>
+<a href="#block4">🧪 Паблишер-трансферы</a>
+<a href="#patterns">📐 Паттерны</a>
+<a href="#devs">👨‍💻 Разработчики</a>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- BLOCK 1 — MULTI-SIGNAL                                 -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="section" id="block1">
+<div class="section-header sec-1">
+  🎯🎯🎯 БЛОК 1 — МУЛЬТИСИГНАЛЬНЫЕ ИГРЫ  |  Несколько независимых источников одновременно · 18–24 апр 2026
+</div>
+<div class="grid">
+
+<!-- Arrows GO! -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c6/03/be/c603bedf-40ba-c420-86fa-627fe40e8097/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">🏹</div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🎯🎯🎯</span>Arrows GO!</div>
+<div class="game-dev">OAKEVER GAMES PTE. LTD.</div>
+<div class="tags">
+<span class="tag tag-pub">🤝 Tripledot Studios</span>
+<span class="tag tag-genre">Hypercasual / Arrow Tap</span>
+<span class="tag tag-plat">iOS + Android</span>
+<span class="tag tag-date">Подписан Apr 9, 2026</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">🤝 Tripledot Studios — подписан 9 апреля 2026</div>
+<div class="ss-wrap">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/03/13/7d/03137d5a-0b36-10ff-8b82-d2eaf1e4be08/1.jpg/392x696bb.jpg" alt="Arrows GO! screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fa/c8/30/fac830c6-11b5-90e4-564f-32056eedab08/2.jpg/392x696bb.jpg" alt="Arrows GO! screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/cd/04/3d/cd043dd6-e26e-a1a1-7ddd-f445e61a15bc/3.jpg/392x696bb.jpg" alt="Arrows GO! screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">🎬 AD CREATIVE — Arrows GO!</div>
+<div class="vid-wrap">
+<video controls poster="https://x-ad-assets.s3.amazonaws.com/media_asset/a66b162266f6d202/thumb" preload="none" style="height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;display:block;margin:0 auto">
+<source src="https://x-ad-assets.s3.amazonaws.com/media_asset/a66b162266f6d202/media" type="video/mp4">
+</video>
+</div>
+<div class="card-body">
+<div class="dl-stat">iOS: 115K загрузок · Android: 135K загрузок · Итого ~250K/нед 🔥 · Rank +33/день · Rating +777/нед · Tripledot подписал Apr 9</div>
+<div class="metrics">📊 Apr 6–12: iOS 115K · Android 135K · Ranking rank 56 +33/день · Rating +777 оценок/нед · Publisher Change: Tripledot Apr 9</div>
+<div class="analysis">Четыре независимых сигнала одновременно — таких комбинаций за квартал единицы. 250K загрузок в неделю на обеих платформах при одновременном росте в рейтинге и оценках говорит о том, что Arrows GO! не просто работающий UA, а реально вирусный продукт. Подписание Tripledot Studios (топ-5 паблишер в casual) прямо в момент органического роста — сильнейший сигнал: паблишер зашёл уже на горячий актив. Механика — стрелки/направления, подтип tap-и-двигай, простой жест. Очень масштабируемо.</div>
+<div class="hypothesis">Это главная игра недели без оговорок. Tripledot умеет строить долгосрочные хиты (WordMaster, Zen Match). Если они масштабируют Arrows GO! — это потенциальный топ-50 iOS casual на 3–6 месяцев. Следить за: download velocity на следующей неделе, появлением UA кампаний.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6758326278" target="_blank">🍎 App Store</a>
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.oakever.arrows" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- Dreamy Room -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8c/ad/d0/8cadd043-d890-5197-fd4f-ac8774e7b8bc/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">🛋️</div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🎯🎯🎯</span>Dreamy Room</div>
+<div class="game-dev">ABI GLOBAL LTD.</div>
+<div class="tags">
+<span class="tag tag-genre">Casual / Unpack &amp; Decorate</span>
+<span class="tag tag-plat">iOS + Android</span>
+<span class="tag tag-date">86 апдейтов / ABI</span>
+</div>
+</div>
+</div>
+<div class="ss-wrap">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fe/a9/68/fea9680c-a145-179a-ce36-b26e65ed2242/Artboard_1.png/392x696bb.jpg" alt="Dreamy Room screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/71/d6/57/71d65710-4fea-822f-78c3-eab930753e1c/Artboard_2.png/392x696bb.jpg" alt="Dreamy Room screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/89/4f/5c/894f5cde-9fae-c0ca-5eaa-5c81e6e1b076/Artboard_3.png/392x696bb.jpg" alt="Dreamy Room screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">🎬 AD CREATIVE — Dreamy Room</div>
+<div class="vid-wrap">
+<video controls poster="https://x-ad-assets.s3.amazonaws.com/media_asset/b7d3d720099406bf/thumb" preload="none" style="height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;display:block;margin:0 auto">
+<source src="https://x-ad-assets.s3.amazonaws.com/media_asset/b7d3d720099406bf/media" type="video/mp4">
+</video>
+</div>
+<div class="card-body">
+<div class="dl-stat">iOS: 29.7K · Android: 17.2K · ABI Active Iteration: 86 апдейтов 🔨 · Продолжительный рост с ноября 2025</div>
+<div class="metrics">📊 Apr 6–12: iOS 29.7K · Android 17.2K · Active Iteration: 86 апдейтов ABI · Released: ноябрь 2025 · Dev: ABI Global</div>
+<div class="analysis">86 версий за ~5 месяцев с релиза — это примерно 17 апдейтов в месяц. ABI Global явно нашли механику, которая держит игру в тесте, и итерируют контент/баланс/монетизацию. Dreamy Room — распаковка + украшение комнаты, мягкий ASMR-стиль. Sustained 29K iOS при такой интенсивности обновлений = высокая retention. Это не просто хайп — это продукт с живой воронкой.</div>
+<div class="hypothesis">ABI Global применяет ту же модель, что Voodoo с casual играми — массовая итерация до нахождения winning formula. 86 апдейтов — это сигнал, что они близко или уже нашли. Смотреть на: выход в топ-100 iOS Free, появление крупного паблишера.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6742221896" target="_blank">🍎 App Store</a>
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.abi.dream.unpacking" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- Cosplaydom -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ea/ba/de/eabade31-ea59-0c48-ee39-98bd56bfd34f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">🎭</div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🎯🎯🎯</span>Cosplaydom</div>
+<div class="game-dev">ABI GLOBAL LTD.</div>
+<div class="tags">
+<span class="tag tag-genre">Casual / Dress-Up &amp; Cosplay</span>
+<span class="tag tag-plat">iOS + Android</span>
+<span class="tag tag-date">35 апдейтов / ABI</span>
+</div>
+</div>
+</div>
+<div class="ss-wrap">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/5c/30/425c307d-83ef-2c68-2e0a-75927aac5840/8.png/392x696bb.jpg" alt="Cosplaydom screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7a/c7/a1/7ac7a1cc-bfb8-d21f-1141-3924ae9e8ec2/7.png/392x696bb.jpg" alt="Cosplaydom screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0b/84/70/0b847052-94ae-b1c8-54c7-9fd5c5867d0b/6.png/392x696bb.jpg" alt="Cosplaydom screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">🎬 AD CREATIVE — Cosplaydom</div>
+<div class="vid-wrap">
+<video controls poster="https://x-ad-assets.s3.amazonaws.com/media_asset/ddb1f1a3db3bef50/thumb" preload="none" style="height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;display:block;margin:0 auto">
+<source src="https://x-ad-assets.s3.amazonaws.com/media_asset/ddb1f1a3db3bef50/media" type="video/mp4">
+</video>
+</div>
+<div class="card-body">
+<div class="dl-stat">iOS: 15K · Android: 5.2K · ABI Active Iteration: 35 апдейтов 🔨 · Debut Nov 2025</div>
+<div class="metrics">📊 Apr 6–12: iOS 15K · Android 5.2K · Active Iteration: 35 апдейтов ABI · Released: ноябрь 2025 · Dev: ABI Global</div>
+<div class="analysis">Вторая игра ABI Global в мультисигнальном блоке одновременно — это уже паттерн студии, а не случайность. Cosplaydom — дрессинг с косплей-тематикой: игрок одевает персонажей в костюмы из аниме, игр, фильмов. 35 апдейтов за 5 месяцев при устойчивых 15K iOS — студия тестирует разные костюмы/наборы/механики. Dress-up/fashion жанр переживает ренессанс через TikTok и YouTube Shorts благодаря GRWM-формату.</div>
+<div class="hypothesis">Два продукта ABI в Блоке 1 одной недели — это сигнал студии, не игры. ABI Global может стать следующим ABI-масштаба игроком. Смотреть на: суммарные загрузки ABI-портфолио, есть ли третья игра в тесте.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6755667284" target="_blank">🍎 App Store</a>
+<div class="link-btn link-gp" style="cursor:default;opacity:0.5;">🔗 GP: com.abi.cosplaydom</div>
+</div>
+</div>
+
+</div><!-- /grid block1 -->
+</div><!-- /section block1 -->
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- BLOCK 2 — PUBLISHER TEST / STRONG SIGNAL               -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="section" id="block2">
+<div class="section-header sec-2">
+  🎯🎯 БЛОК 2 — ПАБЛИШЕР ТЕСТИРУЕТ / СИЛЬНЫЙ СИГНАЛ  |  Один ключевой источник · 18–24 апр 2026
+</div>
+<div class="grid">
+
+
+
+
+
+<!-- Knit Loop — Supersonic signing -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c7/37/bb/c737bb89-af97-ebbb-e0a2-3f3f7d08fff8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">🧶</div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🎯🎯</span>Knit Loop</div>
+<div class="game-dev">Gemo Interactive</div>
+<div class="tags">
+<span class="tag tag-pub">🤝 Supersonic Studios</span>
+<span class="tag tag-genre">Casual / Knitting Loop</span>
+<span class="tag tag-plat">iOS</span>
+<span class="tag tag-date">Подписан Apr 17, 2026</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">🤝 Supersonic Studios (Unity) — подписан 17 апреля 2026</div>
+<div class="ss-wrap">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/51/ae/25/51ae2544-51e3-d969-9d0e-85039f466be9/Image_Sequence_023_0000.png/392x696bb.jpg" alt="Knit Loop screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5a/73/69/5a73699c-487e-44cb-e02e-3f0a0966e2f2/Image_Sequence_027_0000.png/392x696bb.jpg" alt="Knit Loop screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5b/0f/93/5b0f9345-2048-a91a-fbb7-54f6c0b22743/Image_Sequence_031_0000.png/392x696bb.jpg" alt="Knit Loop screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">▶ GAMEPLAY — Knit Loop</div>
+<div class="vid-wrap">
+<a class="yt-thumb-link" href="https://www.youtube.com/watch?v=VxceBFr1Zfk" target="_blank"><img src="https://img.youtube.com/vi/VxceBFr1Zfk/hqdefault.jpg" alt="Knit Loop gameplay"/><div class="yt-play-btn">▶</div></a>
+</div>
+<div class="card-body" style="padding-top:12px">
+<div class="dl-stat">Источник: #05_freeplay_kob_apps_pubchange · Gemo Interactive → Supersonic Studios (Apr 17)</div>
+<div class="analysis">Supersonic Studios (Unity) забрал Knit Loop у Gemo Interactive — петлевая/вязальная механика, жанр cozy casual. Supersonic специализируется на hypercasual с простым жестом (merge, sort, tap). Knit loop — интуитивная механика с ASMR-визуалом, хорошо конвертирующая через TikTok/Shorts. Свежая сделка 17 апреля — UA-тест только начинается.</div>
+<div class="hypothesis">Supersonic знает, как масштабировать casual через Unity Ads. Если Knit Loop покажет D1 &gt; 40% — ожидать агрессивный UA через iOS в течение 2–3 недель. Следить: Market Report следующей недели, Games Parser.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6756001506" target="_blank">🍎 App Store</a>
+</div>
+</div>
+
+<!-- Assolitaire: Word Solitaire — SayGames signing -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/12/b9/c6/12b9c652-0509-83cc-9697-5c56ec4009a0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">🃏</div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🎯🎯</span>Assolitaire: Word Solitaire</div>
+<div class="game-dev">MASTERMIND WORD GAMES</div>
+<div class="tags">
+<span class="tag tag-pub">🤝 SayGames</span>
+<span class="tag tag-genre">Casual / Word Solitaire</span>
+<span class="tag tag-plat">iOS</span>
+<span class="tag tag-date">Подписан Apr 10, 2026</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">🤝 SayGames Ltd — подписан 10 апреля 2026</div>
+<div class="ss-wrap">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/57/c1/b4/57c1b4a1-5577-2b05-c422-bc73a77bb54a/ip6.5-1b.png/392x696bb.jpg" alt="Assolitaire screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/84/f4/ed/84f4edfc-f453-bf55-6563-bcd25d64b309/ip6.5-2__U00288_U0029.png/392x696bb.jpg" alt="Assolitaire screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ec/9e/60/ec9e605d-3600-92f7-e14b-391849533bff/ip6.5-3b.png/392x696bb.jpg" alt="Assolitaire screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">🎬 ГЕЙМПЛЕЙ — Assolitaire: Word Solitaire</div>
+<div class="vid-wrap">
+<a class="yt-thumb-link" href="https://www.youtube.com/watch?v=XC2rfFDqhPA" target="_blank"><img src="https://img.youtube.com/vi/XC2rfFDqhPA/hqdefault.jpg" alt="Assolitaire gameplay"/><div class="yt-play-btn">▶</div>
+</a>
+</div>
+<div class="card-body" style="padding-top:12px">
+<div class="dl-stat">Источник: #05_freeplay_kob_apps_pubchange · MASTERMIND WORD GAMES → SayGames (Apr 10)</div>
+<div class="analysis">SayGames (Беларусь) забрал Assolitaire: Word Solitaire у небольшой студии MASTERMIND WORD GAMES. Необычный шаг для SayGames — они традиционно сильны в ASMR casual (Knitting, Paper, Rope). Выход в word solitaire говорит о расширении жанровой стратегии. Word + solitaire = два устойчивых казуальных архетипа в одной механике, хорошо работающих у аудитории 30+.</div>
+<div class="hypothesis">SayGames умеет работать с retention через IAP и подписки. Если Assolitaire даст D7 &gt; 20% — они масштабируют через Facebook. Следить: Market Report, появление UA-кампаний в word-casual сегменте.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6757992881" target="_blank">🍎 App Store</a>
+</div>
+</div>
+
+</div><!-- /grid block2 -->
+</div><!-- /section block2 -->
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- BLOCK 3 — ON RADAR                                     -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="section" id="block3">
+<div class="section-header sec-3">
+  🔄 БЛОК 3 — НА РАДАРЕ  |  Одиночный сигнал, требует подтверждения · 18–24 апр 2026
+</div>
+<div class="grid">
+
+<!-- Hole Rush -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/32/f9/a2/32f9a2b2-7a4b-ea9f-5381-78cd5bf0d700/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">⚫</div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🔄</span>Hole Rush: Eat All Puzzle</div>
+<div class="game-dev">Независимый разработчик</div>
+<div class="tags">
+<span class="tag tag-genre">Hypercasual / Hole Puzzle</span>
+<span class="tag tag-plat">iOS + Android</span>
+<span class="tag tag-date">18 GP-версий</span>
+</div>
+</div>
+</div>
+<div class="ss-wrap">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ec/3d/31/ec3d316d-1d36-30f6-c01f-d2d6c05bc5e7/HOL_1284x2778px_Screen_1.jpg/392x696bb.jpg" alt="Hole Rush screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4f/07/d6/4f07d66d-0c5f-541a-2b44-2e85890ad8d1/HOL_1284x2778px_Screen_2.jpg/392x696bb.jpg" alt="Hole Rush screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/24/94/75/24947510-ac50-027e-fe8b-936fd8610a07/HOL_1284x2778px_Screen_3.jpg/392x696bb.jpg" alt="Hole Rush screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">🎬 ГЕЙМПЛЕЙ — Hole Rush: Eat All Puzzle</div>
+<div class="vid-wrap">
+<a class="yt-thumb-link" href="https://www.youtube.com/watch?v=xhrwTsbwpj0" target="_blank">
+<img src="https://img.youtube.com/vi/xhrwTsbwpj0/hqdefault.jpg" alt="Hole Rush gameplay"/>
+<div class="yt-play-btn">▶</div>
+</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">Android: 27K dl · GP Activity: 1.97M инсталлов · 18 активных GP-версий 🔨</div>
+<div class="metrics">📊 Apr 6–12 Android: 27K dl · GP Activity: 1.97M суммарно · 18 версий в активном тесте · iOS: 7.8K</div>
+<div class="analysis">18 активных версий на Google Play — это агрессивный AB-тест на живой аудитории. 1.97M суммарных инсталлов при 18 вариантах означает, что команда масштабно тестирует контент, монетизацию или UX. Hole Rush — классическая «дырка поглощает объекты» механика (Black Hole от Voodoo). Жанр работает: простой, интуитивный, вирусный потенциал.</div>
+<div class="hypothesis">Столь активная GP-итерация — это либо самостоятельный дев близко к product-market fit, либо паблишер уже зашёл за кулисами. Если следующая неделя покажет рост iOS или появление крупного паблишера — переходит в Блок 2. Следить: Games Parser.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6749302338" target="_blank">🍎 App Store</a>
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.playgames.hole" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- Patient Zero -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://play-lh.googleusercontent.com/m8k0KCjKj_WJNk_uRvSDw3fFBIoLhqUmhYxkm4guEJv5mZ5WDjksEueI7MQsoOfxBTo=w200-h200-rw" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">🧟</div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🔄</span>Patient Zero: Virus Simulator</div>
+<div class="game-dev">Brightika, Inc.</div>
+<div class="tags">
+<span class="tag tag-genre">HybridCasual / Zombie Survival</span>
+<span class="tag tag-plat">Android</span>
+<span class="tag tag-date">GP Activity</span>
+</div>
+</div>
+</div>
+<div class="ss-wrap">
+<img src="https://play-lh.googleusercontent.com/gk63d8HaXg0IeIFl2rm3IJevA-oo-l78bmBN7eyhwqCfve1M7_VU_LHKXR3dKnypDg=w526-h296-rw" alt="Patient Zero screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://play-lh.googleusercontent.com/elXCQwI8NvOnBgQD_ZQv08Xs3QHeY6xK5PgdXc3Y2R8ClyLMQWdfQjjOl_tItjWrbu8=w526-h296-rw" alt="Patient Zero screenshot 2" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">▶ GAMEPLAY — Patient Zero: Virus Simulator</div>
+<div class="vid-wrap">
+<a class="yt-thumb-link" href="https://www.youtube.com/watch?v=5-PfTWpf3ZI" target="_blank"><img src="https://img.youtube.com/vi/5-PfTWpf3ZI/hqdefault.jpg" alt="Patient Zero Virus Simulator gameplay"/><div class="yt-play-btn">▶</div></a>
+</div>
+<div class="card-body" style="padding-top:12px">
+<div class="dl-stat">GP Activity: 1.35M инсталлов · 7 активных GP-версий · Android-фокус</div>
+<div class="metrics">📊 GP Activity: 1.35M суммарно · 7 версий · Категория: Survival / Zombie</div>
+<div class="analysis">1.35M инсталлов через 7 GP-версий — интенсивный AB-тест на Android. Zombie survival / pandemic тематика — эмоциональный hook, хорошо работающий в HC/hybridcasual (Zombie Idle Defense, Survivor!io). Patient Zero пока не показывает сигналов на iOS, что указывает на Android-first стратегию или GP-exclusive тест.</div>
+<div class="hypothesis">Если у игры есть сильный iOS-порт и нормальный retention — это кандидат для Homa или CrazyLabs. Зомби-выживание + 1.35M суммарно = есть аудитория. Нужно подтверждение iOS-трафика. На следующей неделе: проверить iOS App Store появление.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.gg.patient" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+</div><!-- /grid block3 -->
+</div><!-- /section block3 -->
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- BLOCK 4 — PUBLISHER TRANSFERS                          -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="section" id="block4">
+<div class="section-header sec-4">
+  🧪 БЛОК 4 — ПАБЛИШЕР-ТРАНСФЕРЫ  |  #05_freeplay_kob_apps_pubchange · 8–23 апр 2026
+</div>
+<div class="grid">
+
+<!-- Ice Cream Factory — removed (source: #16_freeplay_kob_apps_gp_new, not transfer channel) -->
+<!-- Spin Miner: Idle Gold Tycoon — removed (not found in #05_freeplay_kob_apps_pubchange) -->
+<!-- Cake Loop -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://play-lh.googleusercontent.com/lnBfZtrzQo3ubE1cN1JPUZwqcFFcpn-wJoVA0LrbZEiGD1xHc3xh0ac5uhVdaFYym2KGOFBs50eWL-UuG1w9=w200-h200-rw" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">🎂</div>
+<div class="card-meta">
+<div class="game-name">Cake Loop</div>
+<div class="game-dev">Goose Group</div>
+<div class="tags">
+<span class="tag tag-pub">🤝 Voodoo</span>
+<span class="tag tag-genre">Hypercasual / Loop + Food</span>
+<span class="tag tag-date">Подписан Apr 13, 2026</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">🤝 Voodoo — подписан 13 апреля 2026</div>
+<div class="ss-wrap">
+<img src="https://play-lh.googleusercontent.com/BLXH2GwWQGUQln9FS9jzkdFCcNUdRn9VSLjvvVt750_ylUeIpKFF20doXgzELNBTCa1BFiomouEmbX9HKFNcRA=w526-h296-rw" alt="Cake Loop screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://play-lh.googleusercontent.com/YUuk7DlthGRKYv7wdc1JOIlpV2SSXWw0INB31YXOoQsa1yYZ6D7Nc11pNPRrr84qJc6hZWaNZfgYc-4vQEIE=w526-h296-rw" alt="Cake Loop screenshot 2" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">🎬 AD CREATIVE — Cake Loop</div>
+<div class="vid-wrap">
+<video controls poster="https://creative-ag-global-v2.umcdn.cn/jpeg/z6/f2/eb/z6f2eba7214eeda93b20e88af8ec5181.jpeg?_upt=643ba9c41778328064" preload="none" style="height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;display:block;margin:0 auto">
+  <source src="https://creative-ag-global-v2.umcdn.cn/mp4/74/fc/64/74fc64b1283abb5261f7f650520076c1.mp4?_upt=37902bb21778328064" type="video/mp4"/>
+</video>
+</div>
+<div class="card-body" style="padding-top:12px">
+<div class="analysis">Voodoo подписал Cake Loop (Goose Group) — loop + food механика, жанр hypercasual. Loop + food — комбинация, проверенная успехом Cake Sort и других food puzzle игр. Подписание 13 апреля — тест только начинается.</div>
+<div class="hypothesis">Voodoo знает, как паковать casual для iOS. Cake Loop с food-визуалом и loop-механикой — сильный кандидат для TikTok-виральности. Следить: Market Report следующей недели, появление UA-кампаний.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.puffer.game.cakeloop" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- Cozy Ropes -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://play-lh.googleusercontent.com/sa6USWCKDVS4QJt-QGtvY-QKIj85m4iqGBT1cQu377iFbNo7SeqQGHCPuYDvEHFlt-bJxBVRXnLVfxSUpQx2Pw=w200-h200-rw" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">🧶</div>
+<div class="card-meta">
+<div class="game-name">Cozy Ropes: Relaxing Knitting</div>
+<div class="game-dev">SayGames Ltd</div>
+<div class="tags">
+<span class="tag tag-pub">🏠 SayGames (in-house)</span>
+<span class="tag tag-genre">Casual / Relaxing / ASMR</span>
+<span class="tag tag-date">Подписан Apr 9, 2026</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">🏠 SayGames — собственный тест с 9 апреля 2026</div>
+<div class="ss-wrap">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d8/0d/aa/d80daa32-0011-7bf2-6559-8467f1de95b0/CZR_1242x2688_AppStore_01.png/392x696bb.jpg" alt="Cozy Ropes screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a9/95/65/a995655f-6539-b524-de7e-c972d91ebbcf/CZR_1242x2688_AppStore_02.png/392x696bb.jpg" alt="Cozy Ropes screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e5/ab/3e/e5ab3e62-00c0-16f8-f5c7-ea0cf01650d9/CZR_1242x2688_AppStore_03.png/392x696bb.jpg" alt="Cozy Ropes screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">🎬 AD CREATIVE — Cozy Ropes: Knitting Puzzle</div>
+<div class="vid-wrap">
+  <video controls poster="https://creative-ag-global-v2.umcdn.cn/jpeg/za/e9/b0/zae9b0a081f4103e8d03c3dff69de354.jpeg?_upt=9f8f71c81778328050" preload="none" style="height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;display:block;margin:0 auto">
+    <source src="https://creative-ag-global-v2.umcdn.cn/mp4/3f/98/b0/3f98b0b381835a3b16bbb181a4c700c3.mp4?_upt=8b9525fb1778328050" type="video/mp4"/>
+  </video>
+</div>
+<div class="card-body" style="padding-top:12px">
+<div class="analysis">SayGames (Беларусь) — крупный casual паблишер, строящий собственные расслабляющие IP. Cozy Ropes: Relaxing Knitting — ASMR-вязание, жанр ultra-casual. Последнее обновление 17 апреля — активная итерация внутри SayGames. Cozy/ASMR тренд устойчив с 2023, особенно у женской аудитории 25+.</div>
+<div class="hypothesis">SayGames умеет строить ASMR casual (Knitting, Paper) — Cozy Ropes вписывается в их стратегию. Если D1 retention выше 45% — они масштабируют через FB/TikTok. Следить: Market Report и еженедельные чарты.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6759645536" target="_blank">🍎 App Store</a>
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.playstrom.cozy.ropes" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- Delivery Life -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://play-lh.googleusercontent.com/z2EXWfrapiDOV0w_CubCOk7jVBhvN-JklyAmKTBNmpiqEewDZQMbOysPr1lAEB5h4wwBR-IDHExmJE2GAXso=w200-h200-rw" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">🚚</div>
+<div class="card-meta">
+<div class="game-name">Delivery Life — Driving Sim 3D</div>
+<div class="game-dev">GenI Games</div>
+<div class="tags">
+<span class="tag tag-pub">🤝 BoomBit</span>
+<span class="tag tag-genre">Casual / Driving Sim</span>
+<span class="tag tag-date">Подписан Apr 18, 2026</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">🤝 BoomBit — подписан 18 апреля 2026</div>
+<div class="ss-wrap">
+<img src="https://play-lh.googleusercontent.com/cyKKFgFv-WALhHuvvVADEsPSWj3Uo3SvoXbM1b1o2hftSVE4zkjTxAz6XifFrUNnfPMY_9DNof0RgGNoW-ok=w526-h296-rw" alt="Delivery Life screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://play-lh.googleusercontent.com/I03QzjrmRDyeDnuTFv1qbnPqPlqmCFOEAR4g66xTwPvwHE75mQIbhEQhZPlOHhscBWSZxReCORpQW2D3IYSmV6M=w526-h296-rw" alt="Delivery Life screenshot 2" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">▶ GAMEPLAY — Delivery Life Driving Sim</div>
+<div class="vid-wrap">
+<a class="yt-thumb-link" href="https://www.youtube.com/watch?v=9rKE-LJUwbk" target="_blank"><img src="https://img.youtube.com/vi/9rKE-LJUwbk/hqdefault.jpg" alt="Delivery Life Driving Sim 3D gameplay"/><div class="yt-play-btn">▶</div></a>
+</div>
+<div class="card-body" style="padding-top:12px">
+<div class="analysis">BoomBit (Польша) — специализируется на driving/transport casual (Car Stunt Races, Bike Unchained). Delivery Life вписывается в их стратегию driving sim 3D. Свежее подписание 18 апреля — это ещё горячий сигнал, тест только начинается. Driving sim + delivery тематика = широкая мужская аудитория.</div>
+<div class="hypothesis">BoomBit знает driving жанр изнутри. Если CPI на Android ниже $0.30 — они масштабируют через TikTok/Google UAC. Первый Market Report сигнал ожидается через 2–3 недели. Следить: Market Report 25 апреля.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.genigames.parcel.delivery.drive.game" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+
+<!-- Hidden Objects Games: TapNation → PSV Studio -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://play-lh.googleusercontent.com/ic_24DBihKf1HQd3CxDkHwrVWQWf2FiYmKfnmaVxWUKKLxNZorZByEcnW2gEdcwmjpYKj3DAXDayk2PIn5x3QCw=w200-h200-rw" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">🔍</div>
+<div class="card-meta">
+<div class="game-name">Hidden Objects Games</div>
+<div class="game-dev">PSV Studio</div>
+<div class="tags">
+<span class="tag tag-pub">🔄 TapNation → PSV Studio</span>
+<span class="tag tag-genre">Casual / Hidden Object</span>
+<span class="tag tag-date">Смена паблишера Apr 23, 2026</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">🔄 TapNation → PSV Studio — трансфер 23 апреля 2026</div>
+<div class="ss-wrap">
+<img src="https://play-lh.googleusercontent.com/cNdBgrHEiKHycCn7DTPx15jlvuGJBWR7PsyH4jG1HRShfHcPTGO5Rgdouw8XD8D95vI=w526-h296-rw" alt="Hidden Objects screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://play-lh.googleusercontent.com/6i-1sg0ueW2NB4CT4PVgGoHMw7xSCIDsShCyHAZD3nnfW-tC8L4vorYZ8M5syO82rpw2=w526-h296-rw" alt="Hidden Objects screenshot 2" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">▶ GAMEPLAY — Hidden Objects Games</div>
+<div class="vid-wrap">
+<a class="yt-thumb-link" href="https://www.youtube.com/watch?v=0X6U_PUvlI8" target="_blank"><img src="https://img.youtube.com/vi/0X6U_PUvlI8/hqdefault.jpg" alt="Hidden Objects Games gameplay"/><div class="yt-play-btn">▶</div></a>
+</div>
+<div class="card-body" style="padding-top:12px">
+<div class="analysis">TapNation (Франция) — один из крупнейших hypercasual паблишеров — отпустил Hidden Objects Games в PSV Studio. Hidden object жанр — традиционно womens casual, с устойчивым органическим трафиком. Переход к PSV Studio может означать, что TapNation оптимизирует портфель, избавляясь от менее масштабируемых через UA жанров.</div>
+<div class="hypothesis">PSV Studio получает игру с наработанной базой пользователей. Ключевой вопрос: сохранят ли они органику после смены паблишера? Следить: динамика рейтингов в App Store / GP после трансфера.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.morionstudio.hiddenobject" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- Mine Drillers: Supersonic → Pandorio -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ba/55/fc/ba55fc89-af9d-7a4e-96bd-d050dff58494/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">⛏️</div>
+<div class="card-meta">
+<div class="game-name">Mine Drillers - Tower Defense</div>
+<div class="game-dev">Pandorio LTD</div>
+<div class="tags">
+<span class="tag tag-pub">🔄 Supersonic → Pandorio</span>
+<span class="tag tag-genre">HybridCasual / Tower Defense</span>
+<span class="tag tag-date">Смена паблишера Apr 23, 2026</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">🔄 SUPERSONIC STUDIOS LTD → Pandorio LTD — 23 апреля 2026</div>
+<div class="ss-wrap">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3c/6a/94/3c6a942c-e9eb-1996-ef47-3a142b94fb07/1.png/392x696bb.jpg" alt="Mine Drillers screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c0/88/13/c08813a5-a65b-f169-021e-133421b38a54/2.png/392x696bb.jpg" alt="Mine Drillers screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ad/4a/4a/ad4a4a6d-4888-cf55-cfe5-73e014ba3e53/3.png/392x696bb.jpg" alt="Mine Drillers screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">🎬 ГЕЙМПЛЕЙ — Mine Drillers: Tower Defense</div>
+<div class="vid-wrap">
+<a class="yt-thumb-link" href="https://www.youtube.com/watch?v=KWvyNV3QudI" target="_blank"><img src="https://img.youtube.com/vi/KWvyNV3QudI/hqdefault.jpg" alt="Mine Drillers gameplay"/><div class="yt-play-btn">▶</div>
+</a>
+</div>
+<div class="card-body" style="padding-top:12px">
+<div class="analysis">Supersonic (Unity) выпустил Mine Drillers - Tower Defense — игра перешла к Pandorio LTD. Это значит, что UA-тест у Supersonic не дал нужных результатов (CPI/D1 не прошёл порог), и они вернули проект. Pandorio — небольшой паблишер, попытается доработать и переупаковать. Смена паблишера у крупной сети — сигнал о рабочих метриках, которые пока не масштабируются.</div>
+<div class="hypothesis">Mine Drillers не прошёл Supersonic-тест. Pandorio может найти нишевую аудиторию через Google UAC с более узким таргетингом. Следить: появятся ли UA-кампании под брендом Pandorio в ближайшие 4 недели.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6740430135" target="_blank">🍎 App Store</a>
+</div>
+</div>
+
+<!-- Magic Dance Star: Amanotes → Pronotes -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/29/0a/31/290a31f1-2e96-8aac-bcfb-659a0f4ced74/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">💃</div>
+<div class="card-meta">
+<div class="game-name">Magic Dance Star: Rhythm Tiles</div>
+<div class="game-dev">Pronotes</div>
+<div class="tags">
+<span class="tag tag-pub">🔄 Amanotes → Pronotes</span>
+<span class="tag tag-genre">Casual / Rhythm Tiles</span>
+<span class="tag tag-date">Смена паблишера Apr 23, 2026</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">🔄 Amanotes Pte. Ltd. → Pronotes — 23 апреля 2026</div>
+<div class="ss-wrap">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/48/15/bd/4815bdd6-e5c2-3492-032b-5f84cf443d95/251114_GMTP_GL_S_Character0TextBox_1284x2778_S1.jpg/392x696bb.jpg" alt="Magic Dance Star screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/db/87/c3/db87c3ad-758b-e4ee-9ac3-3caf7b08c005/251114_GMTP_GL_S_Character0TextBox_1284x2778_S2.jpg/392x696bb.jpg" alt="Magic Dance Star screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e7/8c/a9/e78ca9a1-af61-90f3-9247-af30a3a4d2aa/260119_GMTP_GL_S_customfeature_1284x2778_S8.jpg/392x696bb.jpg" alt="Magic Dance Star screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">🎬 ГЕЙМПЛЕЙ — Magic Dance Star: Rhythm Tiles</div>
+<div class="vid-wrap">
+<a class="yt-thumb-link" href="https://www.youtube.com/watch?v=XCsqwJUlGWM" target="_blank"><img src="https://img.youtube.com/vi/XCsqwJUlGWM/hqdefault.jpg" alt="Magic Dance Star gameplay"/><div class="yt-play-btn">▶</div>
+</a>
+</div>
+<div class="card-body" style="padding-top:12px">
+<div class="analysis">Amanotes (вьетнамская компания, известна как издатель Piano Tiles 2 и десятков music-casual игр) передала Magic Dance Star: Rhythm Tiles в Pronotes — предположительно новый спин-офф или дочерняя структура. Это может означать внутреннюю реструктуризацию Amanotes: выделение отдельного издательского лейбла под rhythm/dance жанр. Жанр rhythm tiles конкурентен, но Amanotes исторически доминирует в нём через масштаб.</div>
+<div class="hypothesis">Если Pronotes — это rebrand/spinoff от Amanotes, то ресурсы сохраняются, но с отдельным UA-бюджетом. Следить: появятся ли другие Amanotes-игры под брендом Pronotes. Может быть началом большой реструктуризации издательского подразделения.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6755515737" target="_blank">🍎 App Store</a>
+</div>
+</div>
+
+
+<!-- Ball of Ages: Ugur Gulser → Rollic -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7c/6d/f6/7c6df633-84ec-9738-90f5-de31d7717286/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">🎱</div>
+<div class="card-meta">
+<div class="game-name">Ball of Ages</div>
+<div class="game-dev">Rollic Games</div>
+<div class="tags">
+<span class="tag tag-pub">🤝 Rollic (Zynga)</span>
+<span class="tag tag-genre">HybridCasual / Ball Merge</span>
+<span class="tag tag-plat">iOS</span>
+<span class="tag tag-date">Подписан Apr 8, 2026</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">🤝 Ugur Gulser (инди) → Rollic Games — 8 апреля 2026</div>
+<div class="ss-wrap">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a9/25/62/a925628d-a007-3054-a345-208882dfc3f4/1242x2688-034.jpg/392x696bb.jpg" alt="Ball of Ages screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d6/8c/70/d68c708d-bef1-f018-86d0-cdaa292cb83a/1242x2688-037.jpg/392x696bb.jpg" alt="Ball of Ages screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/24/40/c3/2440c35a-aefd-159a-1bca-d809ff255936/1242x2688-041.jpg/392x696bb.jpg" alt="Ball of Ages screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">🎬 AD CREATIVES — Ball of Ages</div>
+<div class="vid-wrap">
+<video controls poster="https://x-ad-assets.s3.amazonaws.com/media_asset/d3aa5b781af19259/thumb" preload="none" style="height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;display:block;margin:0 auto">
+  <source src="https://x-ad-assets.s3.amazonaws.com/media_asset/d3aa5b781af19259/media" type="video/mp4"/>
+</video>
+</div>
+<div class="card-body" style="padding-top:12px">
+<div class="analysis">Rollic Games (дочерняя Zynga) подписала Ball of Ages у независимого разработчика Ugur Gulser. Механика: открываешь сундуки, собираешь лут, эволюционируешь мяч через эпохи — merge + ball + прогрессия. Rollic специализируется именно на таких гиперкасуальных merge-петлях (Hair Challenge, Blob Runner). Подписание 8 апреля — один из самых ранних сигналов этой недели.</div>
+<div class="hypothesis">Rollic знает merge и ball-жанры изнутри. Если Ball of Ages покажет D1 > 35% — ожидать агрессивный UA через iOS и TikTok. Следить: появление UA-кампаний в ближайшие 2–3 недели, Market Report.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6759306715" target="_blank">🍎 App Store</a>
+</div>
+</div>
+
+<!-- Cold War Z RPG: Ivan Panasenko → TapNation -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2b/a7/be/2ba7beff-dcf8-34d8-4b48-66d70162a2af/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">☢️</div>
+<div class="card-meta">
+<div class="game-name">Cold War Z RPG</div>
+<div class="game-dev">TapNation</div>
+<div class="tags">
+<span class="tag tag-pub">🤝 TapNation</span>
+<span class="tag tag-genre">HybridCasual / Idle RPG</span>
+<span class="tag tag-plat">iOS</span>
+<span class="tag tag-date">Подписан Apr 9, 2026</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">🤝 Ivan Panasenko (инди) → TapNation — 9 апреля 2026</div>
+<div class="ss-wrap">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleVideo221/v4/64/63/0a/64630a35-8176-077a-e441-ff3792482c05/Joba5fe98a1-e2fc-4b08-8b73-9f08b61b4af7-215292355-PreviewImage_Preview_Image_Intermediate_nonvideo_421348079_2532771608-Time1769431648542.png/392x696bb.jpg" alt="Cold War Z RPG screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleVideo211/v4/5d/02/a4/5d02a4e6-577a-e1c9-53d7-8469e3f1aada/Job5b030ba4-0d43-47ce-bc15-f754777a61ad-215292404-PreviewImage_Preview_Image_Intermediate_nonvideo_421348261_2532773640-Time1769431802328.png/392x696bb.jpg" alt="Cold War Z RPG screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleVideo211/v4/b0/d0/26/b0d0264e-0c15-18e6-77f5-ef96c8470b18/Job9bfa851b-7f3e-4b1a-bc43-fe37b13b3424-215292621-PreviewImage_Preview_Image_Intermediate_nonvideo_421348325_2532774655-Time1769431882362.png/392x696bb.jpg" alt="Cold War Z RPG screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">🎬 AD CREATIVE — Cold War Z RPG</div>
+<div class="vid-wrap">
+<video controls poster="https://creative-ag-global-v2.umcdn.cn/jpeg/z6/ac/6e/z6ac6e54cda4a408f208dcaee63bc398.jpeg?_upt=860e29e81778325460" preload="none" style="height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;display:block;margin:0 auto">
+  <source src="https://creative-ag-global-v2.umcdn.cn/mp4/17/bb/f0/17bbf08cb74575351cc972bb2fa7f730.mp4?_upt=2ca48b401778325460" type="video/mp4"/>
+</video>
+</div>
+<div class="card-body" style="padding-top:12px">
+<div class="analysis">TapNation (Франция) подписала Cold War Z RPG у независимого разработчика — постапокалиптический idle RPG с зомби-темой в антураже Холодной войны. TapNation традиционно работает с hypercasual, но активно расширяется в hybridcasual/RPG (IQ Test, Draw.io). Zombie + idle RPG — жанр с устойчивой аудиторией через TikTok (Survivor!io, Last War).</div>
+<div class="hypothesis">TapNation умеет UA через Facebook и TikTok. Если Cold War Z RPG даст D1 > 30% и ARPU > $0.05 — они масштабируют. Zombie/war тематика хорошо конвертирует у мужской аудитории 18–35. Следить: Market Report, появление видеореклам.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6758109198" target="_blank">🍎 App Store</a>
+</div>
+</div>
+
+<!-- Detective IQ 2: TapNation → MindYourLogic -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6a/49/ee/6a49ee0f-2fb8-0e47-60df-7ef1b0e4084f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">🔎</div>
+<div class="card-meta">
+<div class="game-name">Detective IQ 2: Catch Thieves</div>
+<div class="game-dev">MindYourLogic Studios</div>
+<div class="tags">
+<span class="tag tag-pub">🔄 TapNation → MindYourLogic</span>
+<span class="tag tag-genre">Casual / Brain Puzzle</span>
+<span class="tag tag-plat">iOS</span>
+<span class="tag tag-date">Смена паблишера Apr 17, 2026</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">🔄 TapNation → MindYourLogic Studios — 17 апреля 2026</div>
+<div class="ss-wrap">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2f/8e/98/2f8e9817-7c8a-49bf-33a1-c663311c1824/16.jpg/392x696bb.jpg" alt="Detective IQ 2 screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/20/50/38/20503848-1107-f56b-46cf-4b25dedcdbfe/17.jpg/392x696bb.jpg" alt="Detective IQ 2 screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3d/f1/38/3df138b2-25bf-a315-64f1-c5a22bfb71b4/S9_-_1.jpg/392x696bb.jpg" alt="Detective IQ 2 screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">🎬 AD CREATIVES — Detective IQ 2: Catch Thieves</div>
+<div class="vid-wrap">
+<video controls poster="https://x-ad-assets.s3.amazonaws.com/media_asset/02a065003e20bf92/thumb" preload="none" style="height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;display:block;margin:0 auto">
+  <source src="https://x-ad-assets.s3.amazonaws.com/media_asset/02a065003e20bf92/media" type="video/mp4"/>
+</video>
+</div>
+<div class="card-body" style="padding-top:12px">
+<div class="analysis">TapNation отпустила Detective IQ 2 в MindYourLogic Studios — индийская студия, специализирующаяся на brain puzzle играх. Это обратный сигнал: TapNation избавляется от puzzle-игр, которые не масштабируются через их UA-каналы. MindYourLogic возвращает контроль над franchize с уже наработанной аудиторией Detective IQ 1. Brain puzzle жанр живёт органикой и ASO — не UA.</div>
+<div class="hypothesis">MindYourLogic получает игру с органическим трафиком. Ключевой вопрос: сохранится ли ASO-позиционирование после смены паблишера? Следить: рейтинги в App Store в категории Brain Games через 2–4 недели.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6736873794" target="_blank">🍎 App Store</a>
+</div>
+</div>
+
+<!-- Crowd Champs: AI Games → PLAYCCOON -->
+<div class="card">
+<div class="card-top">
+<img alt="icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/b9/b7/a7b9b7a8-7001-17f0-a658-8bbbdd922c5d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" style="width:72px;height:72px;border-radius:14px;object-fit:cover;flex-shrink:0"/><div class="no-img-icon" style="display:none">🏃</div>
+<div class="card-meta">
+<div class="game-name">Crowd Champs: 3D Runner Game</div>
+<div class="game-dev">PLAYCCOON LTD</div>
+<div class="tags">
+<span class="tag tag-pub">🔄 AI Games → PLAYCCOON</span>
+<span class="tag tag-genre">HybridCasual / Crowd Runner</span>
+<span class="tag tag-plat">iOS</span>
+<span class="tag tag-date">Смена паблишера Apr 9, 2026</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">🔄 AI Games → PLAYCCOON LTD — 9 апреля 2026</div>
+<div class="ss-wrap">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a5/a5/26/a5a526cc-89d5-0566-4f6d-0506f1de2eb1/iOS_4_1.png/392x696bb.jpg" alt="Crowd Champs screenshot 1" onerror="this.parentElement.innerHTML='&lt;div class=ss-placeholder&gt;Скриншот недоступен&lt;/div&gt;'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f7/ea/5f/f7ea5fcc-e474-3aa7-ec0e-e21ef71194ae/iOS_2_1.png/392x696bb.jpg" alt="Crowd Champs screenshot 2" onerror="this.style.display='none'"/>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/24/55/61/24556125-4ea4-32eb-09f1-211452e61139/iOS_1_1.png/392x696bb.jpg" alt="Crowd Champs screenshot 3" onerror="this.style.display='none'"/>
+</div>
+<div class="vid-label">🎬 AD CREATIVES — Crowd Champs: 3D Runner Game</div>
+<div class="vid-wrap">
+<video controls poster="https://x-ad-assets.s3.amazonaws.com/media_asset/bc566cd829791a4c/thumb" preload="none" style="height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;display:block;margin:0 auto">
+  <source src="https://x-ad-assets.s3.amazonaws.com/media_asset/bc566cd829791a4c/media" type="video/mp4"/>
+</video>
+</div>
+<div class="card-body" style="padding-top:12px">
+<div class="analysis">Crowd Runner 3D — жанр, пик которого пришёлся на 2021–2022 (Count Masters, Crowd City). PLAYCCOON LTD берёт Crowd Champs у AI Games — возможно, видят нишу в 3D-версии жанра. Crowd runner механика всё ещё работает в hybridcasual при правильном UA-креативе. AI Games — небольшой паблишер, PLAYCCOON — также нишевый участник рынка.</div>
+<div class="hypothesis">Crowd runner в 3D — интересный эксперимент, но жанр конкурентен. Если PLAYCCOON найдёт working creative (толпа vs. толпа, 3D-физика) — может выстрелить в TikTok. Следить: появление UA-видеореклам в ближайшие 4 недели.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6756704370" target="_blank">🍎 App Store</a>
+</div>
+</div>
+
+</div><!-- /grid block4 -->
+</div><!-- /section block4 -->
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- PATTERNS                                               -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="section" id="patterns">
+<div class="section-header sec-5">
+  📐 ПАТТЕРНЫ НЕДЕЛИ  |  Структурные наблюдения · 18–24 апр 2026
+</div>
+
+<div class="pattern-card">
+<div class="pattern-title">🏢 ABI Global — два продукта в Блоке 1 одновременно</div>
+<div class="pattern-body">Dreamy Room (86 апдейтов) и Cosplaydom (35 апдейтов) — обе игры ABI Global — одновременно попали в Блок 1 мультисигнальных. Это первый случай в нашей практике, когда одна студия занимает два слота в первом блоке. ABI явно нашли рабочую машину итерации: выпускать casual игры с высокой частотой обновлений, тестировать на iOS органике, доводить до рабочих метрик. Dreamy Room и Cosplaydom — разные жанры (unpack vs. dress-up), но одинаковая стратегия. Студия — кандидат на поглощение крупным паблишером в 2026 году.</div>
+<div class="pattern-hyp">💡 Следить за ABI Global как студией, а не только за их играми. Третья игра в их портфолио — потенциальный хит следующего отчёта.</div>
+</div>
+
+<div class="pattern-card">
+<div class="pattern-title">🏹 Tripledot Studios — экспансия в hypercasual</div>
+<div class="pattern-body">Tripledot в период 6–12 апреля подписал Arrows GO! (уже в топ-100 с 250K загрузок/нед) — и это уже горячий актив. Tripledot специализируется на casual с высоким LTV: WordMaster, Zen Match, Solitaire Grand Harvest. Arrows GO! — первый tap/hypercasual в их портфолио, что означает диверсификацию жанра в сторону более широкой аудитории.</div>
+<div class="pattern-hyp">💡 Tripledot + tap hypercasual = необычная комбинация. Они знают, как строить retention через монетизацию — Arrows GO! с их продуктовым DNA может стать долгосрочным хитом, а не flash-in-the-pan. Следить за velocity следующих двух недель.</div>
+</div>
+
+<div class="pattern-card">
+<div class="pattern-title">🎂 Voodoo — ставка на food casual</div>
+<div class="pattern-body">Voodoo подписал Cake Loop (Apr 13, Goose Group) — loop + food механика. Food casual в 2026 набирает обороты: аппетитная визуализация + loop-механика + TikTok-виральность. Одиночное подписание Voodoo в нишевом жанре — не случайность, а целенаправленный тест.</div>
+<div class="pattern-hyp">💡 Food casual от Voodoo = потенциальный рыночный сигнал. Следить за UA-запуском Cake Loop и появлением похожих подписаний у Supersonic и Lion Studios. Время изучить food-механики в pre-production.</div>
+</div>
+
+
+<div class="pattern-card">
+<div class="pattern-title">📝 SayGames расширяется в word-casual</div>
+<div class="pattern-body">SayGames (Беларусь) подписал два разных casual-жанра за одну неделю: Assolitaire: Word Solitaire (Apr 10) и Cozy Ropes (Apr 9). Это первый заметный выход SayGames в word-puzzle сегмент — ранее они концентрировались на ASMR/relaxing casual. Такое жанровое расширение говорит о том, что SayGames видит насыщение ASMR-рынка и ищет рост в смежных нишах. Word + solitaire — более широкая аудитория, сильнее монетизирующаяся через IAP.</div>
+<div class="pattern-hyp">💡 Если оба подписания SayGames (ASMR + word) дадут результат — это сигнал о том, что издатель расширяет свою аудиторию за пределы «female relaxing». Ожидать появление других word-casual в их портфолио к Q3 2026.</div>
+</div>
+
+</div><!-- /section patterns -->
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- DEVELOPERS                                             -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="section" id="devs">
+<div class="section-header sec-dev">
+  👨‍💻 РАЗРАБОТЧИКИ НЕДЕЛИ  |  Студии на подъёме · 18–24 апр 2026
+</div>
+<div class="devs-grid">
+
+<div class="dev-card">
+<div class="dev-name">🏢 ABI Global Ltd.</div>
+<div class="dev-pub">Self-pub (без крупного паблишера)</div>
+<div class="dev-signal">🔥 Сигнал: 2 игры в Блоке 1 одновременно</div>
+<div class="dev-games">🛋️ Dreamy Room (86 апд.) · 🎭 Cosplaydom (35 апд.)</div>
+<div class="dev-why">Студия показывает системный подход к итерации: высокая частота обновлений, два разных casual жанра в тесте параллельно, устойчивые iOS-цифры. Кандидат на поглощение или крупный publishing deal в 2026.</div>
+</div>
+
+<div class="dev-card">
+<div class="dev-name">🏹 Tripledot Studios</div>
+<div class="dev-pub">Паблишер (активное расширение)</div>
+<div class="dev-signal">📈 Сигнал: 2 подписания за неделю + партнёр в Блоке 1</div>
+<div class="dev-games">🏹 Arrows GO! (Oakever) · 💬 You Know: Associations</div>
+<div class="dev-why">Tripledot — один из лучших casual паблишеров по LTV. Выход в hypercasual (Arrows GO!) = диверсификация, указывающая на новые UA-каналы. Две сделки за неделю при уже горячем активе — агрессивное M&A.</div>
+</div>
+
+<div class="dev-card">
+<div class="dev-name">🎮 Voodoo</div>
+<div class="dev-pub">Паблишер (food casual тест)</div>
+<div class="dev-signal">🎂 Сигнал: Cake Loop — подписание в food casual (Apr 13)</div>
+<div class="dev-games">🎂 Cake Loop (Goose Group → Voodoo, Apr 13)</div>
+<div class="dev-why">Voodoo тестирует food casual жанр через Cake Loop — loop + food механика. Подписание свежее (13 апреля), UA-тест ещё не начался. Следить за появлением UA-кампаний в TikTok/Meta в ближайшие 2–3 недели.</div>
+</div>
+
+<div class="dev-card">
+<div class="dev-name">⚡ Supersonic Studios (Unity)</div>
+<div class="dev-pub">Паблишер (hexa sort жанр)</div>
+<div class="dev-signal">🔷 Сигнал: Knit Loop — новое подписание (Apr 17) + сброс Mine Drillers (Apr 23)</div>
+<div class="dev-games">🧶 Knit Loop (Gemo Interactive → Supersonic, Apr 17) · ⛏️ Mine Drillers → Pandorio (Apr 23)</div>
+<div class="dev-why">Supersonic активно управляет портфолем: подписал Knit Loop (casual/cozy) и одновременно отпустил Mine Drillers (tower defense не прошёл порог UA). Классическая стратегия Unity: быстро тестировать, быстро отсекать, масштабировать только победителей.</div>
+</div>
+
+
+
+
+<div class="dev-card">
+<div class="dev-name">🇧🇾 SayGames Ltd.</div>
+<div class="dev-pub">Паблишер (жанровое расширение)</div>
+<div class="dev-signal">📝 Сигнал: 2 подписания за неделю — ASMR + word-puzzle</div>
+<div class="dev-games">🧶 Cozy Ropes (Apr 9) · 🃏 Assolitaire: Word Solitaire (Apr 10)</div>
+<div class="dev-why">SayGames выходит за рамки ASMR-casual в word-puzzle сегмент. Оба подписания за два дня — стратегический сигнал о расширении аудитории. SayGames умеет строить retention через контент-обновления и IAP. Следить за их следующими подписаниями в Q2 2026.</div>
+</div>
+
+</div><!-- /devs-grid -->
+</div><!-- /section devs -->
+
+</div><!-- /container -->
+
+<div id="lb"><span id="lb-close">✕</span><img id="lb-img" src="" alt=""/></div>
+<script>
+document.querySelectorAll('.ss-wrap img').forEach(function(img){
+  img.addEventListener('click',function(){
+    document.getElementById('lb-img').src=img.src;
+    document.getElementById('lb').classList.add('open');
+  });
+});
+document.getElementById('lb').addEventListener('click',function(e){
+  if(e.target!==document.getElementById('lb-img'))
+    document.getElementById('lb').classList.remove('open');
+});
+document.getElementById('lb-close').addEventListener('click',function(){
+  document.getElementById('lb').classList.remove('open');
+});
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape') document.getElementById('lb').classList.remove('open');
+});
+</script>
+</body>
+</html>
