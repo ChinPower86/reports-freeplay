@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>🔥 Insights — 23 мая–9 июня 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',sans-serif;background:#0f0f1a;color:#e2e8f0;min-height:100vh}
+  .header{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);padding:32px 40px;border-bottom:2px solid #e63946}
+  .header h1{font-size:24px;font-weight:800;color:#fff;letter-spacing:-0.5px}
+  .header h1 span{color:#e63946}
+  .header .subtitle{font-size:12px;color:#94a3b8;margin-top:6px}
+  .header .meta{display:flex;gap:20px;margin-top:16px;flex-wrap:wrap}
+  .meta-pill{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 14px;font-size:11px;color:#94a3b8}
+  .container{max-width:1400px;margin:0 auto;padding:32px 40px}
+  .section{margin-bottom:40px}
+  .section-header{display:flex;align-items:center;gap:12px;padding:14px 20px;border-radius:10px;margin-bottom:20px;font-size:14px;font-weight:700;letter-spacing:0.3px}
+  .sec-1{background:linear-gradient(90deg,#7f1d1d,#991b1b);color:#fef2f2}
+  .sec-2{background:linear-gradient(90deg,#1e3a5f,#1e40af);color:#eff6ff}
+  .sec-3{background:linear-gradient(90deg,#064e3b,#065f46);color:#ecfdf5}
+  .sec-4{background:linear-gradient(90deg,#78350f,#92400e);color:#fffbeb}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(440px,1fr));gap:16px}
+  .card{background:#1a1a2e;border:1px solid #2d2d4e;border-radius:12px;overflow:hidden;transition:transform 0.15s,border-color 0.15s;display:flex;flex-direction:column}
+  .card:hover{transform:translateY(-2px);border-color:#4a4a7a}
+  .card-top{display:flex;gap:14px;padding:16px 16px 12px}
+  .icon-wrap{flex-shrink:0}
+  .icon-wrap img{width:72px;height:72px;border-radius:14px;object-fit:cover;background:#2d2d4e}
+  .icon-placeholder{width:72px;height:72px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0}
+  .no-img-icon{width:72px;height:72px;border-radius:14px;background:linear-gradient(135deg,#1e3a5f,#2d2d4e);display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0}
+  .card-meta{flex:1;min-width:0}
+  .game-name{font-size:14px;font-weight:700;color:#f1f5f9;line-height:1.3;margin-bottom:3px}
+  .game-dev{font-size:11px;color:#94a3b8;margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .tags{display:flex;flex-wrap:wrap;gap:4px}
+  .tag{font-size:10px;padding:2px 8px;border-radius:10px;font-weight:500}
+  .tag-pub{background:#1e3a5f;color:#93c5fd}
+  .tag-genre{background:#1c3a2d;color:#6ee7b7}
+  .tag-plat{background:#3d2a1a;color:#fcd34d}
+  .tag-date{background:#2d1a3d;color:#c084fc}
+  .ss-wrap{padding:0 16px 12px;display:flex;justify-content:center;gap:10px;align-items:flex-start}
+  .ss-wrap img{height:160px;width:auto;max-width:48%;object-fit:contain;border-radius:8px;background:#0a0a14;flex-shrink:0;cursor:zoom-in;transition:opacity .15s}
+  .ss-wrap img:hover{opacity:.85}
+  .ss-placeholder{width:calc(100% - 32px);height:80px;border-radius:8px;display:flex;align-items:center;justify-content:center;background:#1f1f35;color:#4a4a6a;font-size:11px;margin:0 16px 12px}
+  #lb{display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out}
+  #lb.open{display:flex}
+  #lb img{max-width:92vw;max-height:92vh;border-radius:10px;object-fit:contain;box-shadow:0 20px 60px rgba(0,0,0,.8)}
+  #lb-close{position:fixed;top:18px;right:22px;color:#fff;font-size:32px;cursor:pointer;line-height:1;opacity:.7}
+  #lb-close:hover{opacity:1}
+  .card-body{padding:0 16px 12px;flex:1}
+  .analysis{font-size:11px;color:#cbd5e1;line-height:1.6;margin-bottom:8px}
+  .hypothesis{font-size:11px;color:#a78bfa;line-height:1.6;padding:8px 10px;background:rgba(167,139,250,0.06);border-left:2px solid #7c3aed;border-radius:0 6px 6px 0}
+  .card-footer{padding:10px 16px 14px;display:flex;gap:8px;flex-wrap:wrap;border-top:1px solid #2d2d4e;margin-top:auto}
+  .link-btn{font-size:10px;padding:4px 12px;border-radius:6px;text-decoration:none;font-weight:600;transition:opacity 0.15s}
+  .link-gp{background:#1a4731;color:#4ade80;border:1px solid #166534}
+  .link-ios{background:#1a2a47;color:#60a5fa;border:1px solid #1e3a5f}
+  .link-btn:hover{opacity:0.8}
+  .signal-badge{font-size:13px;margin-right:4px}
+  .toc{background:#1a1a2e;border:1px solid #2d2d4e;border-radius:10px;padding:16px 20px;margin-bottom:32px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .toc span{font-size:11px;color:#94a3b8;margin-right:4px}
+  .toc a{font-size:11px;color:#60a5fa;text-decoration:none;padding:3px 10px;background:#1e3a5f;border-radius:10px}
+  .toc a:hover{background:#1e40af}
+  .vid-wrap{padding:0 16px 12px;display:flex;justify-content:center;background:transparent}
+  .vid-wrap video{height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;object-fit:contain;display:block;margin:0 auto}
+  .vid-wrap iframe{width:100%;height:200px;border-radius:8px;border:none;display:block}
+  .vid-label{font-size:9px;color:#4a5568;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;padding:0 16px;text-align:center}
+  .vid-search-link{display:flex;align-items:center;justify-content:center;height:48px;border-radius:8px;gap:8px;text-decoration:none;width:100%;background:linear-gradient(135deg,#1a1a2e,#1e2a3e);border:1px solid #2a3a5e;color:#60a5fa;font-size:11px;font-weight:600;transition:border-color .2s}
+  .vid-search-link:hover{border-color:#4a6a9e}
+  .pub-banner{padding:6px 16px;font-size:11px;font-weight:700;color:#93c5fd;letter-spacing:0.4px;background:linear-gradient(90deg,#162236 0%,#1a1a2e 100%);border-bottom:1px solid #2a3a5e;display:flex;align-items:center;gap:6px}
+  .dl-stat{font-size:11px;font-weight:700;color:#fbbf24;margin-bottom:7px;padding:5px 10px;background:rgba(251,191,36,0.07);border-left:2px solid #fbbf24;border-radius:0 6px 6px 0;line-height:1.6}
+  .cluster-banner{padding:8px 16px;font-size:10px;font-weight:700;color:#6ee7b7;letter-spacing:0.6px;background:rgba(6,78,59,0.3);border-bottom:1px solid #0d3d2e;text-transform:uppercase}
+  .ss-caption{font-size:9px;color:#4a5568;text-align:center;margin-top:4px;letter-spacing:0.5px}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>🔥 Insights — <span>23 мая–9 июня 2026</span></h1>
+<div class="subtitle">Новые игры в тесте паблишеров • Сигналы роста • Паблишер-трансферы</div>
+<div class="meta">
+<div class="meta-pill">📅 23 мая–9 июня 2026</div>
+<div class="meta-pill">📈 Market data · May 25–Jun 7</div>
+<div class="meta-pill">🔄 Обновлено: 9 июня 2026</div>
+</div>
+</div>
+
+<div class="container">
+<div class="toc">
+<span>→</span>
+<a href="#block1">🆕 Новые игры (23)</a>
+<a href="#block2">📈 Сигналы роста (6)</a>
+<a href="#block3">👁️ На радаре (3)</a>
+<a href="#block4">🔄 Трансферы (10)</a>
+</div>
+
+<!-- ═══════════════════════ BLOCK 1 — PUBLISHER TESTS ═══════════════════════ -->
+<div class="section" id="block1">
+<div class="section-header sec-1">🆕 БЛОК 1 — НОВЫЕ ИГРЫ В ТЕСТЕ ПАБЛИШЕРОВ | 23 мая–9 июня 2026</div>
+<div class="grid">
+
+<!-- ─── KWALEE — 7 игр ─── -->
+<div class="card">
+<div class="cluster-banner">🟢 KWALEE — 7 игр за период</div>
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/p4D9SjQwG6mT9Q6TKuZKE7MIRM_bqnwx5T2YwvTCm0-Qo74_JvPT9OehFnGqZfd5elr9XV5wkfIJT5q6-a9XCtM=s512-rw" alt="Block Blast Build 3D" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Block Blast Build 3D</div>
+<div class="game-dev">Kwalee Ltd</div>
+<div class="tags">
+<span class="tag tag-pub">🟢 Kwalee</span>
+<span class="tag tag-genre">Casual / Block Build Puzzle</span>
+<span class="tag tag-date">Тест: май 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Новая игра — скриншоты в тесте</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Block Blast Build 3D</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Block+Blast+Build+3D+Kwalee+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">Kwalee Ltd · com.kwalee.blockblastbuild3d · Тест в рамках кластера 7 игр</div>
+<div class="analysis">Kwalee (Великобритания) запустил сразу 7 тайтлов за период — беспрецедентный батч-тест. Block Blast Build 3D совмещает взрывающиеся блоки (popularized Block Blast!) с 3D-строительной механикой. Гибридизация двух доказанных механик под один продукт.</div>
+<div class="hypothesis">Кластер из 7 игр за 2 недели — либо Kwalee перешёл к портфельной UA-стратегии, либо тестирует под разные аудиторные сегменты одновременно. Следить: какие 2–3 игры получат продолжение UA.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.kwalee.blockblastbuild3d" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<div class="card">
+<div class="cluster-banner">🟢 KWALEE — 7 игр за период</div>
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/D0NC0orUO8CO37a1gBzZOOAmiKTYnKNS74JI-nl6gILfBBa4ioEFk-Xyq83eDuUaOols04ViuvMZAqOg_wcc=s512-rw" alt="Barbecue Mania" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Barbecue Mania</div>
+<div class="game-dev">Kwalee Ltd</div>
+<div class="tags">
+<span class="tag tag-pub">🟢 Kwalee</span>
+<span class="tag tag-genre">Hypercasual / Food Sim</span>
+<span class="tag tag-date">Тест: май 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Новая игра — скриншоты в тесте</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Barbecue Mania</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Barbecue+Mania+Kwalee+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">Kwalee Ltd · com.kwalee.barbecuemania · Food sim HC</div>
+<div class="analysis">Барбекю-тематика — сильный ASMR-визуал для TikTok/Shorts. Kwalee традиционно работает с food-themed HC (опыт в жанре есть). Food + «perfect cook» moment = низкий порог вхождения, высокая виральность.</div>
+<div class="hypothesis">Food HC от Kwalee — проверка работает ли тематический подбор или нужен механический инсайт. Если метрики лучше Block Blast Build — Kwalee уходит в food pipeline.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.kwalee.barbecuemania" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<div class="card">
+<div class="cluster-banner">🟢 KWALEE — 7 игр за период</div>
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/GkvVRy7C83xOxwzV7N03a3juOUB8D7bOhBoTeux4MILfdUYOgu71HjLiVZSaZj0T1oEHwRiK7eNY7QT4zjtaPg=s512-rw" alt="Color Crush Connect" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Color Crush Connect</div>
+<div class="game-dev">Kwalee Ltd</div>
+<div class="tags">
+<span class="tag tag-pub">🟢 Kwalee</span>
+<span class="tag tag-genre">Casual / Color Connect</span>
+<span class="tag tag-date">Тест: май 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Новая игра — скриншоты в тесте</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Color Crush Connect</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Color+Crush+Connect+Kwalee+puzzle+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">Kwalee Ltd · com.kwalee.colorcrushconnect · Color matching puzzle</div>
+<div class="analysis">Color connect/matching — постоянно востребованная механика в casual. Kwalee тестирует вариацию в «crush» стиле (популяризован Candy Crush). Цветовой пазл с соединением — проверенный жанр с высокой retention.</div>
+<div class="hypothesis">Из 7 игр Kwalee colour-connect жанр наиболее предсказуем по метрикам D7. Именно этот тайтл ближе всего к масштабируемому хиту.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.kwalee.colorcrushconnect" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<div class="card">
+<div class="cluster-banner">🟢 KWALEE — 7 игр за период</div>
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/VqN77gHYgZ0gRhxlXcDy__ArJV1xplGAzCKxnkkD-RIX4R_7cw3atoo4ew1dL1v_SJsDPaGrmepv-9-meAnw=s512-rw" alt="FusePOP" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">FusePOP</div>
+<div class="game-dev">Kwalee Ltd</div>
+<div class="tags">
+<span class="tag tag-pub">🟢 Kwalee</span>
+<span class="tag tag-genre">Hypercasual / Bubble Pop</span>
+<span class="tag tag-date">Тест: май 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Новая игра — скриншоты в тесте</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — FusePOP</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=FusePOP+Kwalee+bubble+pop+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">Kwalee Ltd · com.kwalee.fusepopgame · Bubble-pop / fuse механика</div>
+<div class="analysis">Fuse + Pop название намекает на механику слияния пузырей с взрывом. Bubble shooter/pop — стабильный массовый жанр (Angry Birds тип). Kwalee добавляет «fuse» element — возможно цепные реакции или таймер.</div>
+<div class="hypothesis">Если «fuse» означает тайм-лимит взрыва — это усиливает скилловый элемент и повышает реиграбельность. Потенциально сильнее стандартного bubble pop.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.kwalee.fusepopgame" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<div class="card">
+<div class="cluster-banner">🟢 KWALEE — 7 игр за период</div>
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/5BQtxCvM8SKoOVuy50bryO3QqnN79jmkvgESe0HsKbiL-90dbGxKKucWI4qsud7JtY3z21W0kfDog1faUlym=s512-rw" alt="Snake Path Grid Puzzle" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Snake Path Grid Puzzle</div>
+<div class="game-dev">Kwalee Ltd</div>
+<div class="tags">
+<span class="tag tag-pub">🟢 Kwalee</span>
+<span class="tag tag-genre">Casual / Snake Logic</span>
+<span class="tag tag-date">Тест: май 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Новая игра — скриншоты в тесте</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Snake Path Grid Puzzle</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Snake+Path+Grid+Puzzle+Kwalee+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">Kwalee Ltd · com.kwalee.snake · Snake логика + grid puzzle</div>
+<div class="analysis">Snake-механика на сетке — один из старейших игровых паттернов, переосмыслённый в puzzle-контексте. Kwalee переводит аркадный Snake в static-puzzle формат: найти путь, не пересекаясь. Ностальгия + логика.</div>
+<div class="hypothesis">Snake puzzle — нишевый но лояльный жанр. Kwalee рискует попасть в узкую аудиторию. Успех зависит от визуального исполнения и «aha moment» в уровнях.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.kwalee.snake" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<div class="card">
+<div class="cluster-banner">🟢 KWALEE — 7 игр за период</div>
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/99Aye9onklHsXYFA7Z-XQmvogDs80fa5xbRkGejNjkXlplGC7VLC5ynH7lz9qQ6fagwh3RPu7gZJmXxX3m7i0ng=s512-rw" alt="Dice Bond Logic Puzzle" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Dice Bond Logic Puzzle</div>
+<div class="game-dev">Kwalee Ltd</div>
+<div class="tags">
+<span class="tag tag-pub">🟢 Kwalee</span>
+<span class="tag tag-genre">Casual / Dice Logic</span>
+<span class="tag tag-date">Тест: май 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Новая игра — скриншоты в тесте</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Dice Bond Logic Puzzle</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Dice+Bond+Logic+Puzzle+Kwalee+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">Kwalee Ltd · com.kwalee.dicebond · Dice logic puzzle — актуальный жанр (Dice Logic Gimica)</div>
+<div class="analysis">Dice puzzle жанр сейчас в активном росте — Dice Logic от Gimica показал x88 рост в прошлом отчёте. Kwalee входит в тренд с собственным «bond» (связь/соединение) вариантом. Правильный тайминг захода.</div>
+<div class="hypothesis">Kwalee отслеживает тренды оперативно — Dice Bond вышел через несколько недель после пика Dice Logic. Если механика отличается — возможно нишевание внутри жанра.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.kwalee.dicebond" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<div class="card">
+<div class="cluster-banner">🟢 KWALEE — 7 игр за период</div>
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/CGQYtgQ8n0jQuyz8eJ60R_RdHcSYg71KElTFbz8Zt3pqEKCsnKHGlNmHvsUNLiH6SFQY959lW1yHchk8i9ZCAA=s512-rw" alt="Tower Defense Flow" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Tower Defense Flow</div>
+<div class="game-dev">Kwalee Ltd</div>
+<div class="tags">
+<span class="tag tag-pub">🟢 Kwalee</span>
+<span class="tag tag-genre">Hybridcasual / Tower Defense</span>
+<span class="tag tag-date">Тест: май 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Новая игра — скриншоты в тесте</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Tower Defense Flow</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Tower+Defense+Flow+Kwalee+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">Kwalee Ltd · com.kwalee.towerdefenseflow · Hybridcasual TD — шаг за HC рамки</div>
+<div class="analysis">Tower Defense с flow-механикой — наиболее сложный тайтл кластера. Kwalee выходит за рамки чистого HC в hybridcasual. TD жанр устойчив с длинным хвостом (Kingdom Rush, Bloons). Flow добавляет пространственный puzzle-элемент.</div>
+<div class="hypothesis">Tower Defense Flow — наименее HC-игра кластера. Если KPIs хуже других — Kwalee вернётся к чистому HC. Если лучше — сигнал о смещении стратегии к hybridcasual.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.kwalee.towerdefenseflow" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- ─── AZUR / FURYLION — 4 игры ─── -->
+<div class="card">
+<div class="cluster-banner">🔷 AZUR / FURYLION — 4 игры за период</div>
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/CCKbz_vLx-rdDPKl3lgeSVb7IBGPl6XPZ8001bw9qF2Yan8siHb1EyL1mEhkKIEtUxoimaxQLJrOiKeSwqtlwA=s512-rw" alt="Color Sort Shot 3D" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Color Sort Shot 3D</div>
+<div class="game-dev">FuryLion</div>
+<div class="tags">
+<span class="tag tag-pub">🔷 Azur / FuryLion</span>
+<span class="tag tag-genre">Casual / Color Sort + Shoot</span>
+<span class="tag tag-date">Тест: май 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Новая игра — скриншоты в тесте</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Color Sort Shot 3D</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Color+Sort+Shot+3D+FuryLion+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">FuryLion (dev) · Azur Interactive (pub) · color.sort.shot · Sort + Shoot гибрид</div>
+<div class="analysis">FuryLion — активный разработчик для Azur Interactive. Color Sort Shot 3D объединяет sorting puzzle (верхний casual trend) с shooting механикой. Гибридизация даёт больший appeal pool: любители sorting + любители стрелялок.</div>
+<div class="hypothesis">Azur нашёл паттерн: FuryLion делает для них гибридные сорт-механики (4 игры за период). Если хотя бы одна проходит UA — усилят партнёрство.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=color.sort.shot" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<div class="card">
+<div class="cluster-banner">🔷 AZUR / FURYLION — 4 игры за период</div>
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/ry9noEdDJlzCWmY6cITpmHnLf4cAjwSPrpcvW3WBFutM_fHhf0Xb76kRgPHnjHKNpp3t9DT36dufVIJMtiiN=s512-rw" alt="Arrow Maze Tap Away Puzzle" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Arrow Maze Tap Away Puzzle</div>
+<div class="game-dev">FuryLion</div>
+<div class="tags">
+<span class="tag tag-pub">🔷 Azur / FuryLion</span>
+<span class="tag tag-genre">Casual / Arrow + Tap Away</span>
+<span class="tag tag-date">Тест: май 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Новая игра — скриншоты в тесте</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Arrow Maze Tap Away</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Arrow+Maze+Tap+Away+Puzzle+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">FuryLion (dev) · Azur (pub) · puzzle.tapaway.arrowmaze · Arrow + Tap Away</div>
+<div class="analysis">Tap Away — доказанная механика (Tap Away 3D миллионы загрузок). Arrow направление добавляет навигационный слой. FuryLion скрещивает два casual hit-паттерна в один тайтл. Популярность arrow puzzle в 2026 (Easybrain, Arrow Puzzle 3D) делает тайминг актуальным.</div>
+<div class="hypothesis">Arrow + Tap Away = высокий шанс попасть в recommendation algorithm как пересечение двух трендов. Azur может получить органику без heavy UA.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=puzzle.tapaway.arrowmaze" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<div class="card">
+<div class="cluster-banner">🔷 AZUR / FURYLION — 4 игры за период</div>
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/5lnkZNNW4Cr9KiQPdSAhIXK9LLDFmd1kLPNfFl4aFE7htW1Q50ZVioFKFVBasEdhls1tXNLRDgbkBOkUo5aTTKQ=s512-rw" alt="Bus Flow" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Bus Flow</div>
+<div class="game-dev">Mankrik</div>
+<div class="tags">
+<span class="tag tag-pub">🔷 Azur cluster</span>
+<span class="tag tag-genre">Casual / Bus + Flow Puzzle</span>
+<span class="tag tag-date">Тест: май 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Новая игра — скриншоты в тесте</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Bus Flow</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Bus+Flow+puzzle+game+mobile+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">Mankrik (dev) · Azur cluster · com.bus.flow.escape.sort.puzzle · Transit + flow</div>
+<div class="analysis">Bus + flow pipe puzzle — транспортная тематика накладывается на классическую flow-механику. Bus theme уже работал в Bubble Bus (Moonee) — транспорт остаётся популярным casual visual hook. Mankrik — разработчик с небольшим портфолио, выход под Azur зонтиком.</div>
+<div class="hypothesis">Azur аккумулирует transport-themed puzzle тайтлы от разных студий. Если жанр стреляет — у них уже будет портфель вариаций для AB-тестирования.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.bus.flow.escape.sort.puzzle" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<div class="card">
+<div class="cluster-banner">🔷 AZUR / FURYLION — 4 игры за период</div>
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/tf4SEZHkH9JnpUB-b6ACkp9J6w7X5SwKjTWKRl0Rahlclfm6pwb4fXHyr4tEzwD5z5LzGflthp-jEouVIB_TY7I=s512-rw" alt="Lines Away" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Lines Away</div>
+<div class="game-dev">F-WAY GAMES LIMITED</div>
+<div class="tags">
+<span class="tag tag-pub">🔷 Azur cluster</span>
+<span class="tag tag-genre">Casual / Line Puzzle</span>
+<span class="tag tag-date">Тест: май 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Новая игра — скриншоты в тесте</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Lines Away</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Lines+Away+puzzle+game+mobile+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">F-WAY GAMES LIMITED (dev) · Azur cluster · com.lines.away · Line drawing puzzle</div>
+<div class="analysis">F-WAY GAMES — регулярный партнёр Azur (Hexa Art Gallery в предыдущем отчёте). Lines Away — line-drawing или line-clearing puzzle. Azur продолжает развивать партнёрство с F-WAY на разных жанрах.</div>
+<div class="hypothesis">F-WAY + Azur строят долгосрочное партнёрство: если Lines Away покажет разные метрики чем Hexa Art Gallery — Azur получит жанровую карту для обоих студий.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.lines.away" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- ─── SUPERSONIC — 2 игры ─── -->
+<div class="card">
+<div class="cluster-banner">⚡ SUPERSONIC — 2 игры за период</div>
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/NF8u_onMlJe2QTpaBDaUGk5LLZa16EZm9stpdkfoPKpNY9JoSwyJZyoKCx-e7OZsf_bZ5QCLTSw9MKVEFd73=s512-rw" alt="Chaos Drawer" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Chaos Drawer</div>
+<div class="game-dev">TechnoMagic Pvt. Ltd.</div>
+<div class="tags">
+<span class="tag tag-pub">⚡ Supersonic</span>
+<span class="tag tag-genre">Casual / Drawing Puzzle</span>
+<span class="tag tag-date">Тест: июнь 2026</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">⚡ Supersonic Studios (Unity) — тест июнь 2026</div>
+<div class="ss-placeholder">📱 Новая игра — скриншоты в тесте</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Chaos Drawer</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Chaos+Drawer+Supersonic+drawing+puzzle+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">TechnoMagic Pvt. Ltd. (dev, Индия) · Supersonic (pub) · com.technomagic.ChaosDrawer</div>
+<div class="analysis">TechnoMagic — индийская студия, Supersonic работал с ними ранее (Patch and Place). Chaos Drawer — drawing/creative puzzle механика. «Chaos» в названии намекает на непредсказуемое физическое взаимодействие — возможно paper io / draw-physics тип.</div>
+<div class="hypothesis">TechnoMagic повторно с Supersonic — студия подтвердила качество пайплайна. Если Chaos Drawer пройдёт 2 недели тест — это второй продукт совместного портфеля.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.technomagic.ChaosDrawer" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<div class="card">
+<div class="cluster-banner">⚡ SUPERSONIC — 2 игры за период</div>
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/quGjwGxWq4qZyZNXEjs1RGEKc_OYUTXeDTzQSrHOFA1yYb5ah5OvEbF6WSMug8uyM2ehh0PgidTRyd_960zC=s512-rw" alt="Water Pop Sort" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Water Pop Sort</div>
+<div class="game-dev">悠穀網絡 (Yuogu Networks)</div>
+<div class="tags">
+<span class="tag tag-pub">⚡ Supersonic</span>
+<span class="tag tag-genre">Casual / Water Sort</span>
+<span class="tag tag-date">Тест: май 2026</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">⚡ Supersonic Studios (Unity) — тест май 2026</div>
+<div class="ss-placeholder">📱 Новая игра — скриншоты в тесте</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Water Pop Sort</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Water+Pop+Sort+Supersonic+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">悠穀網絡 (dev, Китай) · Supersonic (pub) · com.gamatom.waterpopsort · Water sort + pop</div>
+<div class="analysis">Water Sort — классика casual (Water Sort Puzzle топ-5 всех времён). Добавление «pop» элемента может означать bubble-pop внутри sorting. Supersonic продолжает работать с китайскими студиями, чередуя индийских разработчиков.</div>
+<div class="hypothesis">Water Sort жанр достиг насыщения — нужна механическая инновация (pop) чтобы отстроиться. Если pop-механика даёт «aha moment» — шанс попасть в новую аудиторию water sort.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.gamatom.waterpopsort" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- ─── VOODOO — 2 игры ─── -->
+<div class="card">
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/RzoP2fj4I2-o26GeWxuv16rxlyNb7NHPTc0igW-i8T_qzbgllJ9kxDedf_8zexudEQSxG1O2pFF2RBo2Vemf=s512-rw" alt="Dye Loop" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Dye Loop</div>
+<div class="game-dev">Goose Group Ltd.</div>
+<div class="tags">
+<span class="tag tag-pub">🟣 Voodoo</span>
+<span class="tag tag-genre">Casual / Dye / Loop Puzzle</span>
+<span class="tag tag-date">Тест: май 2026</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">🟣 Voodoo — тест май 2026</div>
+<div class="ss-placeholder">📱 Новая игра — скриншоты в тесте</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Dye Loop</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Dye+Loop+Voodoo+game+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">Goose Group Ltd. (dev) · Voodoo (pub) · com.puffer.dyeloop · Tie-dye + loop механика</div>
+<div class="analysis">Dye Loop — крашение ткани в loop-паттернах. ASMR visual + satisfying colour reveal = идеальный TikTok/Shorts креатив. Voodoo мастерски монетизирует visual-first игры. Goose Group — небольшой indie-студия, Voodoo скаутит органику.</div>
+<div class="hypothesis">Если Dye Loop собирает UGC-контент в Shorts (виральные unboxing красок) — органика будет без paid UA. Voodoo умеет капитализировать именно на таких механиках.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.puffer.dyeloop" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<div class="card">
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/Y4cc7YGkJxs2t-tHty3q_Udak-8wdLryJDj2y_okRRa6lJ3wBD3ybhRa39o8vq11TIT52LUMt3WxIPEzkUSxKw=s512-rw" alt="Dunk or Die" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Dunk or Die</div>
+<div class="game-dev">IllimaniEuropeo</div>
+<div class="tags">
+<span class="tag tag-pub">🟣 Voodoo</span>
+<span class="tag tag-genre">Hypercasual / Basketball Dunk</span>
+<span class="tag tag-date">Тест: май 2026</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">🟣 Voodoo — тест май 2026</div>
+<div class="ss-placeholder">📱 Новая игра — скриншоты в тесте</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Dunk or Die</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Dunk+or+Die+Voodoo+basketball+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">IllimaniEuropeo (dev, Европа) · Voodoo (pub) · com.illimanieuropeo.dunkordie · Basketball HC</div>
+<div class="analysis">Basketball dunk — HC паттерн с высоким wow-moment (попасть в кольцо). «Or Die» добавляет pressure-механику: не попал — проиграл. Voodoo тестирует два очень разных тайтла (ASMR Dye vs Athletic Dunk) — параллельная диверсификация по аудиториям.</div>
+<div class="hypothesis">Voodoo одновременно тестирует female-friendly (Dye Loop) и male-friendly (Dunk or Die) механики. Умная портфельная диверсификация.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.illimanieuropeo.dunkordie" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- ─── ROLLIC — Brew Foos ─── -->
+<div class="card">
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/a3KlxMSzaC12tZ6ASFa30jlFnNNjLy6o0G0E_h9o--NFFx2OGN2m3VgxsUyqMxMGRPR1DIEFLEdA071SECTLYA=s512-rw" alt="Brew Foos" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Brew Foos</div>
+<div class="game-dev">BREW GAMES</div>
+<div class="tags">
+<span class="tag tag-pub">🎲 Rollic Games</span>
+<span class="tag tag-genre">Casual / Foosball</span>
+<span class="tag tag-date">Тест: май 2026</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">🎲 Rollic Games (Zynga) — тест май 2026</div>
+<div class="ss-placeholder">📱 Новая игра — скриншоты в тесте</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Brew Foos</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Brew+Foos+Rollic+foosball+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">BREW GAMES (dev) · Rollic Games (pub) · com.brewgames.foosballclub.app · Настольный футбол</div>
+<div class="analysis">Foosball — нетипичный выбор для Rollic (обычно сортировки и puzzle). BREW GAMES — небольшой инди. Настольный футбол в мобильном формате имеет доказанный appeal (Real Table Football и подобные). Rollic диверсифицирует за рамки своих классических сорт-жанров.</div>
+<div class="hypothesis">Rollic тестирует sports-casual как альтернативный вектор. Если Brew Foos проходит UA-тест — это сигнал о стратегической диверсификации Rollic в 2026.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.brewgames.foosballclub.app" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- ─── SUPERCENT — Match Clash ─── -->
+<div class="card">
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/YJXvaG2n19cWTsa993L2xD5CQR_nbaWlHX1U8Z5apUEJGr9MqIUIkdrMbkVWyyRjhzAtY6q5L6EhU-FBpc4G=s512-rw" alt="Match Clash" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Match Clash</div>
+<div class="game-dev">Supercent Inc.</div>
+<div class="tags">
+<span class="tag tag-pub">💫 Supercent</span>
+<span class="tag tag-genre">Casual / Match Battle</span>
+<span class="tag tag-date">Тест: май 2026</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">💫 Supercent Inc. — тест май 2026</div>
+<div class="ss-placeholder">📱 Новая игра — скриншоты в тесте</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Match Clash</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Match+Clash+Supercent+game+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">Supercent Inc. (dev+pub) · com.hidea.leaguepuzzle · Match + battle механика</div>
+<div class="analysis">Supercent (AppLovin-affiliated) традиционно работает с sorting/matching. Match Clash с «league» в bundle ID намекает на PvP элемент (league = соревновательная механика). Hybrid matching + competitive = популярный hybridcasual паттерн.</div>
+<div class="hypothesis">Supercent тестирует competitive layer поверх match mechanics. Если live-ops отдел справится с PvP балансом — это выход в sustainable hybridcasual.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.hidea.leaguepuzzle" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- ─── TAPNATION / HOHAMA — 3 игры ─── -->
+<div class="card">
+<div class="cluster-banner">🌟 TAPNATION / HOHAMA — 3 игры за период</div>
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/QjgKJQyemH7kC6pCIGQpdiiKIM1b-hhfD5VQMdeR2wn_H3ZT4kT3TA2SlX3L_v8R2RHGAhDjZJVtln9kevuZyQ=s512-rw" alt="Marble Fever" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Marble Fever</div>
+<div class="game-dev">TapNation / Hohama</div>
+<div class="tags">
+<span class="tag tag-pub">🌟 TapNation</span>
+<span class="tag tag-genre">Casual / Marble Sort Puzzle</span>
+<span class="tag tag-date">Тест: май 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Новая игра — скриншоты в тесте</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Marble Fever</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Marble+Fever+sort+puzzle+game+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">TapNation / Hohama · com.marble.fever.sort.puzzle · Marble sort variant</div>
+<div class="analysis">TapNation (Homa игровая группа) запустил 3 тайтла за период — batch-testing стратегия. Marble Fever — сортировка с шариками/мрамором. Marble sort стабильно популярен (tactile visual, satisfying click). Hohama — суббренд TapNation для casual тайтлов.</div>
+<div class="hypothesis">TapNation тестирует три параллельных механики с одинаковым sort-core. Это классический AB-тест: какая «обёртка» (marble/bus/beads) даёт лучший CPI.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.marble.fever.sort.puzzle" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<div class="card">
+<div class="cluster-banner">🌟 TAPNATION / HOHAMA — 3 игры за период</div>
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/tfOH5v-JugHCYFwWrNpe-g1QsOu7FKxkQekuMO9nfoRK3Fid7zJ-G9CzDKdBqVLpKYtfFIw2fCz7qRCIONTvcQ=s512-rw" alt="Bus Match!" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Bus Match!</div>
+<div class="game-dev">TapNation / Hohama</div>
+<div class="tags">
+<span class="tag tag-pub">🌟 TapNation</span>
+<span class="tag tag-genre">Casual / Bus Sort Match</span>
+<span class="tag tag-date">Тест: май 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Новая игра — скриншоты в тесте</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Bus Match!</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Bus+Match+puzzle+game+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">TapNation · com.bus.match.puzzle · Bus + match sort (transit theme)</div>
+<div class="analysis">Bus Match — сортировка с автобусами. Transit тема широко востребована (Bubble Bus, Bus Flow в этом же отчёте). TapNation тестирует, работает ли transport visual сильнее marble или beads для своей аудитории.</div>
+<div class="hypothesis">Три одновременных теста с одной core-механикой — TapNation/Hohama использует A/B/C тестирование тем. Победитель получит основные UA-бюджеты. Следить через 2 недели какой из трёх остаётся активным.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.bus.match.puzzle" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<div class="card">
+<div class="cluster-banner">🌟 TAPNATION / HOHAMA — 3 игры за период</div>
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/O1jb7Ksk_SH_zMIL7HV7p60VrLXRqG9fydSZ1cOOLqyVCdmbYIOwET-bR2cL9-ZYvgiFfvib_8irTBRqmo3Vwg=s512-rw" alt="Beads Loop" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Beads Loop</div>
+<div class="game-dev">Weegoon (TapNation)</div>
+<div class="tags">
+<span class="tag tag-pub">🌟 TapNation</span>
+<span class="tag tag-genre">Casual / Bead Sort Loop</span>
+<span class="tag tag-date">Тест: май 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Новая игра — скриншоты в тесте</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Beads Loop</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Beads+Loop+TapNation+game+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">Weegoon (dev) · TapNation (pub) · com.nation.weegoon.beadsloop · Bead sort + loop</div>
+<div class="analysis">Beads Loop объединяет bead/jewelry тематику с loop-sorting механикой. Bead/jewelry visual — сильный female-friendly visual hook (ASMR смешивание бусин). Loop добавляет кольцевую механику сортировки.</div>
+<div class="hypothesis">Из трёх TapNation тайтлов Beads Loop нацелен на самую специфичную female аудиторию. Если CPI ниже у bus — Hohama сфокусируется на transport теме. Если beads — выходят в jewelry casual нишу.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.nation.weegoon.beadsloop" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- ─── KAYAC — Ragdoll Skater ─── -->
+<div class="card">
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/Neiciz1zNTQqhPDMYkGUhkkd3_sZoImWLVbknqLdHjScU6n1kmje7xzLQgm9ii3WgvZbxtKtw6EhtqgAyOWx5w=s512-rw" alt="Ragdoll Skater" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Ragdoll Skater</div>
+<div class="game-dev">KAYAC Inc.</div>
+<div class="tags">
+<span class="tag tag-pub">🎮 KAYAC</span>
+<span class="tag tag-genre">Hypercasual / Ragdoll Skate</span>
+<span class="tag tag-date">Тест: май 2026</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">🎮 KAYAC Inc. (Япония) — тест май 2026</div>
+<div class="ss-placeholder">📱 Новая игра — скриншоты в тесте</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Ragdoll Skater</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Ragdoll+Skater+KAYAC+game+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">KAYAC Inc. (dev+pub, Япония) · com.kayac.RagdollSkater · Ragdoll + skateboard</div>
+<div class="analysis">KAYAC — японский developer/publisher с опытом в HC. Ragdoll + skating = виральная комбинация (Fall Guys-подобная физика + extreme sports визуал). Ragdoll механики стабильно генерируют UGC-контент через смешные fail-моменты.</div>
+<div class="hypothesis">KAYAC всё активнее выходит на глобальный рынок. Ragdoll Skater с fail-viralityпотенциалом может собрать органику через TikTok без heavy UA.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.kayac.RagdollSkater" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- ─── BRAVESTARS — Sand Tap ─── -->
+<div class="card">
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/zCBCb8QeV3Btb9Uk1zwgaNAE3Zw2BfiCk5iYggrWgzOd6gMwAhDKf8_GHLxJ8Tm60PZizMWQqMxbNW0PIvBB-g=s512-rw" alt="Sand Tap" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Sand Tap</div>
+<div class="game-dev">Bravestars Games</div>
+<div class="tags">
+<span class="tag tag-pub">⭐ Bravestars</span>
+<span class="tag tag-genre">Casual / Sand Sort Puzzle</span>
+<span class="tag tag-date">Тест: май 2026</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">⭐ Bravestars Games — тест май 2026</div>
+<div class="ss-placeholder">📱 Новая игра — скриншоты в тесте</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Sand Tap</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Sand+Tap+sort+puzzle+game+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">Bravestars Games · puzzle.sand.tap.sort · Sand sort tap механика</div>
+<div class="analysis">Sand sorting — тактильно удовлетворяющая визуальная механика (пересыпание песка). Bravestars входит в сегмент tactile-casual. Sand + tap = одна из самых ASMR-совместимых механик для shorts/reels контента.</div>
+<div class="hypothesis">Sand sort жанр менее конкурентен чем water/marble sort. Bravestars может занять нишу при правильном ASO. Следить за органическими позициями по «sand puzzle».</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=puzzle.sand.tap.sort" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- ─── EASYBRAIN — Arrow Puzzle 3D ─── -->
+<div class="card">
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/oTGrtX3Fv0KxMANyIStfmXh0QQj8MMiHHJoLNfsSts7xCu7e5OdX4T8p1nKD7vGXqThSiY6Mx_r4F1Bt85Xf=s512-rw" alt="Arrow Puzzle 3D" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Arrow Puzzle 3D</div>
+<div class="game-dev">Easybrain</div>
+<div class="tags">
+<span class="tag tag-pub">🧠 Easybrain</span>
+<span class="tag tag-genre">Casual / Arrow Puzzle 3D</span>
+<span class="tag tag-date">Тест: май 2026</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">🧠 Easybrain — тест май 2026 · ≠ Arrow Puzzle (Block 3)</div>
+<div class="ss-placeholder">📱 Новая игра — скриншоты в тесте</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Arrow Puzzle 3D</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Arrow+Puzzle+3D+Easybrain+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">Easybrain · com.easybrain.arrow.puzzle3d · ⚠️ Другая игра от той же студии (Block 3: Arrow Puzzle original)</div>
+<div class="analysis">Easybrain (Кипр) — крупный casual паблишер (Sudoku.com, Nonogram.com). Arrow Puzzle 3D — 3D-версия своей же успешной механики Arrow Puzzle (которая в Block 3 показывает 77K Android/нед). Easybrain намеренно каннибализирует собственный продукт 3D-итерацией.</div>
+<div class="hypothesis">Easybrain тестирует каннибализацию собственного топового тайтла. Если 3D версия переманивает старых пользователей — ошибка. Если привлекает новых — умная продуктовая диверсификация. Следить за MAU обоих Arrow Puzzle тайтлов в июле.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.easybrain.arrow.puzzle3d" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+</div><!-- /grid block1 -->
+</div><!-- /section block1 -->
+
+<!-- ═══════════════════════ BLOCK 2 — GROWTH SIGNALS ═══════════════════════ -->
+<div class="section" id="block2">
+<div class="section-header sec-2">📈 БЛОК 2 — СИГНАЛЫ РОСТА | May 25–Jun 7</div>
+<div class="grid">
+
+<!-- Meowdoku! -->
+<div class="card">
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/1vD3Jl37OTth18x__EkbpMZRAmDlGB5mlqKvveWumothf52-1HZXhAy5HGkGLzW_HYoz-rj2q0HBaxu5_8kyVQ=s512-rw" alt="Meowdoku!" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🎯🎯🎯</span>Meowdoku!</div>
+<div class="game-dev">Oakever</div>
+<div class="tags">
+<span class="tag tag-genre">Casual / Sudoku + Cats</span>
+<span class="tag tag-date">iOS 487K Jun 1–7 🔥</span>
+</div>
+</div>
+</div>
+<div class="ss-wrap">
+<img src="https://play-lh.googleusercontent.com/qsGiOZrr0qmnA9hPmwRv79Qq_xnta6onx8aaf_RGat7b-8sQK269EyS4CIkFbisjEQpfIxmfBXnPYOm5t87uSA=w526-h296-rw" alt="screenshot 1" loading="lazy">
+<img src="https://play-lh.googleusercontent.com/bKQjRJdjGdwaiL_tF_xnUbyGi_w0thsZG45RUyJY_iSjc2MJkSaJGb7NV1mn6s8Uceexz3S9gAEUzBAOTuFstg=w526-h296-rw" alt="screenshot 2" loading="lazy">
+</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Meowdoku!</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Meowdoku+sudoku+cats+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">iOS Jun 1–7: 487K (+343%) 🔥 · iOS May 25–31: 110K (+2372%) · Android Jun 1–7: 197K (+72%)</div>
+<div class="analysis">Meowdoku! — судоку с кошачьей тематикой. Oakever — небольшая indie-студия. iOS May 25–31: с нуля до 110K (+2372%) — взрывной старт. Jun 1–7: ещё 487K — три недели подряд роста. Судоку жанр нишевый но с лояльной платящей аудиторией; кошачья тема добавляет casual charm. Редкий сигнал: органический rocket без крупного паблишера.</div>
+<div class="hypothesis">Meowdoku! — потенциальный acquisition target категории A. Если сохранит >200K/нед в июне — студия станет объектом интереса всех топ-паблишеров. Следить за появлением UA-кампаний (значит паблишер уже ведёт переговоры).</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6761760135" target="_blank">🍎 App Store</a>
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.oakever.meowdoku" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- Profile Perfect -->
+<div class="card">
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/3pi3Qm5gY71bm5DEWt_1XDJIQ9S3g4TcofAD6got-WB-PsL2-EmX65zSemMtcyGjmQ=s512-rw" alt="Profile Perfect" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🎯🎯</span>Profile Perfect</div>
+<div class="game-dev">luwukmeliana</div>
+<div class="tags">
+<span class="tag tag-pub">🦁 Lion Studios Plus</span>
+<span class="tag tag-genre">Casual / Profile Makeover</span>
+<span class="tag tag-date">iOS 137K Jun 1–7 📈</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">🦁 Lion Studios Plus (AppLovin) — активный UA</div>
+<div class="ss-wrap">
+<img src="https://play-lh.googleusercontent.com/vnrHwmgreHFtattHUmeOsItl5P3wfxTeSHdlD7RgFuspo5wE9-y2xd8YUa-Sa3YhRRq3=w526-h296-rw" alt="screenshot 1" loading="lazy">
+<img src="https://play-lh.googleusercontent.com/PRiydmSIW7Zq87o0w17EwtuFrstVYBTIEL6-5LnbRD_4o1jMV1qiM1fo02wka2szRBM=w526-h296-rw" alt="screenshot 2" loading="lazy">
+</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Profile Perfect</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Profile+Perfect+Lion+Studios+makeover+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">iOS Jun 1–7: 137K (+230%) · Android Jun 1–7: 88K (+146%)</div>
+<div class="analysis">Lion Studios Plus (AppLovin) работает с инди-разработчиком luwukmeliana. Profile Perfect — игра о создании/кастомизации профиля (аватара или социального профиля). Концепт пересекается с makeover + social media aesthetics — актуальная Gen Z тема. +230% iOS и +146% Android — Lion Studios включил paid UA на обоих платформах.</div>
+<div class="hypothesis">Двойной рост на iOS и Android одновременно = Lion Studios уверен в CPI/CPM метриках. Следить: если UA не останавливается на 3-й неделе — тайтл масштабируется как долгосрочный хит портфеля.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.luwukmeliana.profileperfect" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- GoT Dragonfire -->
+<div class="card">
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/2y_h7WQuNqcoxOKRLDUmNsEgRBKhTSFyM-EWG6rguQrDqWkHUB_oUXXWQ_p5RnLaKepvs8pNbj-xaPecEH11uw=s512-rw" alt="GoT Dragonfire" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🎯🎯</span>GoT: Dragonfire</div>
+<div class="game-dev">Warner Bros. Games</div>
+<div class="tags">
+<span class="tag tag-pub">🎬 Warner Bros. Games</span>
+<span class="tag tag-genre">Midcore / Social Strategy</span>
+<span class="tag tag-date">iOS 108K Jun 1–7 🆕</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">🎬 Warner Bros. Games — лицензионный лонч июнь 2026</div>
+<div class="ss-wrap">
+<img src="https://play-lh.googleusercontent.com/ewavFWlT-P1EkYbZGQPewJZziAkIrALVh4t6B7fVf_euvdKJrSQhlD22sWr7QDx6NdHK-GboDdmJYEj25mhDPg=w526-h296-rw" alt="screenshot 1" loading="lazy">
+<img src="https://play-lh.googleusercontent.com/osEBPhv-3JuPFSfIYRJhiubniOKbHiCTaUnUcdt-iOJxBpo6_aOAKzhHAMK7EIr4Gy7TTMS9xQ-s8-OmEkH5Dk-Z2pjA4=w526-h296-rw" alt="screenshot 2" loading="lazy">
+</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — GoT: Dragonfire</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Game+of+Thrones+Dragonfire+mobile+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">iOS Jun 1–7: 108K 🆕 (первый вход) · Android Jun 1–7: 61K (+6844%) 🔥</div>
+<div class="analysis">Game of Thrones: Dragonfire (House of the Dragon social strategy) — лицензионный мидкор от Warner Bros. Games. Лонч недели: iOS 108K и Android +6844% в первую неделю. GoT IP остаётся мощным мобильным магнитом. Social strategy жанр (HOTD бренд) = высокий LTV аудитории. Конкурирует с GoT: Conquest (Scopely).</div>
+<div class="hypothesis">Первая неделя Warner Bros IP обычно лонч-буст за счёт brand awareness. Критический момент — удержание на 3–4-й неделе. Если D28 retention выше 15% — тайтл становится долгосрочным earner для WB.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id1642607669" target="_blank">🍎 App Store</a>
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.wb.goog.hotd.socialstrategy" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- Clash of Critters -->
+<div class="card">
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/nIjO9pFz1R7G_wct00QMBKVqAmLHs2TqiaCmSUJfnKPw7yG_VzSmp26TRGCmm98v-Mye0MtsW_xz8CHNdIFD1A=s512-rw" alt="Clash of Critters" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🎯🎯</span>Clash of Critters</div>
+<div class="game-dev">FARLIGHT</div>
+<div class="tags">
+<span class="tag tag-pub">⚔️ FARLIGHT</span>
+<span class="tag tag-genre">Midcore / Strategy Tower Defense</span>
+<span class="tag tag-date">Пик iOS 213K (May 18–24) 📉</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">⚔️ FARLIGHT — стратегия с Tataris-петами</div>
+<div class="ss-wrap">
+<img src="https://play-lh.googleusercontent.com/htxe61KnInSxAZtxOrs2ia06V2QWJs-RnmM6HNXCafyXeCIQt8ZvyqYrX4VS6QmRDHM1AZZDJJRVaoTbA-IhP4o=w526-h296-rw" alt="screenshot 1" loading="lazy">
+<img src="https://play-lh.googleusercontent.com/jyytYkM-_1lh2U_WZOQzxjTJYyydCjFNuK4VDqfY-6uqSIM953btKoZhinQ24_x7quTmfsm27AZxQHqnmGO6kA=w526-h296-rw" alt="screenshot 2" loading="lazy">
+</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Clash of Critters</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Clash+of+Critters+FARLIGHT+tower+defense+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">iOS пик May 18–24: 213K 🆕 → May 25–31: −28% → Jun 1–7: −24% · Android May 25–31: 125K (+63%) → Jun 1–7: 90K (−28%)</div>
+<div class="analysis">Clash of Critters — strategy с коллекционными питомцами (Tataris). FARLIGHT (крупный китайский издатель). iOS лонч-буст 213K в неделю релиза, затем устойчивое снижение: -28% и -24%. Android компенсирует с задержкой (+63% на May 25–31). Игра в жанре tower defense с коллекционными персонажами — конкурирует со Clash Royale и подобными. Снижение после лонча характерно для мидкора без strong live-ops hook.</div>
+<div class="hypothesis">Если FARLIGHT не проведёт крупный live event в июне — снижение продолжится. Ключевой вопрос: есть ли у Clash of Critters механизм re-engagement (guild wars, PvP season). Если да — кривая стабилизируется.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.farlightgames.pgame.gp" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- Jigsaw Drop -->
+<div class="card">
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/osGxi-Zz3WeL09IOBQD5QbD9BGtf78utL7d4Og4K47n9HTosLISS_Hw9EbKJ9aIKw2yfslrwQX1SiU4i60V6oCE=s512-rw" alt="Jigsaw Drop" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🎯</span>Jigsaw Drop</div>
+<div class="game-dev">Runyou</div>
+<div class="tags">
+<span class="tag tag-genre">Casual / Jigsaw Drop Puzzle</span>
+<span class="tag tag-date">Android 38K Jun 1–7 📈</span>
+</div>
+</div>
+</div>
+<div class="ss-wrap">
+<img src="https://play-lh.googleusercontent.com/jeqz2QHQyNSaNRenjKi8my8SJSRWKh9zmJzVq-rGJumiCGnuEkL0mvotc3rlqhSJm7waWci8OlOtQ19jYBmR=w526-h296-rw" alt="screenshot 1" loading="lazy">
+<img src="https://play-lh.googleusercontent.com/K3E86g1oh9NpIEprD85n0q_pFHdUtG63upZDR7-N2GkP2s4GlqWxQsafeGsHU5lJDddYBu9vrcpcqp9kDSvX=w526-h296-rw" alt="screenshot 2" loading="lazy">
+</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Jigsaw Drop</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Jigsaw+Drop+solitaire+match+puzzle+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">Android May 25–31: 29K (+217%) · Android Jun 1–7: 38K (+29%) · iOS Jun 1–7: 31K (+66%)</div>
+<div class="analysis">Jigsaw Drop (Runyou) — jigsaw puzzle с drop-механикой (выпадающие пазл-кусочки как в Tetris). Оригинальная гибридизация: jigsaw (любимый casual жанр 30+ аудитории) + drop-стратегия. Android +217% за неделю без крупного паблишера — сильный органический сигнал. Три недели стабильного роста подтверждают retention.</div>
+<div class="hypothesis">Runyou может быть acquisition target для паблишеров casual (Easybrain, SayGames). Если рост продолжится в июне — студия привлечёт внимание крупных игроков. Следить: появление крупного паблишера в App Store listing.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6761760135" target="_blank">🍎 App Store</a>
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=jigsaw.solitaire.match.games.free" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- Color Block Jam -->
+<div class="card">
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/H-FJz6OLSLhFmflq2HoasMWZTNf38JyJ_j64ekCCZaKVcJCUQn-_foneJrV1Bd_as7-vCMiZQpY7QUWk3ArevQ=s512-rw" alt="Color Block Jam" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🎯🎯</span>Color Block Jam</div>
+<div class="game-dev">GybeGames</div>
+<div class="tags">
+<span class="tag tag-pub">🎲 Rollic Games</span>
+<span class="tag tag-genre">Casual / Color Block Unblock</span>
+<span class="tag tag-date">iOS 106K Jun 1–7 📈</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">🎲 Rollic Games (Zynga) — активный масштаб · 10M+ загрузок</div>
+<div class="ss-wrap">
+<img src="https://play-lh.googleusercontent.com/wiNVYbH7Jf9bRcyJNQ4xb2Zy3s0OJHf1g-E4J94X5fJj1r8ysyEurgrHXZdD0JYRNtQ=w526-h296-rw" alt="screenshot 1" loading="lazy">
+<img src="https://play-lh.googleusercontent.com/Q_8j3Ce6eXvzFWKDWZoRIOxggvd4BLEfy5WtcKYOlYGwN46AOI5N5r1dsPNkrw-Z5Q8=w526-h296-rw" alt="screenshot 2" loading="lazy">
+</div>
+<div class="vid-label">🎬 AD CREATIVE — Color Block Jam (GP Store Video)</div>
+<div class="vid-wrap">
+<video controls preload="none" style="height:200px;min-width:200px;max-width:100%;border-radius:8px;background:#0a0a14;display:block;margin:0 auto">
+<source src="https://play-games.googleusercontent.com/vp/mp4/1280x720/tqxl-WbaD0I.mp4" type="video/mp4"/>
+</video>
+</div>
+<div class="card-body">
+<div class="dl-stat">iOS Jun 1–7: 106K (+76%) · iOS May 25–31: 60K (+60%) · Android Jun 1–7: 32K (+67%) · 10M+ всего</div>
+<div class="analysis">Color Block Jam (GybeGames + Rollic) — color-coded unblock puzzle (блоки нужно разблокировать по цвету). 10M+ общих загрузок к июню. Устойчивый рост три недели подряд на iOS (+60%, +76%) говорит о сильном retention + работающем UA от Rollic. Жанр unblock puzzle доказан (Unblock Me, Traffic Jam). Color coding добавляет визуальную глубину.</div>
+<div class="hypothesis">Rollic масштабирует Color Block Jam как флагманский тайтл периода. 10M+ в короткий срок и продолжающийся рост — это хит. FreePlay стоит изучить механику детально для potential HC-версии.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6504332779" target="_blank">🍎 App Store</a>
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.GybeGames.ColorBlockJam" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+</div><!-- /grid block2 -->
+</div><!-- /section block2 -->
+
+<!-- ═══════════════════════ BLOCK 3 — ON RADAR ═══════════════════════ -->
+<div class="section" id="block3">
+<div class="section-header sec-3">👁️ БЛОК 3 — НА РАДАРЕ | Стабильный рост</div>
+<div class="grid">
+
+<!-- Arrow Puzzle: Tap Puzzle Games -->
+<div class="card">
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/b--9J_VPY-VBj6ZAYDkXBZIni5JSi44_tFOeJ_HW3uVnxw1XNIkUvHF8qT9V6aLzyK_W4U5EAlDoofjjOfqWXQ=s512-rw" alt="Arrow Puzzle" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🎯</span>Arrow Puzzle: Tap Puzzle Games</div>
+<div class="game-dev">Easybrain</div>
+<div class="tags">
+<span class="tag tag-pub">🧠 Easybrain</span>
+<span class="tag tag-genre">Casual / Arrow Direction Puzzle</span>
+<span class="tag tag-date">Android 77K Jun 1–7 📈</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">🧠 Easybrain — ≠ Arrow Puzzle 3D (Block 1) · оригинальная игра</div>
+<div class="ss-placeholder">📱 Скриншоты не загружены</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Arrow Puzzle</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Arrow+Puzzle+Easybrain+tap+direction+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">Android Jun 1–7: 77K (+50%)</div>
+<div class="analysis">Arrow Puzzle — оригинальный флагман Easybrain по стрелочному жанру (com.easybrain.arrow.puzzle.game). Android 77K при +50% — устойчивый органический рост. ⚠️ В этом же отчёте (Block 1) Easybrain запустил Arrow Puzzle 3D — Easybrain сам себе конкурент внутри жанра. Парадокс каннибализации собственного топ-тайтла.</div>
+<div class="hypothesis">Следить: если Arrow Puzzle 3D набирает загрузки — оригинал начнёт терять. Easybrain либо готовит плановый переход аудитории на 3D, либо не скоординировал портфель.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.easybrain.arrow.puzzle.game" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- Level Devil -->
+<div class="card">
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/1zTWXjwCUeRmOVeqNnmrb-oR-KELGQMOLjrcZ2cXkQby8pQRpD5Wrng7Z8JPuWrsqQ=s512-rw" alt="Level Devil" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🎯</span>Level Devil</div>
+<div class="game-dev">Poki.com</div>
+<div class="tags">
+<span class="tag tag-pub">🎮 Poki.com</span>
+<span class="tag tag-genre">Casual / Rage Trap Platformer</span>
+<span class="tag tag-date">iOS 47K + Android 58K Jun 1–7</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">🎮 Poki.com — web-first developer, mobile expansion</div>
+<div class="ss-wrap">
+<img src="https://play-lh.googleusercontent.com/I-jeHPZ04W-ceYPIHc--ZIAteNrfkl096Eg04Nc9gL5Ck9oV1r6ZPjtLg5qIKkdpsxfS=w526-h296-rw" alt="screenshot 1" loading="lazy">
+<img src="https://play-lh.googleusercontent.com/SW2pqmwYG3AD5S0vFAIHToXPK-bzEdbPexId-ZgXE-Y1B2vbCUEoXJ-SuUOLfSQwzCZZ=w526-h296-rw" alt="screenshot 2" loading="lazy">
+</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Level Devil</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Level+Devil+trap+platformer+mobile+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">iOS Jun 1–7: 47K (+43%) · Android May 25–31: 59K (+87%) → Jun 1–7: 58K (стабильно)</div>
+<div class="analysis">Level Devil — rage trap platformer (Poki.com). Игра изначально была веб-хитом на платформе Poki, теперь в мобайле. Rage platformer жанр (Geometry Dash, Only Up!) работает через fail-compilation контент в Shorts. Android стабилен на 58K+ две недели — редкое удержание. iOS +43% = рост через ASO/рекомендации.</div>
+<div class="hypothesis">Web-to-mobile трансфер с Poki — интересный паттерн. Если Level Devil сохранит 50K+/нед в июле — это доказательство жизнеспособности Poki-to-mobile pipeline. Следить: могут ли другие Poki-хиты повторить переход.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6477413486" target="_blank">🍎 App Store</a>
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.unept.leveldevil" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- Mini Challenges: Calm Games -->
+<div class="card">
+<div class="card-top">
+<div class="icon-wrap"><img src="https://play-lh.googleusercontent.com/tZO4p-R6R05mZAMKsEmH6shCtolDdhgkn2CwtyNOGd6PSBGU1RNH3l3SjkBOrHWD9nA=s512-rw" alt="Mini Challenges" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name"><span class="signal-badge">🔄</span>Mini Challenges: Calm Games</div>
+<div class="game-dev">UltraPub</div>
+<div class="tags">
+<span class="tag tag-pub">📱 UltraPub</span>
+<span class="tag tag-genre">Casual / Mini Games Collection</span>
+<span class="tag tag-plat">🔗 Android only</span>
+<span class="tag tag-date">Android 92K May 25–31 📈</span>
+</div>
+</div>
+</div>
+<div class="pub-banner">📱 UltraPub — Android-only, calm mini-games</div>
+<div class="ss-wrap">
+<img src="https://play-lh.googleusercontent.com/x5z3p2Sxwtde49nmhXgMT8NiiXcYnnWmstmW9vcwAb5mrqktVF-Rzb8m3iOJjByWHFk=w526-h296-rw" alt="screenshot 1" loading="lazy">
+<img src="https://play-lh.googleusercontent.com/M3jouKH5ruq1I-SdpvptOaoJ-dd2WJF8RkOLCiLI5QquD6H0HAeEJ977u3WH4yaQ=w526-h296-rw" alt="screenshot 2" loading="lazy">
+</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Mini Challenges: Calm Games</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Mini+Challenges+Calm+Games+UltraPub+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">Android Apr 27–May 3: 16K (+332%) → May 11–17: 19K → May 25–31: 92K (+80%) → Jun 1–7: 74K (−20%)</div>
+<div class="analysis">Mini Challenges: Calm Games — коллекция мини-игр в «calm» (расслабляющем) стиле. UltraPub — небольшой издатель. Android-only игра с нестандартной кривой роста: несколько недель медленного роста, потом взрыв до 92K. Jun 1–7: откат -20% но удержание на 74K — нормальная коррекция после пика. Calm mini-games жанр отвечает на wellness trend.</div>
+<div class="hypothesis">Пик 92K без iOS и без крупного паблишера = сильная органика. Если UltraPub найдёт паблишера для iOS-лонча — потенциал удвоения загрузок. Следить: появится ли паблишер до Q3 2026.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.u1.relax.minigame3" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+</div><!-- /grid block3 -->
+</div><!-- /section block3 -->
+
+<!-- ═══════════════════════ BLOCK 4 — PUBLISHER TRANSFERS ═══════════════════════ -->
+<div class="section" id="block4">
+<div class="section-header sec-4">🔄 БЛОК 4 — ПАБЛИШЕР-ТРАНСФЕРЫ | 23 мая–9 июня 2026</div>
+<div class="grid">
+
+<!-- ─── VOODOO WAVE — 4 трансфера ─── -->
+<div class="card">
+<div class="pub-banner">🔄 Arcane Blast → Voodoo · iOS #6748215220 · 29 мая 2026</div>
+<div class="card-top">
+<div class="no-img-icon">🏐</div>
+<div class="card-meta">
+<div class="game-name">VolleyCraft</div>
+<div class="game-dev">Arcane Blast (prev.) → Voodoo</div>
+<div class="tags">
+<span class="tag tag-pub">🟣 → Voodoo</span>
+<span class="tag tag-genre">HC / Volleyball Craft</span>
+<span class="tag tag-plat">🍎 iOS + 🔗 Android</span>
+<span class="tag tag-date">iOS: 29 мая · Android: 8 июня</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Скриншоты не загружены</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — VolleyCraft</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=VolleyCraft+Voodoo+volleyball+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">iOS: Arcane Blast → Voodoo (29 мая) · Android: Lucky Potion → VOODOO (8 июня) · Двухплатформенный захват</div>
+<div class="hypothesis">Voodoo взял VolleyCraft сразу на двух платформах с 10-дневным разрывом — нетипичный паттерн. Либо два разных дева делали iOS/Android версии, либо поэтапное портфельное оформление. Volleyball mechanic + craft element — потенциально viral через Shorts (прыжки, физика).</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6748215220" target="_blank">🍎 App Store</a>
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.ArcaneBlast.VolleyCraft" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<div class="card">
+<div class="pub-banner">🔄 Adria Martin Colome → Voodoo · iOS #6760320168 · 30 мая 2026</div>
+<div class="card-top">
+<div class="icon-wrap"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a4/64/a2/a464a2ae-921d-30c2-ae18-c817c44a3ad2/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg" alt="Galactic Merge Idle" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Galactic Merge Idle</div>
+<div class="game-dev">Adria Martin Colome → Voodoo</div>
+<div class="tags">
+<span class="tag tag-pub">🟣 → Voodoo</span>
+<span class="tag tag-genre">Casual / Space Merge Idle</span>
+<span class="tag tag-plat">🍎 iOS</span>
+<span class="tag tag-date">30 мая 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Скриншоты не загружены</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Galactic Merge Idle</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Galactic+Merge+Idle+Voodoo+space+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">iOS · Инди-дев Adria Martin Colome (Испания) → Voodoo · 30 мая 2026 · Space merge idle</div>
+<div class="hypothesis">Voodoo скаутит idle merge от одиночных разработчиков — стандартная стратегия. Галактическая тема + idle merge = долгий хвост с высоким LTV. Ожидать UA через Meta Ads в ближайшие 2–3 недели.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6760320168" target="_blank">🍎 App Store</a>
+</div>
+</div>
+
+<div class="card">
+<div class="pub-banner">🔄 Hugo Peyron → Voodoo · iOS #6772106126 · 4 июня 2026</div>
+<div class="card-top">
+<div class="no-img-icon">🧩</div>
+<div class="card-meta">
+<div class="game-name">Cortex – Shikaku</div>
+<div class="game-dev">Hugo Peyron → Voodoo</div>
+<div class="tags">
+<span class="tag tag-pub">🟣 → Voodoo</span>
+<span class="tag tag-genre">Casual / Shikaku Logic Puzzle</span>
+<span class="tag tag-plat">🍎 iOS</span>
+<span class="tag tag-date">4 июня 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Скриншоты не загружены</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Cortex Shikaku</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Cortex+Shikaku+puzzle+logic+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">iOS · Инди-дев Hugo Peyron (Франция) → Voodoo · 4 июня 2026 · Shikaku-логика</div>
+<div class="hypothesis">Shikaku — японская логическая головоломка (прямоугольники с числами). Нишевый но lояльный жанр. Voodoo заходит в «brain training» категорию через Cortex бренд — возможна серия Cortex-X тайтлов (Cortex-Sudoku, Cortex-Nonogram?).</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6772106126" target="_blank">🍎 App Store</a>
+</div>
+</div>
+
+<div class="card">
+<div class="pub-banner">🔄 Screaming Parrots → VOODOO · Android · 8 июня 2026</div>
+<div class="card-top">
+<div class="no-img-icon">📖</div>
+<div class="card-meta">
+<div class="game-name">The Almanac</div>
+<div class="game-dev">Screaming Parrots → VOODOO</div>
+<div class="tags">
+<span class="tag tag-pub">🟣 → Voodoo</span>
+<span class="tag tag-genre">Casual / Almanac Puzzle</span>
+<span class="tag tag-plat">🔗 Android</span>
+<span class="tag tag-date">8 июня 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Скриншоты не загружены</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — The Almanac</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=The+Almanac+Voodoo+puzzle+game+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">Android · Screaming Parrots (dev) → VOODOO (pub) · 8 июня 2026 · com.voodoo.almanac</div>
+<div class="hypothesis">Четвёртый Voodoo трансфер за 10 дней — Voodoo в активной фазе портфельного расширения. Almanac name + Voodoo bundle ID (com.voodoo.almanac) = игра уже переоформлена под Voodoo. Быстрое переименование bundle ID говорит о плановом поглощении, не рандомном скаутинге.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.voodoo.almanac" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+<!-- ─── ROLLIC WAVE — 3 трансфера ─── -->
+<div class="card">
+<div class="pub-banner">🔄 Duykan Bakay → Rollic Games · iOS #6758138698 · 2 июня 2026</div>
+<div class="card-top">
+<div class="no-img-icon">🚗</div>
+<div class="card-meta">
+<div class="game-name">Car Sort: Color Puzzle</div>
+<div class="game-dev">Duykan Bakay → Rollic Games</div>
+<div class="tags">
+<span class="tag tag-pub">🎲 → Rollic</span>
+<span class="tag tag-genre">Casual / Car Sort Puzzle</span>
+<span class="tag tag-plat">🍎 iOS</span>
+<span class="tag tag-date">2 июня 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Скриншоты не загружены</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Car Sort: Color Puzzle</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Car+Sort+Color+Puzzle+Rollic+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">iOS Jun 1–7: 33K · Инди-дев Duykan Bakay → Rollic · 2 июня · Car sort popular genre</div>
+<div class="hypothesis">Car Sort уже генерирует 33K/нед при инди-разработчике до Rollic UA. После подключения Rollic-масштаба ожидается x3–5 рост. Rollic забирает уже работающие продукты — низкий риск, быстрый ROI.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6758138698" target="_blank">🍎 App Store</a>
+</div>
+</div>
+
+<div class="card">
+<div class="pub-banner">🔄 Ristretto Studios → Rollic Games · iOS #6756491779 · 3 июня 2026</div>
+<div class="card-top">
+<div class="no-img-icon">🏰</div>
+<div class="card-meta">
+<div class="game-name">Spin Siege</div>
+<div class="game-dev">Ristretto Studios → Rollic Games</div>
+<div class="tags">
+<span class="tag tag-pub">🎲 → Rollic</span>
+<span class="tag tag-genre">Casual / Spin Defense</span>
+<span class="tag tag-plat">🍎 iOS</span>
+<span class="tag tag-date">3 июня 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Скриншоты не загружены</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Spin Siege</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Spin+Siege+Rollic+defense+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">iOS Jun 1–7: 216 загрузок (ранняя стадия) · Ristretto Studios → Rollic · 3 июня</div>
+<div class="hypothesis">216 загрузок/нед до Rollic UA — самая ранняя стадия теста. Rollic берёт игру фактически на нуле и будет строить с нуля. Если Spin Siege выживет после UA-разгона — значит механика прошла закрытое A/B-тестирование внутри Rollic.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6756491779" target="_blank">🍎 App Store</a>
+</div>
+</div>
+
+<div class="card">
+<div class="pub-banner">🔄 FUBU GAMES → Rollic Games · iOS #6758237144 · 8 июня 2026</div>
+<div class="card-top">
+<div class="no-img-icon">👊</div>
+<div class="card-meta">
+<div class="game-name">Endless Puncher</div>
+<div class="game-dev">FUBU GAMES → Rollic Games</div>
+<div class="tags">
+<span class="tag tag-pub">🎲 → Rollic</span>
+<span class="tag tag-genre">Hypercasual / Puncher Action</span>
+<span class="tag tag-plat">🍎 iOS</span>
+<span class="tag tag-date">8 июня 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Скриншоты не загружены</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Endless Puncher</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Endless+Puncher+Rollic+action+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">iOS Jun 1–7: 56 загрузок · FUBU GAMES (Турция) → Rollic · 8 июня · Endless action HC</div>
+<div class="hypothesis">Rollic за 6 дней подписал три игры (Car Sort 2 июня, Spin Siege 3 июня, Endless Puncher 8 июня) — активная сессия скаутинга. Разные жанры (сортировка / защита / экшн) говорят о портфельной диверсификации, а не жанровом фокусе.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6758237144" target="_blank">🍎 App Store</a>
+</div>
+</div>
+
+<!-- SayGames — Word Jigsort -->
+<div class="card">
+<div class="pub-banner">🔄 PLAYSTROM → SayGames LTD · iOS #6761367598 · 2 июня 2026</div>
+<div class="card-top">
+<div class="no-img-icon">📝</div>
+<div class="card-meta">
+<div class="game-name">Word Jigsort – Associations</div>
+<div class="game-dev">PLAYSTROM → SayGames LTD</div>
+<div class="tags">
+<span class="tag tag-pub">🟡 → SayGames</span>
+<span class="tag tag-genre">Casual / Word + Jigsaw</span>
+<span class="tag tag-plat">🍎 iOS</span>
+<span class="tag tag-date">2 июня 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Скриншоты не загружены</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Word Jigsort</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Word+Jigsort+Associations+SayGames+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">iOS · PLAYSTROM → SayGames LTD · 2 июня 2026 · Word + jigsaw associations</div>
+<div class="hypothesis">SayGames (Беларусь) — лидер в word/sorting casual. Word Jigsort = слово + jigsaw ассоциации — попытка занять пересечение word puzzle и visual puzzle. SayGames знает как монетизировать word жанр через IAP. Потенциально сильный тайтл в их портфеле.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6761367598" target="_blank">🍎 App Store</a>
+</div>
+</div>
+
+<!-- Zynga — Dice Companions -->
+<div class="card">
+<div class="pub-banner">🔄 Skillpoint Games → Zynga Inc. · iOS #6725179954 · 9 июня 2026</div>
+<div class="card-top">
+<div class="icon-wrap"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8d/5c/cb/8d5ccb4e-c62b-9aa1-e853-17e490e890b2/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg" alt="Dice Companions" loading="lazy"></div>
+<div class="card-meta">
+<div class="game-name">Dice Companions</div>
+<div class="game-dev">Skillpoint Games → Zynga Inc.</div>
+<div class="tags">
+<span class="tag tag-pub">🎰 → Zynga</span>
+<span class="tag tag-genre">Casual / Dice Companion Puzzle</span>
+<span class="tag tag-plat">🍎 iOS</span>
+<span class="tag tag-date">9 июня 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Скриншоты не загружены</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Dice Companions</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Dice+Companions+Zynga+puzzle+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">iOS · Skillpoint Games, LLC → Zynga Inc. · 9 июня 2026 · Dice + companion механика</div>
+<div class="hypothesis">Zynga — крупный корпоративный паблишер (Take-Two). Dice Companions = dice puzzle с companion/pet элементом. Zynga добавляет companion как retention hook (привязанность к персонажу). Dice жанр в тренде (Dice Logic Gimica x88, Dice Bond Kwalee) — Zynga заходит в актуальный жанр.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-ios" href="https://apps.apple.com/us/app/id6725179954" target="_blank">🍎 App Store</a>
+</div>
+</div>
+
+<!-- Mine Drillers — Supersonic → Pandorio (portfolio churn) -->
+<div class="card">
+<div class="pub-banner">🔄 Supersonic Studios → PANDORIO LTD · Android · 27 мая 2026</div>
+<div class="card-top">
+<div class="no-img-icon">⛏️</div>
+<div class="card-meta">
+<div class="game-name">Mine Drillers – Tower Defense</div>
+<div class="game-dev">Pandorio (prev. Supersonic)</div>
+<div class="tags">
+<span class="tag tag-pub">⚡ Supersonic → Pandorio</span>
+<span class="tag tag-genre">Casual / Tower Defense</span>
+<span class="tag tag-plat">🔗 Android</span>
+<span class="tag tag-date">27 мая 2026</span>
+</div>
+</div>
+</div>
+<div class="ss-placeholder">📱 Скриншоты не загружены</div>
+<div class="vid-label">🔍 ГЕЙМПЛЕЙ — Mine Drillers</div>
+<div class="vid-wrap">
+<a class="vid-search-link" href="https://www.youtube.com/results?search_query=Mine+Drillers+Tower+Defense+Pandorio+gameplay" target="_blank">🔍 Найти геймплей на YouTube</a>
+</div>
+<div class="card-body">
+<div class="dl-stat">Android · Supersonic → PANDORIO LTD · 27 мая · Portfolio churn (провальный UA-тест)</div>
+<div class="hypothesis">Supersonic → Pandorio — устоявшийся паттерн отбраковки: не прошёл UA-тест → передаётся в Pandorio (внутренний «second chance» лейбл или аффилированная компания). Аналогично Sand Bottle Sort → Easy Hesy из прошлого отчёта. Supersonic жёстко чистит портфель — TD жанр не в их core фокусе.</div>
+</div>
+<div class="card-footer">
+<a class="link-btn link-gp" href="https://play.google.com/store/apps/details?id=com.pandorio.minedrillers" target="_blank">🔗 Google Play</a>
+</div>
+</div>
+
+</div><!-- /grid block4 -->
+</div><!-- /section block4 -->
+
+</div><!-- /container -->
+
+<!-- Lightbox -->
+<div id="lb"><span id="lb-close">✕</span><img id="lb-img" src="" alt=""/></div>
+<script>
+const lb=document.getElementById('lb');
+const lbImg=document.getElementById('lb-img');
+document.getElementById('lb-close').addEventListener('click',()=>{lb.classList.remove('open');lbImg.src='';});
+lb.addEventListener('click',e=>{if(e.target===lb){lb.classList.remove('open');lbImg.src='';}});
+document.querySelectorAll('.ss-wrap img').forEach(img=>{
+  img.addEventListener('click',()=>{lbImg.src=img.src;lb.classList.add('open');});
+});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){lb.classList.remove('open');lbImg.src='';}});
+</script>
+</body>
+</html>
