@@ -1456,7 +1456,11 @@ const lbImg=document.getElementById('lb-img');
 document.getElementById('lb-close').addEventListener('click',()=>{lb.classList.remove('open');lbImg.src='';});
 lb.addEventListener('click',e=>{if(e.target===lb){lb.classList.remove('open');lbImg.src='';}});
 document.querySelectorAll('.ss-wrap img').forEach(img=>{
-  img.addEventListener('click',()=>{lbImg.src=img.src;lb.classList.add('open');});
+  img.addEventListener('click',()=>{
+    let s=img.src;
+    if(s.includes('play-lh.googleusercontent.com')) s=s.replace(/=w\d+-h\d+-rw$/,'=w2048-h2048-rw');
+    lbImg.src=s;lb.classList.add('open');
+  });
 });
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){lb.classList.remove('open');lbImg.src='';}});
 </script>
